@@ -1,6 +1,6 @@
 {
   "2026-06-19": {
-    "generated_at": "2026-06-19 02:26:49 CST",
+    "generated_at": "2026-06-19 03:23:55 CST",
     "search_window": {
       "primary": [
         "2026-06-16",
@@ -10,15 +10,23 @@
         "2026-06-10",
         "2026-06-18"
       ],
-      "extended_high_value": [
-        "2026-05-23",
+      "representative_extension": [
+        "2025-04-12",
         "2026-05-27"
       ]
     },
-    "notes": [
-      "本批次优先覆盖近 1-7 天；因高相关正式出版论文较少，补充了两篇 5 月末高价值 arXiv 预印本。",
-      "以下条目均未缓存 PDF 全文；如正文未公开可访问，则标注为仅基于摘要判断。"
-    ],
+    "dedupe": {
+      "rules": [
+        "same_doi",
+        "same_arxiv_id",
+        "merge_same_paper_across_sources",
+        "skip_existing_entries_in_history"
+      ],
+      "notes": [
+        "本次用 ACM e-Energy DOI 合并了同文的 arXiv 与会议版本，仅保留一条。",
+        "相较上一版，移除了较旧的 EV 充电 RL 条目，改纳入更近且正式发表的 decision-focused EV 充电论文。"
+      ]
+    },
     "papers": [
       {
         "priority": "必读",
@@ -34,17 +42,50 @@
         "links": {
           "paper": "https://arxiv.org/abs/2606.17692",
           "arxiv": "https://arxiv.org/abs/2606.17692",
+          "doi": null,
           "code": null,
           "data": "https://power.larc.nasa.gov/"
         },
         "topics": [
           "短期负荷预测",
-          "时序建模",
-          "稳健预测"
+          "目标重构",
+          "稳健预测",
+          "时序建模"
         ],
         "relevance": "高",
         "abstract_only": true,
-        "summary": "通过把绝对负荷预测改写为相邻时刻增量预测，在小时级负荷预测上为 LSTM、Transformer 与 LightGBM 带来稳定收益。"
+        "summary": "把预测目标改成相邻时刻负荷增量，在小时级负荷预测上对 LSTM、Transformer 和 LightGBM 都带来稳定收益。"
+      },
+      {
+        "priority": "必读",
+        "title_zh": "预测什么比预测多准更重要：面向未知离站时间的受控 EV 充电决策聚焦强化学习",
+        "title_en": "Forecasting what Matters: Decision-Focused RL for Controlled EV Charging with Unknown Departure Times",
+        "authors": [
+          "Giuseppe Gabriele",
+          "Fabio Pavirani",
+          "Seyed Soroush Karimi Madahi",
+          "Chris Develder"
+        ],
+        "institutions": [],
+        "source": "ACM e-Energy 2026 / arXiv",
+        "date": "2026-06-17",
+        "doi": "10.1145/3744255.3811736",
+        "links": {
+          "paper": "https://doi.org/10.1145/3744255.3811736",
+          "arxiv": "https://arxiv.org/abs/2606.19199",
+          "doi": "https://doi.org/10.1145/3744255.3811736",
+          "code": null,
+          "data": null
+        },
+        "topics": [
+          "EV充电调度",
+          "强化学习",
+          "决策聚焦学习",
+          "交通能源耦合"
+        ],
+        "relevance": "高",
+        "abstract_only": false,
+        "summary": "将离站时间预测器与 SAC 控制器端到端联合训练，在未知离站时间下显著改善 EV 充电决策质量。"
       },
       {
         "priority": "必读",
@@ -67,18 +108,19 @@
         "links": {
           "paper": "https://arxiv.org/abs/2606.18851",
           "arxiv": "https://arxiv.org/abs/2606.18851",
+          "doi": null,
           "code": null,
           "data": null
         },
         "topics": [
           "需求响应",
           "数据中心能源管理",
-          "LLM 负荷柔性",
+          "LLM能源负荷",
           "碳感知调度"
         ],
         "relevance": "高",
         "abstract_only": true,
-        "summary": "把 LLM 量化精度选择转化为可调度能源柔性，结合多园区协同响应，在不减少已服务 token 的前提下降低运行成本 34.3%。"
+        "summary": "把模型量化级别转成可调度柔性资源，在不减少服务 token 量的前提下降低 34.3% 运行成本。"
       },
       {
         "priority": "值得跟进",
@@ -95,17 +137,19 @@
         "links": {
           "paper": "https://arxiv.org/abs/2606.12097",
           "arxiv": "https://arxiv.org/abs/2606.12097",
+          "doi": null,
           "code": null,
           "data": null
         },
         "topics": [
           "风电功率预测",
           "概率预测",
-          "不确定性建模"
+          "不确定性建模",
+          "长时域预测"
         ],
         "relevance": "高",
         "abstract_only": true,
-        "summary": "以 Weibull 参数预测、SDE 场景生成和 XGBoost 功率曲线映射实现月尺度风电概率预测，适合作为储能和备用调度输入。"
+        "summary": "通过 Weibull 参数状态空间建模与正值 SDE 生成风速样本路径，输出可直接用于后续调度的月尺度概率预测。"
       },
       {
         "priority": "值得跟进",
@@ -124,86 +168,52 @@
         "links": {
           "paper": "https://arxiv.org/abs/2605.27781",
           "arxiv": "https://arxiv.org/abs/2605.27781",
+          "doi": null,
           "code": null,
           "data": null
         },
         "topics": [
           "日前电价预测",
-          "统计学习",
           "概率预测",
+          "可解释模型",
           "市场建模"
         ],
         "relevance": "高",
         "abstract_only": true,
-        "summary": "用多变量 Group Lasso 刻画价格跨连续时段的组效应，在 CAISO 两年数据和国际挑战赛回测中显示出高解释性与竞争力。"
-      },
-      {
-        "priority": "值得跟进",
-        "title_zh": "可再生能源渗透变化下的面向减排 EV 充电强化学习",
-        "title_en": "Emission-Aware Reinforcement Learning for Sustainable Electric Vehicle Charging and Carbon Dioxide Reduction Under Varying Renewable Penetration",
-        "authors": [
-          "Ninglin Ou",
-          "Mohammad A. Razzaque",
-          "Iftekher Islam Shovon",
-          "Shafkat Khan Siam",
-          "Shafiuzzaman K Khadem",
-          "Krishnendu Guha",
-          "Mayeen U Khandaker",
-          "Md. Noor-A-Rahim"
-        ],
-        "institutions": [],
-        "source": "arXiv",
-        "date": "2026-05-23",
-        "doi": null,
-        "links": {
-          "paper": "https://arxiv.org/abs/2605.24543",
-          "arxiv": "https://arxiv.org/abs/2605.24543",
-          "code": null,
-          "data": "https://github.com/StavrosOrf/EV2Gym"
-        },
-        "topics": [
-          "EV 充电调度",
-          "强化学习",
-          "交通能源耦合",
-          "碳感知调度"
-        ],
-        "relevance": "高",
-        "abstract_only": true,
-        "summary": "基于 SAC 的多目标奖励调度 EV 充电，显式压低碳排放和弃风弃光，同时保持用户需求满足与配网约束。"
+        "summary": "把整日电价向量联合建模，并用 group sparsity 显式刻画连续时段组效应，兼顾精度、解释性和复杂度。"
       },
       {
         "priority": "简要了解",
-        "title_zh": "电力电子化电力系统中的人工智能：一篇综述",
-        "title_en": "Artificial Intelligence for Power-Converter-Rich Electrical Systems: A Review",
+        "title_zh": "大语言模型在智能电网中的集成",
+        "title_en": "Large Language Models integration in Smart Grids",
         "authors": [
-          "Pengfeng Lin",
-          "Yuan Gao",
-          "Yuxi Tang",
-          "Muhammad Waqas Qaisar",
-          "Peifeng Hui",
-          "Chuanlin Zhang",
-          "Miao Zhu",
-          "Peng Wang"
+          "Seyyedreza Madani",
+          "Ahmadreza Tavasoli",
+          "Zahra Khoshtarash Astaneh",
+          "Pierre-Olivier Pineau"
         ],
-        "institutions": [],
+        "institutions": [
+          "HEC Montreal"
+        ],
         "source": "arXiv",
-        "date": "2026-06-14",
+        "date": "2025-04-12",
         "doi": null,
         "links": {
-          "paper": "https://arxiv.org/abs/2606.15948",
-          "arxiv": "https://arxiv.org/abs/2606.15948",
+          "paper": "https://arxiv.org/abs/2504.09059",
+          "arxiv": "https://arxiv.org/abs/2504.09059",
+          "doi": null,
           "code": null,
           "data": null
         },
         "topics": [
-          "综述",
-          "强化学习控制",
-          "微电网协调",
-          "部署约束"
+          "LLM在能源系统中的应用",
+          "智能电网运维",
+          "市场与用户侧",
+          "安全与合规"
         ],
         "relevance": "中高",
-        "abstract_only": true,
-        "summary": "围绕电力电子化系统的设计、控制、运行与治理，梳理 AI 应用与部署前验证缺口，适合做研究地图。"
+        "abstract_only": false,
+        "summary": "系统梳理 30 个 LLM+智能电网应用与 8 类任务簇，适合作为选题和系统设计的研究地图。"
       }
     ]
   }

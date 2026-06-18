@@ -1,0 +1,210 @@
+{
+  "2026-06-19": {
+    "generated_at": "2026-06-19 02:26:49 CST",
+    "search_window": {
+      "primary": [
+        "2026-06-16",
+        "2026-06-19"
+      ],
+      "supplemental": [
+        "2026-06-10",
+        "2026-06-18"
+      ],
+      "extended_high_value": [
+        "2026-05-23",
+        "2026-05-27"
+      ]
+    },
+    "notes": [
+      "本批次优先覆盖近 1-7 天；因高相关正式出版论文较少，补充了两篇 5 月末高价值 arXiv 预印本。",
+      "以下条目均未缓存 PDF 全文；如正文未公开可访问，则标注为仅基于摘要判断。"
+    ],
+    "papers": [
+      {
+        "priority": "必读",
+        "title_zh": "面向短期电力负荷预测的 Delta 目标重构：基于 LSTM 与 Transformer 的建模",
+        "title_en": "Delta-Based Target Reformulation for Short-Term Electricity Load Forecasting Using LSTM and Transformer Models",
+        "authors": [
+          "Vansh Bansal"
+        ],
+        "institutions": [],
+        "source": "arXiv",
+        "date": "2026-06-16",
+        "doi": null,
+        "links": {
+          "paper": "https://arxiv.org/abs/2606.17692",
+          "arxiv": "https://arxiv.org/abs/2606.17692",
+          "code": null,
+          "data": "https://power.larc.nasa.gov/"
+        },
+        "topics": [
+          "短期负荷预测",
+          "时序建模",
+          "稳健预测"
+        ],
+        "relevance": "高",
+        "abstract_only": true,
+        "summary": "通过把绝对负荷预测改写为相邻时刻增量预测，在小时级负荷预测上为 LSTM、Transformer 与 LightGBM 带来稳定收益。"
+      },
+      {
+        "priority": "必读",
+        "title_zh": "从 Token 到能源柔性：面向 LLM 推理工作负荷数据中心的量化驱动需求响应",
+        "title_en": "From Tokens to Energy Flexibility: Quantization-Enabled Demand Response for Data Centers with LLM Inference Workloads",
+        "authors": [
+          "Bojun Du",
+          "Xiaoyi Fan",
+          "Ershun Du",
+          "Long Chen",
+          "Jianpei Han",
+          "Qingchun Hou",
+          "Ning Zhang",
+          "Chongqing Kang"
+        ],
+        "institutions": [],
+        "source": "arXiv",
+        "date": "2026-06-17",
+        "doi": null,
+        "links": {
+          "paper": "https://arxiv.org/abs/2606.18851",
+          "arxiv": "https://arxiv.org/abs/2606.18851",
+          "code": null,
+          "data": null
+        },
+        "topics": [
+          "需求响应",
+          "数据中心能源管理",
+          "LLM 负荷柔性",
+          "碳感知调度"
+        ],
+        "relevance": "高",
+        "abstract_only": true,
+        "summary": "把 LLM 量化精度选择转化为可调度能源柔性，结合多园区协同响应，在不减少已服务 token 的前提下降低运行成本 34.3%。"
+      },
+      {
+        "priority": "值得跟进",
+        "title_zh": "用于条件长时域风电功率预测的 Weibull 平稳随机微分方程",
+        "title_en": "Weibull-Stationary Stochastic Differential Equations for Conditional Long-Horizon Wind Power Forecasting",
+        "authors": [
+          "Luca Di Persio",
+          "Mehrdad Ghadiri"
+        ],
+        "institutions": [],
+        "source": "arXiv",
+        "date": "2026-06-10",
+        "doi": null,
+        "links": {
+          "paper": "https://arxiv.org/abs/2606.12097",
+          "arxiv": "https://arxiv.org/abs/2606.12097",
+          "code": null,
+          "data": null
+        },
+        "topics": [
+          "风电功率预测",
+          "概率预测",
+          "不确定性建模"
+        ],
+        "relevance": "高",
+        "abstract_only": true,
+        "summary": "以 Weibull 参数预测、SDE 场景生成和 XGBoost 功率曲线映射实现月尺度风电概率预测，适合作为储能和备用调度输入。"
+      },
+      {
+        "priority": "值得跟进",
+        "title_zh": "基于多变量 Group Lasso 的日前电价预测方法",
+        "title_en": "Day-Ahead Electricity Price Forecasting Using a Multivariate Group Lasso Method",
+        "authors": [
+          "Keyi Wang",
+          "Jiaxiang Ji",
+          "Mahan Mansouri",
+          "Ahmed Aziz Ezzat"
+        ],
+        "institutions": [],
+        "source": "arXiv",
+        "date": "2026-05-27",
+        "doi": null,
+        "links": {
+          "paper": "https://arxiv.org/abs/2605.27781",
+          "arxiv": "https://arxiv.org/abs/2605.27781",
+          "code": null,
+          "data": null
+        },
+        "topics": [
+          "日前电价预测",
+          "统计学习",
+          "概率预测",
+          "市场建模"
+        ],
+        "relevance": "高",
+        "abstract_only": true,
+        "summary": "用多变量 Group Lasso 刻画价格跨连续时段的组效应，在 CAISO 两年数据和国际挑战赛回测中显示出高解释性与竞争力。"
+      },
+      {
+        "priority": "值得跟进",
+        "title_zh": "可再生能源渗透变化下的面向减排 EV 充电强化学习",
+        "title_en": "Emission-Aware Reinforcement Learning for Sustainable Electric Vehicle Charging and Carbon Dioxide Reduction Under Varying Renewable Penetration",
+        "authors": [
+          "Ninglin Ou",
+          "Mohammad A. Razzaque",
+          "Iftekher Islam Shovon",
+          "Shafkat Khan Siam",
+          "Shafiuzzaman K Khadem",
+          "Krishnendu Guha",
+          "Mayeen U Khandaker",
+          "Md. Noor-A-Rahim"
+        ],
+        "institutions": [],
+        "source": "arXiv",
+        "date": "2026-05-23",
+        "doi": null,
+        "links": {
+          "paper": "https://arxiv.org/abs/2605.24543",
+          "arxiv": "https://arxiv.org/abs/2605.24543",
+          "code": null,
+          "data": "https://github.com/StavrosOrf/EV2Gym"
+        },
+        "topics": [
+          "EV 充电调度",
+          "强化学习",
+          "交通能源耦合",
+          "碳感知调度"
+        ],
+        "relevance": "高",
+        "abstract_only": true,
+        "summary": "基于 SAC 的多目标奖励调度 EV 充电，显式压低碳排放和弃风弃光，同时保持用户需求满足与配网约束。"
+      },
+      {
+        "priority": "简要了解",
+        "title_zh": "电力电子化电力系统中的人工智能：一篇综述",
+        "title_en": "Artificial Intelligence for Power-Converter-Rich Electrical Systems: A Review",
+        "authors": [
+          "Pengfeng Lin",
+          "Yuan Gao",
+          "Yuxi Tang",
+          "Muhammad Waqas Qaisar",
+          "Peifeng Hui",
+          "Chuanlin Zhang",
+          "Miao Zhu",
+          "Peng Wang"
+        ],
+        "institutions": [],
+        "source": "arXiv",
+        "date": "2026-06-14",
+        "doi": null,
+        "links": {
+          "paper": "https://arxiv.org/abs/2606.15948",
+          "arxiv": "https://arxiv.org/abs/2606.15948",
+          "code": null,
+          "data": null
+        },
+        "topics": [
+          "综述",
+          "强化学习控制",
+          "微电网协调",
+          "部署约束"
+        ],
+        "relevance": "中高",
+        "abstract_only": true,
+        "summary": "围绕电力电子化系统的设计、控制、运行与治理，梳理 AI 应用与部署前验证缺口，适合做研究地图。"
+      }
+    ]
+  }
+}

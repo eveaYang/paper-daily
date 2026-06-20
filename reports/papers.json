@@ -216,5 +216,227 @@
         "summary": "系统梳理 30 个 LLM+智能电网应用与 8 类任务簇，适合作为选题和系统设计的研究地图。"
       }
     ]
+  },
+  "2026-06-20": {
+    "generated_at": "2026-06-20 12:55:53 CST",
+    "search_window": {
+      "primary": [
+        "2026-06-17",
+        "2026-06-20"
+      ],
+      "supplemental": [
+        "2026-06-02",
+        "2026-06-10"
+      ],
+      "representative_extension": [
+        "2026-01-06",
+        "2026-01-06"
+      ]
+    },
+    "dedupe": {
+      "rules": [
+        "same_doi",
+        "same_arxiv_id",
+        "merge_same_paper_across_sources",
+        "skip_existing_entries_in_history"
+      ],
+      "notes": [
+        "已跳过 2026-06-19 已收录的 6 篇论文，避免跨日报重复分析。",
+        "本轮未发现与历史条目 DOI 或 arXiv ID 冲突的同文多来源重复项，新增条目集中在 OPF、EV 行为建模与风电基础模型。"
+      ]
+    },
+    "papers": [
+      {
+        "priority": "必读",
+        "title_zh": "连接数据驱动与模型驱动方法：面向分布式最优潮流的学习优化架构",
+        "title_en": "Bridging Data-Driven and Model-Based Methods: A Learn-to-Optimize Architecture for Distributed Optimal Power Flow",
+        "authors": [
+          "Sina Abolmasov",
+          "Niklas Grunwald",
+          "Maren Simons",
+          "Rik W. De Doncker"
+        ],
+        "institutions": [],
+        "source": "arXiv",
+        "date": "2026-06-17",
+        "doi": null,
+        "links": {
+          "paper": "https://arxiv.org/abs/2606.18822",
+          "arxiv": "https://arxiv.org/abs/2606.18822",
+          "doi": null,
+          "code": null,
+          "data": null
+        },
+        "topics": [
+          "分布式最优潮流",
+          "学习优化",
+          "电网调度",
+          "物理约束学习"
+        ],
+        "relevance": "高",
+        "abstract_only": false,
+        "summary": "把分布式 OPF 的求解机理神经化，在 141 节点系统上实现最高 22 倍加速且最优性损失低于 0.1%。"
+      },
+      {
+        "priority": "必读",
+        "title_zh": "Tyan-WP：面向长期概率风电功率预测的基础模型",
+        "title_en": "Tyan-WP: A Foundation Model for Long-Term Probabilistic Wind Power Forecasting",
+        "authors": [
+          "Xinyang Liu",
+          "Xiaoli Li",
+          "Hao Wang",
+          "Zheng Yi",
+          "Yuanyuan Ma",
+          "Cheng Qiu",
+          "Yifei Mei",
+          "Cong Fu",
+          "Xiaofeng Gao",
+          "Ying Zhang"
+        ],
+        "institutions": [
+          "中国科学技术大学",
+          "中国电力科学研究院"
+        ],
+        "source": "arXiv",
+        "date": "2026-06-07",
+        "doi": null,
+        "links": {
+          "paper": "https://arxiv.org/abs/2606.08630",
+          "arxiv": "https://arxiv.org/abs/2606.08630",
+          "doi": null,
+          "code": null,
+          "data": null
+        },
+        "topics": [
+          "风电功率预测",
+          "基础模型",
+          "概率预测",
+          "跨区域迁移"
+        ],
+        "relevance": "高",
+        "abstract_only": false,
+        "summary": "在 15 个国家 36 个风场预训练，长期概率预测相对强基线降低 33.3% NRMSE 和 28.6% CRPS。"
+      },
+      {
+        "priority": "必读",
+        "title_zh": "面向拓扑变化的大规模交流最优潮流物理信息图学习加速",
+        "title_en": "Physics-Informed Graph Learning Acceleration for Large-Scale AC Optimal Power Flow with Topology Changes",
+        "authors": [
+          "Harshvardhan Pandit",
+          "Rishabh Sharma",
+          "Sunita Sarawagi",
+          "Venkat Venkatasubramanian"
+        ],
+        "institutions": [],
+        "source": "arXiv",
+        "date": "2026-06-04",
+        "doi": null,
+        "links": {
+          "paper": "https://arxiv.org/abs/2606.05772",
+          "arxiv": "https://arxiv.org/abs/2606.05772",
+          "doi": null,
+          "code": null,
+          "data": null
+        },
+        "topics": [
+          "交流最优潮流",
+          "图神经网络",
+          "物理约束",
+          "拓扑变化鲁棒性"
+        ],
+        "relevance": "高",
+        "abstract_only": true,
+        "summary": "针对 N-1 与拓扑切换场景提供近可行 warm-start，较传统 warm-start 最高提速 284.92 倍。"
+      },
+      {
+        "priority": "值得跟进",
+        "title_zh": "ev-flow：面向电网与出行耦合研究的快速真实 EV 行为合成开源工具",
+        "title_en": "ev-flow: A Fast and Realistic Open-Source EV Behavioral Synthesis Package for Grid and Mobility Interaction Studies",
+        "authors": [
+          "Elisa Rinaldi",
+          "Alessandro De Paola",
+          "Costas Spanos"
+        ],
+        "institutions": [],
+        "source": "arXiv",
+        "date": "2026-06-18",
+        "doi": null,
+        "links": {
+          "paper": "https://arxiv.org/abs/2606.19520",
+          "arxiv": "https://arxiv.org/abs/2606.19520",
+          "doi": null,
+          "code": null,
+          "data": null
+        },
+        "topics": [
+          "EV 充电负荷合成",
+          "交通能源耦合",
+          "仿真数据生成",
+          "用户行为建模"
+        ],
+        "relevance": "高",
+        "abstract_only": true,
+        "summary": "用公开出行与充电数据生成可扩展 EV 会话样本，单机约 15 分钟可合成 5000 辆车行为。"
+      },
+      {
+        "priority": "值得跟进",
+        "title_zh": "面向电动汽车的分类型智能充电控制",
+        "title_en": "Class-Based Smart Charging Control for Electric Vehicles",
+        "authors": [
+          "Stefano Margaria",
+          "Giacomo Bolla",
+          "Luca Bolognani"
+        ],
+        "institutions": [],
+        "source": "arXiv",
+        "date": "2026-06-02",
+        "doi": null,
+        "links": {
+          "paper": "https://arxiv.org/abs/2606.03319",
+          "arxiv": "https://arxiv.org/abs/2606.03319",
+          "doi": null,
+          "code": null,
+          "data": null
+        },
+        "topics": [
+          "EV 智能充电",
+          "聚类建模",
+          "聚合调度",
+          "可扩展控制"
+        ],
+        "relevance": "高",
+        "abstract_only": true,
+        "summary": "把单车充电控制改写为类别级控制，在保持成本与削峰收益的同时显著降低优化复杂度。"
+      },
+      {
+        "priority": "简要了解",
+        "title_zh": "电价预测：连接线性模型、神经网络与在线学习",
+        "title_en": "Electricity Price Forecasting: Bridging Linear Models, Neural Networks and Online Learning",
+        "authors": [
+          "Btissame El Mahtout",
+          "Florian Ziel"
+        ],
+        "institutions": [],
+        "source": "arXiv",
+        "date": "2026-01-06",
+        "doi": null,
+        "links": {
+          "paper": "https://arxiv.org/abs/2601.02856",
+          "arxiv": "https://arxiv.org/abs/2601.02856",
+          "doi": "https://doi.org/10.48550/arXiv.2601.02856",
+          "code": null,
+          "data": null
+        },
+        "topics": [
+          "电价预测",
+          "在线学习",
+          "混合神经网络",
+          "市场建模"
+        ],
+        "relevance": "高",
+        "abstract_only": false,
+        "summary": "在欧洲主要电力市场六年回测中，以部分在线学习和 BOA 组合实现 11%-12% RMSE、14%-17% MAE 改善。"
+      }
+    ]
   }
 }

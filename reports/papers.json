@@ -904,5 +904,235 @@
         "summary": "构建覆盖 24 国 38 区域的数据集，并提出带图结构归纳偏置的多区域多步长多分位数概率电价基础模型。"
       }
     ]
+  },
+  "2026-06-23": {
+    "generated_at": "2026-06-23 12:42:05 CST",
+    "search_window": {
+      "primary": [
+        "2026-06-20",
+        "2026-06-23"
+      ],
+      "supplemental": [
+        "2026-06-01",
+        "2026-06-19"
+      ],
+      "representative_extension": [
+        "2025-10-05",
+        "2026-04-21"
+      ]
+    },
+    "dedupe": {
+      "rules": [
+        "same_doi",
+        "same_arxiv_id",
+        "merge_same_paper_across_sources",
+        "skip_existing_entries_in_history"
+      ],
+      "notes": [
+        "已跳过 2026-06-19 至 2026-06-22 已收录的 25 篇论文，避免跨日报重复分析。",
+        "本轮优先保留 IEEE Transactions on Power Systems 正式发表版本；其余新增条目以 arXiv 官方页面信息为准。"
+      ]
+    },
+    "papers": [
+      {
+        "priority": "必读",
+        "title_zh": "面向鲁棒电力系统运行的决策校准预测集",
+        "title_en": "Decision-calibrated prediction sets for robust power system operations",
+        "authors": [
+          "Boyi Wang",
+          "Donghao Shi",
+          "Ali Vahid",
+          "Yuxuan Yang",
+          "Kameshwar Poolla",
+          "Joshua A. Taylor"
+        ],
+        "institutions": [],
+        "source": "arXiv",
+        "date": "2026-06-01",
+        "doi": null,
+        "links": {
+          "paper": "https://arxiv.org/abs/2606.02081",
+          "arxiv": "https://arxiv.org/abs/2606.02081",
+          "doi": null,
+          "code": null,
+          "data": null
+        },
+        "topics": [
+          "鲁棒预测",
+          "决策聚焦学习",
+          "机会约束优化",
+          "风光不确定性建模"
+        ],
+        "relevance": "高",
+        "abstract_only": false,
+        "summary": "把 prediction set 的构造与下游鲁棒运行成本耦合，在保持统计有效性的同时降低电力系统运行代价。"
+      },
+      {
+        "priority": "必读",
+        "title_zh": "异常事件期间面向负荷预测的人类空间动态建模",
+        "title_en": "Human spatial dynamics for electricity demand forecasting during anomalous events",
+        "authors": [
+          "Qiongsi Cheng",
+          "Hoan Le Nguyen",
+          "Stefania Rubrichi",
+          "Pierre Pinson"
+        ],
+        "institutions": [
+          "LPSM",
+          "EDF R&D OSIRIS",
+          "Orange Innovation"
+        ],
+        "source": "IEEE Transactions on Power Systems / arXiv",
+        "date": "2026-01-01",
+        "doi": "10.1109/TPWRS.2025.3648653",
+        "links": {
+          "paper": "https://doi.org/10.1109/TPWRS.2025.3648653",
+          "arxiv": "https://arxiv.org/abs/2309.16238",
+          "doi": "https://doi.org/10.1109/TPWRS.2025.3648653",
+          "code": null,
+          "data": null
+        },
+        "topics": [
+          "短期负荷预测",
+          "异常事件建模",
+          "空间行为特征",
+          "交通能源耦合"
+        ],
+        "relevance": "高",
+        "abstract_only": false,
+        "summary": "把人群空间动态特征显式引入负荷预测，在异常事件阶段明显提升先进模型表现。"
+      },
+      {
+        "priority": "必读",
+        "title_zh": "电动汽车充电需求的时空建模",
+        "title_en": "Spatio-temporal modelling of electric vehicle charging demand",
+        "authors": [
+          "Louise Goodall",
+          "Vitor Cerqueira",
+          "Pedro Faria",
+          "Beniamino Di Martino",
+          "Susana Salcedo-Sanz",
+          "Joao Gama"
+        ],
+        "institutions": [],
+        "source": "arXiv",
+        "date": "2026-04-21",
+        "doi": null,
+        "links": {
+          "paper": "https://arxiv.org/abs/2604.19841",
+          "arxiv": "https://arxiv.org/abs/2604.19841",
+          "doi": null,
+          "code": null,
+          "data": null
+        },
+        "topics": [
+          "EV充电负荷预测",
+          "交通能源耦合",
+          "时空预测",
+          "公开基准"
+        ],
+        "relevance": "高",
+        "abstract_only": true,
+        "summary": "基于 188 个苏格兰站点和 2022-2025 年真实数据建立 EV 充电需求时空 benchmark，强调空间依赖对预测的重要性。"
+      },
+      {
+        "priority": "值得跟进",
+        "title_zh": "机组退役对传输约束交流最优潮流的地理敏感性",
+        "title_en": "Geospatial sensitivity of transmission-constrained ACOPF to generator retirement",
+        "authors": [
+          "Dimos V. Dimarogonas",
+          "Alexandros-Nikolaos Angelakis",
+          "Paul H. Scott"
+        ],
+        "institutions": [],
+        "source": "arXiv",
+        "date": "2026-06-15",
+        "doi": null,
+        "links": {
+          "paper": "https://arxiv.org/abs/2606.16117",
+          "arxiv": "https://arxiv.org/abs/2606.16117",
+          "doi": null,
+          "code": null,
+          "data": null
+        },
+        "topics": [
+          "电网规划",
+          "ACOPF",
+          "机组退役",
+          "地理敏感性分析"
+        ],
+        "relevance": "中高",
+        "abstract_only": true,
+        "summary": "在 8000 多个退役场景上分析 transmission-constrained ACOPF 的地理敏感性，并用简单机器学习解释脆弱区域。"
+      },
+      {
+        "priority": "值得跟进",
+        "title_zh": "面向 RTO 级资源充裕性规划的高性能关键机组重要度评估",
+        "title_en": "HPC-Enabled Generator Importance Assessment for RTO-Scale Resource Adequacy Planning",
+        "authors": [
+          "Jianhui Wang",
+          "Miguel Ortega-Vazquez",
+          "Shicong Cui",
+          "Minyi Zhang",
+          "Guilherme de C. Pereira",
+          "Angelos Tsoukalas",
+          "Yuting Zhang",
+          "Matthew Hall",
+          "Jennifer L. King",
+          "Hao Wen"
+        ],
+        "institutions": [],
+        "source": "arXiv",
+        "date": "2026-06-12",
+        "doi": null,
+        "links": {
+          "paper": "https://arxiv.org/abs/2606.14064",
+          "arxiv": "https://arxiv.org/abs/2606.14064",
+          "doi": null,
+          "code": null,
+          "data": null
+        },
+        "topics": [
+          "资源充裕性",
+          "容量规划",
+          "关键机组筛查",
+          "高性能计算"
+        ],
+        "relevance": "中高",
+        "abstract_only": true,
+        "summary": "利用 HPC 评估大系统中发电机对 adequacy 的边际贡献，为关键机组排序和场景压缩提供工程基线。"
+      },
+      {
+        "priority": "特别补读",
+        "title_zh": "面向 24/7 零碳电力数据中心调度的保序校准机会约束方法",
+        "title_en": "A Conformal Prediction-Based Chance-Constrained Programming Approach for 24/7 Carbon-Free Data Center Operation Scheduling",
+        "authors": [
+          "Ali Vahid",
+          "Boyi Wang",
+          "Takamitsu Matsubara",
+          "Joshua A. Taylor"
+        ],
+        "institutions": [],
+        "source": "arXiv",
+        "date": "2025-10-05",
+        "doi": null,
+        "links": {
+          "paper": "https://arxiv.org/abs/2510.04053",
+          "arxiv": "https://arxiv.org/abs/2510.04053",
+          "doi": null,
+          "code": null,
+          "data": null
+        },
+        "topics": [
+          "数据中心能源管理",
+          "概率预测",
+          "机会约束优化",
+          "24/7 CFE"
+        ],
+        "relevance": "高",
+        "abstract_only": false,
+        "summary": "将 conformalized quantile regression 与机会约束调度结合，在满足 24/7 CFE 风险约束的同时显著降低运行成本。"
+      }
+    ]
   }
 }

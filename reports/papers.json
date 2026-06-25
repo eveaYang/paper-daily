@@ -1134,5 +1134,406 @@
         "summary": "将 conformalized quantile regression 与机会约束调度结合，在满足 24/7 CFE 风险约束的同时显著降低运行成本。"
       }
     ]
+  },
+  "2026-06-24": {
+    "generated_at": "2026-06-24 12:33:44 CST",
+    "search_window": {
+      "primary": [
+        "2026-06-21",
+        "2026-06-24"
+      ],
+      "supplemental": [
+        "2026-06-17",
+        "2026-06-20"
+      ],
+      "representative_extension": [
+        "2026-03-24",
+        "2026-03-24"
+      ]
+    },
+    "dedupe": {
+      "rules": [
+        "same_doi",
+        "same_arxiv_id",
+        "merge_same_paper_across_sources",
+        "skip_existing_entries_in_history"
+      ],
+      "notes": [
+        "已跳过 2026-06-19 至 2026-06-23 已收录条目与同文重复候选，避免跨日报重复分析。",
+        "近 1-3 天直接命中智能电网、电价/负荷预测、VPP 控制与 EV 场景的新增强相关论文偏少，因此补入近 7 天最值得读的新作，并额外附上一篇近两年内高相关的 EV VPP MARL 代表论文。"
+      ]
+    },
+    "papers": [
+      {
+        "priority": "必读",
+        "title_zh": "ev-flow：面向八个美国区域、以 NHTS 为基础的可复现插电式电动汽车充电行为合成器",
+        "title_en": "ev-flow: A Reproducible, NHTS-Grounded Generator of Synthetic Plug-in Electric Vehicle Charging Behavior for Eight U.S. Regions",
+        "authors": [
+          "Bertrand Travacca",
+          "Srijan Kumar",
+          "Joan Ogden",
+          "Kook Lee",
+          "D. O. Olis"
+        ],
+        "institutions": [],
+        "source": "arXiv",
+        "date": "2026-06-17",
+        "doi": null,
+        "arxiv_id": "2606.19520",
+        "links": {
+          "paper": "https://arxiv.org/abs/2606.19520",
+          "arxiv": "https://arxiv.org/abs/2606.19520",
+          "doi": null,
+          "code": null,
+          "data": null
+        },
+        "topics": [
+          "EV充电负荷预测",
+          "交通能源耦合",
+          "合成数据生成",
+          "需求响应",
+          "VPP用户侧建模"
+        ],
+        "relevance": "高",
+        "abstract_only": true,
+        "summary": "基于 NHTS 2022 构建跨 8 个美国区域的可复现 EV 充电行为生成器，可为负荷预测、站点调度与交通能源耦合研究提供高质量合成数据底座。"
+      },
+      {
+        "priority": "必读",
+        "title_zh": "电力系统 Agent 基准：面向电力工程 AI 代理的可执行评测",
+        "title_en": "Power Systems Agent Benchmark: Executable Evaluation of AI Agents in Electric Power Engineering",
+        "authors": [
+          "Rui Wang",
+          "Xiangyu Zhang",
+          "Yuzhe Wang",
+          "Yian Chen",
+          "Ruoxuan Wang",
+          "Donghan Feng",
+          "Zachary Fronczak",
+          "Le Xie"
+        ],
+        "institutions": [],
+        "source": "arXiv",
+        "date": "2026-06-19",
+        "doi": null,
+        "arxiv_id": "2606.21040",
+        "links": {
+          "paper": "https://arxiv.org/abs/2606.21040",
+          "arxiv": "https://arxiv.org/abs/2606.21040",
+          "doi": null,
+          "code": null,
+          "data": null
+        },
+        "topics": [
+          "LLM在能源系统中的应用",
+          "工具调用代理",
+          "稳态分析",
+          "可执行基准"
+        ],
+        "relevance": "高",
+        "abstract_only": true,
+        "summary": "将 8 个方向的 41 类电力工程任务细化为 809 个可执行子任务，用自动评测器量化电力系统 AI 代理的工具调用、多步推理与领域 grounding 能力。"
+      },
+      {
+        "priority": "值得跟进",
+        "title_zh": "面向电动汽车充电基础设施的混合式入侵检测系统",
+        "title_en": "A Hybrid Intrusion Detection System for Electric Vehicle Charging Infrastructure",
+        "authors": [
+          "Uthman Baroudi",
+          "Emad Abudawood",
+          "Adnan Gutub",
+          "Fawaz Alsolami"
+        ],
+        "institutions": [],
+        "source": "arXiv",
+        "date": "2026-06-22",
+        "doi": null,
+        "arxiv_id": "2606.22623",
+        "links": {
+          "paper": "https://arxiv.org/abs/2606.22623",
+          "arxiv": "https://arxiv.org/abs/2606.22623",
+          "doi": null,
+          "code": null,
+          "data": null
+        },
+        "topics": [
+          "EV充电调度",
+          "网络安全",
+          "异常检测",
+          "安全约束控制"
+        ],
+        "relevance": "中高",
+        "abstract_only": true,
+        "summary": "提出网络侧 NIDS 与主机侧 HIDS 的双层 EV 充电基础设施入侵检测框架，在 CICEVSE2024 数据集上对多类攻击显示出较强识别能力。"
+      },
+      {
+        "priority": "简要了解",
+        "title_zh": "NRT-Bench：面向安全关键控制室 LLM 操作代理的多轮红队基准",
+        "title_en": "NRT-Bench: Benchmarking Multi-Turn Red-Teaming of LLM Operator Agents in Safety-Critical Control Rooms",
+        "authors": [
+          "Varun Machupalli",
+          "Michael B. Chen",
+          "Uday S. Sajjan",
+          "Andrew C. Siegel",
+          "Lucian Busoniu",
+          "Jason O. Miles"
+        ],
+        "institutions": [],
+        "source": "arXiv",
+        "date": "2026-06-18",
+        "doi": null,
+        "arxiv_id": "2606.20154",
+        "links": {
+          "paper": "https://arxiv.org/abs/2606.20154",
+          "arxiv": "https://arxiv.org/abs/2606.20154",
+          "doi": null,
+          "code": null,
+          "data": null
+        },
+        "topics": [
+          "LLM在能源系统中的应用",
+          "安全评测",
+          "控制室代理",
+          "对抗鲁棒性"
+        ],
+        "relevance": "中",
+        "abstract_only": true,
+        "summary": "在模拟核电控制室中构建多轮红队基准，量化 LLM 操作代理在角色攻击与流程劫持下的脆弱性，对能源控制场景的 agent 安全设计有直接借鉴意义。"
+      },
+      {
+        "priority": "特别补读",
+        "title_zh": "有限网络可见性下 EV 虚拟电厂的安全分散式运行：一种多智能体强化学习方法",
+        "title_en": "Safe Decentralized Operation of EV Virtual Power Plant with Limited Network Visibility via Multi-Agent Reinforcement Learning",
+        "authors": [
+          "Jianhong Du",
+          "Tianhao Zhong",
+          "Dungang Hu",
+          "Haili Zhang"
+        ],
+        "institutions": [],
+        "source": "arXiv",
+        "date": "2026-03-24",
+        "doi": null,
+        "arxiv_id": "2603.18166",
+        "links": {
+          "paper": "https://arxiv.org/abs/2603.18166",
+          "arxiv": "https://arxiv.org/abs/2603.18166",
+          "doi": null,
+          "code": null,
+          "data": null
+        },
+        "topics": [
+          "虚拟电厂",
+          "EV充电调度",
+          "多智能体强化学习",
+          "配网电压约束",
+          "部分可观测控制"
+        ],
+        "relevance": "高",
+        "abstract_only": true,
+        "summary": "在 33-bus 配网下结合图结构状态推断与多智能体强化学习，在有限网络可见性条件下实现更安全的 EV VPP 分散式调度，显著降低电压违规与运行成本。"
+      }
+    ]
+  },
+  "2026-06-25": {
+    "generated_at": "2026-06-25 19:20:16 CST",
+    "search_window": {
+      "primary": [
+        "2026-06-22",
+        "2026-06-25"
+      ],
+      "supplemental": [
+        "2026-06-18",
+        "2026-06-21"
+      ],
+      "representative_extension": [
+        "2026-01-17",
+        "2026-01-17"
+      ]
+    },
+    "dedupe": {
+      "rules": [
+        "same_doi",
+        "same_arxiv_id",
+        "merge_same_paper_across_sources",
+        "skip_existing_entries_in_history"
+      ],
+      "notes": [
+        "已跳过 2026-06-19 至 2026-06-24 已分析条目，以及同文的 arXiv / 期刊 / 项目页重复候选。",
+        "特别补读条目采用期刊版与 arXiv 预印本合并记录，只保留一条元数据。"
+      ]
+    },
+    "papers": [
+      {
+        "priority": "必读",
+        "title_zh": "面向工业微网联络线整形的无参考异构多智能体强化学习",
+        "title_en": "Reference-Free Heterogeneous Multi-Agent Reinforcement Learning for Grid-Friendly Tie-Line Power Shaping in Industrial Microgrids",
+        "authors": [
+          "Daniyaer Paizulamua",
+          "Lin Cheng",
+          "Fashun Shi",
+          "Haoyu Zheng",
+          "Pengfei He",
+          "Haiwang Zhong"
+        ],
+        "institutions": [],
+        "source": "arXiv",
+        "date": "2026-06-24",
+        "doi": null,
+        "links": {
+          "paper": "https://arxiv.org/abs/2606.25599",
+          "arxiv": "https://arxiv.org/abs/2606.25599",
+          "doi": null,
+          "code": null,
+          "data": null
+        },
+        "topics": [
+          "工业微网调度",
+          "多智能体强化学习",
+          "多时间尺度控制",
+          "电网友好运行"
+        ],
+        "relevance": "高",
+        "abstract_only": true,
+        "summary": "SHAC 以异步异构 agent、动作屏蔽与可行性投影联合实现工业微网 1 分钟级安全调度，并显著降低购电成本与联络线越限。"
+      },
+      {
+        "priority": "必读",
+        "title_zh": "可电网友好响应的 AI 数据中心：把算力负荷变成灵活资源",
+        "title_en": "Power-Flexible AI Data Centers: A New Paradigm for Grid-Responsive Compute",
+        "authors": [
+          "Chris Williams",
+          "Philip Colangelo",
+          "Ayse Coskun",
+          "Ethan Levine",
+          "Andy Neale",
+          "Ciaran Roberts",
+          "Shayan Sengupta",
+          "Nikhil Shirolkar",
+          "Varun Sivaram",
+          "Sarah Soares",
+          "Ethan Tiao",
+          "Scott Underwood",
+          "Daniel Wilson",
+          "Frank Sharp",
+          "Luke Wainwright",
+          "Harry Petty",
+          "Scott Wallace",
+          "Brandon Records"
+        ],
+        "institutions": [],
+        "source": "arXiv",
+        "date": "2026-06-23",
+        "doi": null,
+        "links": {
+          "paper": "https://arxiv.org/abs/2606.25098",
+          "arxiv": "https://arxiv.org/abs/2606.25098",
+          "doi": null,
+          "code": null,
+          "data": null
+        },
+        "topics": [
+          "AI数据中心能源管理",
+          "需求响应",
+          "跨区域负荷迁移",
+          "碳感知调度"
+        ],
+        "relevance": "高",
+        "abstract_only": true,
+        "summary": "在真实 130 kW GPU 集群上验证 AI 负荷可执行快速降载、持续限载与跨区域迁移，说明算力基础设施可作为新型灵活负荷。"
+      },
+      {
+        "priority": "值得跟进",
+        "title_zh": "不完全信息下柔性需求如何生成兼容 EUPHEMIA 的日前市场竞价",
+        "title_en": "Generating EUPHEMIA-compatible bids for flexible demand under imperfect information",
+        "authors": [
+          "Christian Doh Dinga",
+          "Mukunda Badarinath",
+          "Seyed Hossein Jamali",
+          "Laurens de Vries",
+          "Milos Cvetkovic"
+        ],
+        "institutions": [],
+        "source": "arXiv",
+        "date": "2026-06-23",
+        "doi": null,
+        "links": {
+          "paper": "https://arxiv.org/abs/2606.24183",
+          "arxiv": "https://arxiv.org/abs/2606.24183",
+          "doi": null,
+          "code": null,
+          "data": null
+        },
+        "topics": [
+          "电力市场",
+          "柔性需求竞价",
+          "日前市场",
+          "风险管理"
+        ],
+        "relevance": "高",
+        "abstract_only": true,
+        "summary": "针对 EUPHEMIA 规则设计 HBs 与 EBs 两类柔性需求竞价格式，并说明负荷灵活度与市场波动性决定最优出价结构。"
+      },
+      {
+        "priority": "值得跟进",
+        "title_zh": "AI 数据中心与电力系统可持续性：风险、灵活性与碳核算边界",
+        "title_en": "AI Data Centers and Power System Sustainability: Understanding the Sustainability Implications of AI-Driven Data Centers on Power Systems",
+        "authors": [
+          "Yuhao Huang",
+          "Novarun Deb",
+          "Hamidreza Zareipour"
+        ],
+        "institutions": [],
+        "source": "arXiv / IEEE Energy Sustainability Magazine",
+        "date": "2026-06-19",
+        "doi": "10.1109/ESM.2026.3676745",
+        "links": {
+          "paper": "https://arxiv.org/abs/2606.21064",
+          "arxiv": "https://arxiv.org/abs/2606.21064",
+          "doi": "https://doi.org/10.1109/ESM.2026.3676745",
+          "code": null,
+          "data": null
+        },
+        "topics": [
+          "AI负荷增长",
+          "碳排评估",
+          "容量规划",
+          "辅助服务"
+        ],
+        "relevance": "中高",
+        "abstract_only": true,
+        "summary": "系统梳理 AI 数据中心负荷扩张对碳排、灵活性、可靠性与长期规划的影响，并给出研究路线图。"
+      },
+      {
+        "priority": "特别补读",
+        "title_zh": "面向多站协同 EV 充电站的利润最大化多智能体强化学习",
+        "title_en": "Profit Maximization for Electric Vehicle Charging Stations Using Multiagent Reinforcement Learning",
+        "authors": [
+          "Kun-Yan Jiang",
+          "Wei-Yu Chiu",
+          "Yuan-Po Tsai"
+        ],
+        "institutions": [],
+        "source": "arXiv / Sustainable Energy, Grids and Networks",
+        "date": "2026-01-17",
+        "doi": "10.1016/j.segan.2025.102009",
+        "links": {
+          "paper": "https://arxiv.org/abs/2601.12028",
+          "arxiv": "https://arxiv.org/abs/2601.12028",
+          "doi": "https://doi.org/10.1016/j.segan.2025.102009",
+          "code": null,
+          "data": null
+        },
+        "topics": [
+          "EV充电调度",
+          "多智能体强化学习",
+          "储能与可再生协同",
+          "能量交易"
+        ],
+        "relevance": "高",
+        "abstract_only": true,
+        "summary": "用 Double Hypernetwork QMIX 统一处理多站 EV 充电、储能、可再生和站间交易，在真实数据上实现 5.3% 与 12.7% 的利润提升。"
+      }
+    ]
   }
 }

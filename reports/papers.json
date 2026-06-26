@@ -1535,5 +1535,161 @@
         "summary": "用 Double Hypernetwork QMIX 统一处理多站 EV 充电、储能、可再生和站间交易，在真实数据上实现 5.3% 与 12.7% 的利润提升。"
       }
     ]
+  },
+  "2026-06-26": {
+    "generated_at": "2026-06-26 13:02:12 CST",
+    "search_window": {
+      "primary": [
+        "2026-06-23",
+        "2026-06-26"
+      ],
+      "supplemental": [
+        "2026-06-19",
+        "2026-06-22"
+      ],
+      "representative_extension": [
+        "2024-04-19",
+        "2024-11-14"
+      ]
+    },
+    "dedupe": {
+      "rules": [
+        "same_doi",
+        "same_arxiv_id",
+        "merge_same_paper_across_sources",
+        "skip_existing_entries_in_history"
+      ],
+      "notes": [
+        "已跳过 2026-06-24 已分析的 Power Systems Agent Benchmark、EV VPP MARL 与 EV charging cybersecurity 条目。",
+        "本轮近 1-3 天高相关新增论文偏少，因此未强行补入弱相关综述，而是保留 3 篇新增条目并补读 1 篇近两年代表作。"
+      ]
+    },
+    "papers": [
+      {
+        "priority": "必读",
+        "title_zh": "面向分布式能源资源协调的监督强化学习",
+        "title_en": "Supervised Reinforcement Learning for the Coordination of Distributed Energy Resources",
+        "authors": [
+          "Mohamed Hassan",
+          "Javad Saadi",
+          "Shady H. E. Abdel Aleem",
+          "Ali Mehrizi-Sani"
+        ],
+        "institutions": [],
+        "source": "arXiv / PSCC 2026",
+        "date": "2026-06-23",
+        "doi": null,
+        "links": {
+          "paper": "https://arxiv.org/abs/2606.24947",
+          "arxiv": "https://arxiv.org/abs/2606.24947",
+          "doi": null,
+          "code": null,
+          "data": null
+        },
+        "topics": [
+          "分布式能源协调",
+          "虚拟电厂",
+          "强化学习",
+          "在线控制"
+        ],
+        "relevance": "高",
+        "abstract_only": true,
+        "summary": "先用 demonstration data 做监督预训练，再用 RL 微调 DER 协调策略，核心价值在于提升样本效率和部署可行性。"
+      },
+      {
+        "priority": "必读",
+        "title_zh": "带特征隔离时间注意力机制的可解释 Kolmogorov-Arnold 网络用于电力负荷预测",
+        "title_en": "Interpretable Kolmogorov-Arnold Network with Feature-Isolated Temporal Attention Mechanism for Electricity Load Forecasting",
+        "authors": [
+          "Hao Wang",
+          "Dandan Wang",
+          "Xueying Zhang",
+          "Jiacheng Zhang",
+          "Ying Lyu",
+          "Haitao Yang",
+          "Bin Zhang"
+        ],
+        "institutions": [],
+        "source": "arXiv / Applied Energy",
+        "date": "2026-06-22",
+        "doi": "10.1016/j.apenergy.2026.128296",
+        "links": {
+          "paper": "https://arxiv.org/abs/2606.23425",
+          "arxiv": "https://arxiv.org/abs/2606.23425",
+          "doi": "https://doi.org/10.1016/j.apenergy.2026.128296",
+          "code": null,
+          "data": null
+        },
+        "topics": [
+          "短期负荷预测",
+          "可解释预测",
+          "时空行为特征",
+          "多源特征融合"
+        ],
+        "relevance": "高",
+        "abstract_only": true,
+        "summary": "用特征隔离时间注意力提取多源行为特征，再以 KAN 建模非线性映射，强调可解释负荷预测而非纯黑盒精度。"
+      },
+      {
+        "priority": "值得跟进",
+        "title_zh": "PROTECT-90：面向配电系统保护分析的大规模真实感数据集",
+        "title_en": "PROTECT-90: A Large Real-World Dataset for Power Protection Analysis in Distribution Systems",
+        "authors": [
+          "Wiktor Klepacki",
+          "Jędrzej Borkowski",
+          "Damian Gawlak",
+          "Tomasz Tarasiuk"
+        ],
+        "institutions": [],
+        "source": "arXiv",
+        "date": "2026-06-20",
+        "doi": null,
+        "links": {
+          "paper": "https://arxiv.org/abs/2606.20932",
+          "arxiv": "https://arxiv.org/abs/2606.20932",
+          "doi": null,
+          "code": null,
+          "data": null
+        },
+        "topics": [
+          "配电系统保护",
+          "事件检测",
+          "数据集构建",
+          "物理约束学习"
+        ],
+        "relevance": "中高",
+        "abstract_only": true,
+        "summary": "基于 90 kV 双回路系统与 domain randomization 构建 9022 个 episode 的保护分析数据集，为事件检测与保护学习提供统一基准。"
+      },
+      {
+        "priority": "特别补读",
+        "title_zh": "通过局部能源市场与深度强化学习实现分布式能源资源去中心化协调",
+        "title_en": "Decentralized Coordination of Distributed Energy Resources through Local Energy Markets and Deep Reinforcement Learning",
+        "authors": [
+          "Panagiotis Antoniadis",
+          "Evangelos Pournaras"
+        ],
+        "institutions": [],
+        "source": "arXiv / submitted to Energy and AI",
+        "date": "2024-11-14",
+        "doi": null,
+        "links": {
+          "paper": "https://arxiv.org/abs/2404.13142",
+          "arxiv": "https://arxiv.org/abs/2404.13142",
+          "doi": null,
+          "code": null,
+          "data": null
+        },
+        "topics": [
+          "分布式能源协调",
+          "局部能源市场",
+          "需求响应",
+          "强化学习"
+        ],
+        "relevance": "高",
+        "abstract_only": true,
+        "summary": "把局部能源市场与终端用户侧 DRL 代理结合，在降低社区峰值与进出口能量方面接近或优于动态规划基线。"
+      }
+    ]
   }
 }

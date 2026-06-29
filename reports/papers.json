@@ -1691,5 +1691,383 @@
         "summary": "把局部能源市场与终端用户侧 DRL 代理结合，在降低社区峰值与进出口能量方面接近或优于动态规划基线。"
       }
     ]
+  },
+  "2026-06-27": {
+    "generated_at": "2026-06-27 13:50:22 CST",
+    "search_window": {
+      "primary": [
+        "2026-06-24",
+        "2026-06-27"
+      ],
+      "supplemental": [
+        "2026-06-20",
+        "2026-06-23"
+      ],
+      "representative_extension": [
+        "2026-02-10",
+        "2026-05-12"
+      ]
+    },
+    "dedupe": {
+      "rules": [
+        "same_doi",
+        "same_arxiv_id",
+        "merge_same_paper_across_sources",
+        "skip_existing_entries_in_history"
+      ],
+      "notes": [
+        "已跳过 2026-06-25 已收录的 SHAC 工业微网 MARL 论文，避免与历史日报重复。",
+        "最近 1-3 天正式出版且高度相关的新论文较少，本轮补入近 7 天内最值得读的 arXiv 新作，并以一篇电价预测综述作为代表性补读。"
+      ]
+    },
+    "papers": [
+      {
+        "priority": "必读",
+        "title_zh": "面向真实非平稳能源时序的持续功率预测",
+        "title_en": "Towards Continuous Power Forecasting: Practical Continual Learning for Real-World Energy Systems in Nonstationary Time Series",
+        "authors": [
+          "Yujiang He",
+          "Frederic Uhrweiller",
+          "Bernhard Sick"
+        ],
+        "institutions": [],
+        "source": "arXiv",
+        "date": "2026-06-23",
+        "doi": null,
+        "links": {
+          "paper": "https://arxiv.org/abs/2606.24955",
+          "arxiv": "https://arxiv.org/abs/2606.24955",
+          "doi": null,
+          "code": null,
+          "data": null
+        },
+        "topics": [
+          "持续学习",
+          "负荷/功率预测",
+          "非平稳时序",
+          "鲁棒部署"
+        ],
+        "relevance": "高",
+        "abstract_only": true,
+        "summary": "把真实能源预测重构为 continual learning 问题，强调在不长期保留全部历史数据的前提下适应分布漂移并减轻遗忘。"
+      },
+      {
+        "priority": "必读",
+        "title_zh": "CONDUCTOR：面向不确定性感知配网运行的 LLM 编排数字孪生",
+        "title_en": "CONDUCTOR: An LLM-Orchestrated Digital Twin for Uncertainty-Aware Distribution Grid Operations",
+        "authors": [
+          "Antonio Alcantara",
+          "Aysegul Kahraman",
+          "Anosh Arshad Sundhu",
+          "Spyros Chatzivasileiadis"
+        ],
+        "institutions": [],
+        "source": "arXiv",
+        "date": "2026-06-23",
+        "doi": null,
+        "links": {
+          "paper": "https://arxiv.org/abs/2606.24609",
+          "arxiv": "https://arxiv.org/abs/2606.24609",
+          "doi": null,
+          "code": null,
+          "data": null
+        },
+        "topics": [
+          "LLM在能源系统中的应用",
+          "数字孪生",
+          "配网运行",
+          "不确定性分析"
+        ],
+        "relevance": "高",
+        "abstract_only": true,
+        "summary": "让 open-weights LLM 编排配网分析与优化求解器，在 Bornholm 60 kV 真实量测上完成概率安全评估与鲁棒纠正调度等任务。"
+      },
+      {
+        "priority": "值得跟进",
+        "title_zh": "面向重复受限 DER 协调的状态化定价与分配",
+        "title_en": "Stateful Pricing and Allocation for Repeated Constrained DER Coordination in Distribution Networks",
+        "authors": [
+          "Shaun Sweeney",
+          "Peter Kilby",
+          "Blake Penney",
+          "Komeil Moghaddasi",
+          "Sunera Mudiyanselage"
+        ],
+        "institutions": [],
+        "source": "arXiv",
+        "date": "2026-06-21",
+        "doi": null,
+        "links": {
+          "paper": "https://arxiv.org/abs/2606.22463",
+          "arxiv": "https://arxiv.org/abs/2606.22463",
+          "doi": null,
+          "code": null,
+          "data": null
+        },
+        "topics": [
+          "DER协调",
+          "动态定价",
+          "配网约束",
+          "公平分配"
+        ],
+        "relevance": "高",
+        "abstract_only": true,
+        "summary": "通过具备历史记忆的自动做市层，把 DER 接入约束、公平性和实时价格绑定在一起，并在 CSIRO MV+33LV feeder 上显著降低未满足需求与限发。"
+      },
+      {
+        "priority": "值得跟进",
+        "title_zh": "风电接入弱电网的去纠缠概率稳定性分析",
+        "title_en": "Uncertainty-Disentangled Probabilistic Stability Analysis in Wind Power Integrated Weak Grids",
+        "authors": [
+          "Samson S. Yu",
+          "Yinsong Chen"
+        ],
+        "institutions": [],
+        "source": "arXiv",
+        "date": "2026-06-20",
+        "doi": null,
+        "links": {
+          "paper": "https://arxiv.org/abs/2606.21984",
+          "arxiv": "https://arxiv.org/abs/2606.21984",
+          "doi": null,
+          "code": null,
+          "data": null
+        },
+        "topics": [
+          "新能源不确定性",
+          "弱电网稳定性",
+          "概率分析",
+          "鲁棒评估"
+        ],
+        "relevance": "中高",
+        "abstract_only": true,
+        "summary": "用 d-PCE 将风电场景中的 aleatoric 与 epistemic 不确定性在稳定性映射里显式分离，便于判断该补数据还是该加强控制。"
+      },
+      {
+        "priority": "特别补读",
+        "title_zh": "电价预测中的深度学习：日前、日内与平衡市场综述",
+        "title_en": "Deep Learning for Electricity Price Forecasting: A Review of Day-Ahead, Intraday, and Balancing Electricity Markets",
+        "authors": [
+          "Runyao Yu",
+          "Derek W. Bunn",
+          "Julia Lin",
+          "Jochen Stiasny",
+          "Fabian Leimgruber",
+          "Tara Esterl",
+          "Yuchen Tao",
+          "Lianlian Qi",
+          "Yujie Chen",
+          "Wentao Wang",
+          "Jochen L. Cremer"
+        ],
+        "institutions": [],
+        "source": "arXiv",
+        "date": "2026-05-12",
+        "doi": null,
+        "links": {
+          "paper": "https://arxiv.org/abs/2602.10071",
+          "arxiv": "https://arxiv.org/abs/2602.10071",
+          "doi": null,
+          "code": null,
+          "data": null
+        },
+        "topics": [
+          "电价预测",
+          "深度学习综述",
+          "市场建模",
+          "概率预测"
+        ],
+        "relevance": "高",
+        "abstract_only": true,
+        "summary": "用 backbone、head、loss 三层 taxonomy 重构 EPF 文献，并指出研究正在从日前单点预测转向概率化、市场感知和微结构驱动建模。"
+      }
+    ]
+  },
+  "2026-06-29": {
+    "generated_at": "2026-06-29 12:55:17 CST",
+    "search_window": {
+      "primary": [
+        "2026-06-26",
+        "2026-06-29"
+      ],
+      "supplemental": [
+        "2026-04-04",
+        "2026-06-25"
+      ],
+      "representative_extension": [
+        "2026-02-05",
+        "2026-02-05"
+      ]
+    },
+    "dedupe": {
+      "rules": [
+        "same_doi",
+        "same_arxiv_id",
+        "merge_same_paper_across_sources",
+        "skip_existing_entries_in_history"
+      ],
+      "notes": [
+        "本次显式跳过了 2026-06-19 至 2026-06-27 已收录的 Power Systems Agent Benchmark、Towards Continuous Power Forecasting、Stateful Pricing and Allocation、European electricity markets XAI 等历史条目。",
+        "最近 1-3 天严格高相关新论文较少，因此仅保留 1 篇近 7 天新作，并补入 2026 年春季但此前未收录的高价值论文。"
+      ]
+    },
+    "papers": [
+      {
+        "priority": "必读",
+        "title_zh": "数据中心时代的工业电气化：一种面向电网的大负荷分配贝叶斯优化方法",
+        "title_en": "Industrial electrification in the era of data centers: A Bayesian Optimization approach for grid-aware large load allocation",
+        "authors": [
+          "Jiyong Lee",
+          "Peter Molzahn",
+          "Mads Almassalkhi"
+        ],
+        "institutions": [],
+        "source": "arXiv",
+        "date": "2026-06-22",
+        "doi": null,
+        "links": {
+          "paper": "https://arxiv.org/abs/2606.22947",
+          "arxiv": "https://arxiv.org/abs/2606.22947",
+          "doi": null,
+          "code": null,
+          "data": null
+        },
+        "topics": [
+          "大负荷接入",
+          "数据中心负荷",
+          "贝叶斯优化",
+          "电网承载能力"
+        ],
+        "relevance": "高",
+        "abstract_only": true,
+        "summary": "将大规模新增负荷接入建模为带电网约束的贝叶斯优化问题，在 240 节点系统上提升 6.5% 负荷利用率并将求解器调用减少 44 倍。"
+      },
+      {
+        "priority": "必读",
+        "title_zh": "需求响应下工业园区异构电池的强化学习能量管理",
+        "title_en": "Reinforcement Learning-Based Energy Management for Industrial Park with Heterogeneous Batteries under Demand Response",
+        "authors": [
+          "Kai Mao",
+          "Yixuan Sun",
+          "Xinyu Chai",
+          "Huaqing Xu"
+        ],
+        "institutions": [],
+        "source": "arXiv",
+        "date": "2026-04-04",
+        "doi": null,
+        "links": {
+          "paper": "https://arxiv.org/abs/2509.22381",
+          "arxiv": "https://arxiv.org/abs/2509.22381",
+          "doi": null,
+          "code": null,
+          "data": null
+        },
+        "topics": [
+          "园区能源管理",
+          "需求响应",
+          "储能控制",
+          "强化学习"
+        ],
+        "relevance": "高",
+        "abstract_only": true,
+        "summary": "在真实工业园负荷场景下用 DDPG 协调异构电池，摘要披露相对基线可实现 44.58% 与 40.68% 的成本改善。"
+      },
+      {
+        "priority": "值得跟进",
+        "title_zh": "迈向更可负担的能源：面向电力公司需求响应项目的 Gymnasium 环境",
+        "title_en": "Towards Affordable Energy: A Gymnasium Environment for Electric Utility Demand-Response Programs",
+        "authors": [
+          "Rohan Agarwal",
+          "Le Xie"
+        ],
+        "institutions": [],
+        "source": "arXiv",
+        "date": "2026-05-12",
+        "doi": null,
+        "links": {
+          "paper": "https://arxiv.org/abs/2605.08747",
+          "arxiv": "https://arxiv.org/abs/2605.08747",
+          "doi": null,
+          "code": null,
+          "data": null
+        },
+        "topics": [
+          "需求响应",
+          "强化学习环境",
+          "聚合器控制",
+          "仿真平台"
+        ],
+        "relevance": "高",
+        "abstract_only": true,
+        "summary": "面向 utility 需求响应项目构建可训练环境，PPO 的总成本仅比最优高 5.8%，并较启发式降低 27.4%。"
+      },
+      {
+        "priority": "值得跟进",
+        "title_zh": "资源受限能源系统中的短期电力负荷预测：量子储备池计算方法",
+        "title_en": "Quantum Reservoir Computing for Short-Term Power Load Forecasting in Resource-Constrained Energy Systems",
+        "authors": [
+          "Fabian Schäffer",
+          "Daniel Brunner",
+          "Markus P. Müller"
+        ],
+        "institutions": [],
+        "source": "arXiv",
+        "date": "2026-06-11",
+        "doi": null,
+        "links": {
+          "paper": "https://arxiv.org/abs/2506.09226",
+          "arxiv": "https://arxiv.org/abs/2506.09226",
+          "doi": null,
+          "code": null,
+          "data": null
+        },
+        "topics": [
+          "短期负荷预测",
+          "边缘部署",
+          "轻量化模型",
+          "资源约束"
+        ],
+        "relevance": "中高",
+        "abstract_only": true,
+        "summary": "QRC 在 6-bit 精度下实现 81.2% 内存缩减且不损失精度，强调了负荷预测的边缘部署价值。"
+      },
+      {
+        "priority": "简要了解",
+        "title_zh": "面向高波动市场的日前电价预测：结合正则化策略的基础模型方法",
+        "title_en": "Day-Ahead Electricity Price Forecasting for Volatile Markets Using Foundation Models with Regularization Strategy",
+        "authors": [
+          "Xiaoheng Li",
+          "Ling He",
+          "Zhaoxi Liu",
+          "Chengqi Wang",
+          "Tong Wang",
+          "Ao Li",
+          "Yuzhe Wang",
+          "Kwang Y. Lee",
+          "Le Xie"
+        ],
+        "institutions": [],
+        "source": "arXiv",
+        "date": "2026-02-05",
+        "doi": null,
+        "links": {
+          "paper": "https://arxiv.org/abs/2602.05430",
+          "arxiv": "https://arxiv.org/abs/2602.05430",
+          "doi": null,
+          "code": null,
+          "data": null
+        },
+        "topics": [
+          "日前电价预测",
+          "基础模型",
+          "迁移学习",
+          "市场建模"
+        ],
+        "relevance": "高",
+        "abstract_only": true,
+        "summary": "将时间序列基础模型与正则化策略结合到高波动电价市场，在新加坡市场相对最佳基线实现 37.4% 的 MAPE 改善。"
+      }
+    ]
   }
 }

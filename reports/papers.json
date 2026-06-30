@@ -2069,5 +2069,220 @@
         "summary": "将时间序列基础模型与正则化策略结合到高波动电价市场，在新加坡市场相对最佳基线实现 37.4% 的 MAPE 改善。"
       }
     ]
+  },
+  "2026-06-30": {
+    "generated_at": "2026-06-30 17:45:38 CST",
+    "search_window": {
+      "primary": [
+        "2026-06-27",
+        "2026-06-30"
+      ],
+      "supplemental": [
+        "2025-12-04",
+        "2026-05-23"
+      ],
+      "representative_extension": [
+        "2024-08-29",
+        "2024-08-29"
+      ]
+    },
+    "dedupe": {
+      "rules": [
+        "same_doi",
+        "same_arxiv_id",
+        "merge_same_paper_across_sources",
+        "skip_existing_entries_in_history"
+      ],
+      "notes": [
+        "近 1-3 天与近 7 天候选在与历史缓存去重后新增高相关条目很少，因此本轮补入 2026 年上半年此前未归档但与电价预测、风光预测、数据中心柔性负荷和 EV 充电控制高度相关的论文。",
+        "已显式跳过历史已收录的 Tyan-WP、冷启动光伏 TSFM、PowerAgentBench-SS、PowerAgentBench-Dyn、公平性 VPP 以及基础模型电价预测等重复候选。"
+      ]
+    },
+    "papers": [
+      {
+        "priority": "必读",
+        "title_zh": "安全约束机组组合中的数据中心时空负荷柔性",
+        "title_en": "Data Center Spatio-Temporal Load Flexibility in Security-Constrained Unit Commitment",
+        "authors": [
+          "Ranjit S. Chora",
+          "Sailik Sengupta",
+          "Jinjun Xiong",
+          "Le Xie"
+        ],
+        "institutions": [],
+        "source": "arXiv",
+        "date": "2026-05-18",
+        "doi": null,
+        "links": {
+          "paper": "https://arxiv.org/abs/2605.18517",
+          "arxiv": "https://arxiv.org/abs/2605.18517",
+          "doi": null,
+          "code": null,
+          "data": null
+        },
+        "topics": [
+          "安全约束机组组合",
+          "数据中心柔性负荷",
+          "需求响应",
+          "市场与调度耦合"
+        ],
+        "relevance": "高",
+        "abstract_only": true,
+        "summary": "将数据中心时空柔性写入 SCUC，在高 AI 负荷场景下实现 7.9% 负荷切除下降、21.7% 风电弃电下降和 14.6% 局部价格波动下降。"
+      },
+      {
+        "priority": "必读",
+        "title_zh": "动态碳强度与节点边际电价下的成本有效且可持续电动汽车充电强化学习",
+        "title_en": "Dynamic Carbon Intensity and Locational Marginal Pricing: Reinforcement Learning for Cost-effective and Sustainable Electric Vehicle Charging",
+        "authors": [
+          "Mikaela O'Reilly",
+          "Arthur R. Klasen",
+          "Madeleine Udell",
+          "Alexandre Jacquillat"
+        ],
+        "institutions": [],
+        "source": "arXiv",
+        "date": "2026-05-23",
+        "doi": null,
+        "links": {
+          "paper": "https://arxiv.org/abs/2605.24543",
+          "arxiv": "https://arxiv.org/abs/2605.24543",
+          "doi": null,
+          "code": null,
+          "data": null
+        },
+        "topics": [
+          "EV充电调度",
+          "强化学习",
+          "节点电价",
+          "碳感知优化"
+        ],
+        "relevance": "高",
+        "abstract_only": true,
+        "summary": "在碳强度与 LMP 双信号下学习 EV 充电策略，相对基线实现 18.5% 成本下降、9.5% 碳排下降和 14.7% 峰值负荷下降。"
+      },
+      {
+        "priority": "值得跟进",
+        "title_zh": "具有线性结构的循环神经网络用于电价预测",
+        "title_en": "Recurrent Neural Networks with Linear Structures for Electricity Price Forecasting",
+        "authors": [
+          "Phillip Lippe",
+          "Jörg-Henrik Ziegeldorf"
+        ],
+        "institutions": [],
+        "source": "arXiv",
+        "date": "2025-12-04",
+        "doi": null,
+        "links": {
+          "paper": "https://arxiv.org/abs/2512.04690",
+          "arxiv": "https://arxiv.org/abs/2512.04690",
+          "doi": null,
+          "code": null,
+          "data": null
+        },
+        "topics": [
+          "电价预测",
+          "结构化时序建模",
+          "节点电价",
+          "可解释预测"
+        ],
+        "relevance": "高",
+        "abstract_only": true,
+        "summary": "在线性价格结构与 RNN 表达力之间做融合，在德国电力市场把误差降低 6% 到 21%，同时把计算成本降低约 33%。"
+      },
+      {
+        "priority": "值得跟进",
+        "title_zh": "基于树模型与天气集合的概率风电功率预测",
+        "title_en": "Probabilistic Wind Power Forecasting with Tree-Based Machine Learning and Weather Ensembles",
+        "authors": [
+          "Nicolai Meinshausen",
+          "Kai Polsterer",
+          "Lars Kotzur",
+          "Simon Bischl",
+          "Jens Große",
+          "Vincent Leroy"
+        ],
+        "institutions": [],
+        "source": "arXiv",
+        "date": "2026-02-13",
+        "doi": null,
+        "links": {
+          "paper": "https://arxiv.org/abs/2602.13010",
+          "arxiv": "https://arxiv.org/abs/2602.13010",
+          "doi": null,
+          "code": null,
+          "data": null
+        },
+        "topics": [
+          "风电功率预测",
+          "概率预测",
+          "天气集合预报",
+          "不确定性建模"
+        ],
+        "relevance": "高",
+        "abstract_only": true,
+        "summary": "利用树模型与天气集合预报进行概率风电预测，摘要披露分位数损失下降约 31%，绝对误差下降约 14%。"
+      },
+      {
+        "priority": "值得跟进",
+        "title_zh": "基于任意分位点循环神经网络的多区域太阳能功率概率预测",
+        "title_en": "Probabilistic Multi-Regional Solar Power Forecasting with Any-Quantile Recurrent Neural Networks",
+        "authors": [
+          "Andrew M. Wilson",
+          "Peter H. Nguyen",
+          "Emma J. Frew"
+        ],
+        "institutions": [],
+        "source": "arXiv",
+        "date": "2026-02-05",
+        "doi": null,
+        "links": {
+          "paper": "https://arxiv.org/abs/2602.09771",
+          "arxiv": "https://arxiv.org/abs/2602.09771",
+          "doi": null,
+          "code": null,
+          "data": null
+        },
+        "topics": [
+          "光伏功率预测",
+          "概率预测",
+          "多区域时空建模",
+          "分位点回归"
+        ],
+        "relevance": "高",
+        "abstract_only": true,
+        "summary": "通过 Any-Quantile RNN 同时建模多区域相关性与任意分位点输出，实现约 24.5% 到 30.0% 的 CRPS 改善和约 23.5% 的覆盖误差下降。"
+      },
+      {
+        "priority": "简要了解",
+        "title_zh": "基于深度学习的短期电力负荷预测：一篇综合综述",
+        "title_en": "Short-Term Electricity-Load Forecasting by Deep Learning: A Comprehensive Survey",
+        "authors": [
+          "Teba Ladjal",
+          "Tarek Ykhlef",
+          "Ibrahim Yitmen"
+        ],
+        "institutions": [],
+        "source": "arXiv",
+        "date": "2024-08-29",
+        "doi": null,
+        "links": {
+          "paper": "https://arxiv.org/abs/2408.17258",
+          "arxiv": "https://arxiv.org/abs/2408.17258",
+          "doi": null,
+          "code": null,
+          "data": null
+        },
+        "topics": [
+          "短期负荷预测",
+          "深度学习综述",
+          "特征工程",
+          "评测基线"
+        ],
+        "relevance": "中高",
+        "abstract_only": true,
+        "summary": "系统梳理短期负荷预测深度学习方法、数据特征与评测协议，适合作为后续做负荷、电价和风光预测研究的 baseline checklist。"
+      }
+    ]
   }
 }

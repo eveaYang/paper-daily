@@ -2284,5 +2284,242 @@
         "summary": "系统梳理短期负荷预测深度学习方法、数据特征与评测协议，适合作为后续做负荷、电价和风光预测研究的 baseline checklist。"
       }
     ]
+  },
+  "2026-07-01": {
+    "generated_at": "2026-07-01 15:56:43 CST",
+    "search_window": {
+      "primary": [
+        "2026-06-28",
+        "2026-07-01"
+      ],
+      "supplemental": [
+        "2026-01-31",
+        "2026-06-10"
+      ],
+      "representative_extension": [
+        "2025-06-28",
+        "2025-06-28"
+      ]
+    },
+    "dedupe": {
+      "rules": [
+        "same_doi",
+        "same_arxiv_id",
+        "merge_same_paper_across_sources",
+        "skip_existing_entries_in_history"
+      ],
+      "notes": [
+        "近 1-3 天与近 7 天候选在与历史缓存去重后新增高相关条目很少，因此本轮扩展到近 30 天，并补入 1 篇 2025 年正式接收的代表性强化学习控制论文。",
+        "今天未检到新的高相关 IEEE/Elsevier/ACM/IET 条目能在公开检索结果中稳定核验且未被历史缓存收录，因此 formal coverage 由 Springer LNCS 正式收录论文与 IJCNN 2025 正式接收论文承担。"
+      ]
+    },
+    "papers": [
+      {
+        "priority": "必读",
+        "title_zh": "用于电动汽车充电需求早期预测的联邦学习",
+        "title_en": "Federated Learning for Early Prediction of EV Charging Demand",
+        "authors": [
+          "Abdullah Yildirim",
+          "Waqar Yousaf",
+          "Andrew Kobus",
+          "Jiaqi Geng",
+          "Juan Aparicio Ojea",
+          "Amro M. Farid"
+        ],
+        "institutions": [],
+        "source": "arXiv",
+        "date": "2026-05-06",
+        "doi": null,
+        "links": {
+          "paper": "https://arxiv.org/abs/2605.04993",
+          "arxiv": "https://arxiv.org/abs/2605.04993",
+          "doi": null,
+          "code": "https://github.com/indigma/ev-charging-demand-forecasting",
+          "data": null,
+          "project": null
+        },
+        "topics": [
+          "EV充电负荷预测",
+          "交通能源耦合",
+          "联邦学习",
+          "充电网络调度"
+        ],
+        "relevance": "高",
+        "abstract_only": true,
+        "summary": "在 ACN 会话级数据上比较集中式与联邦式早期需求预测，为 EV 充电调度提供可隐私保护的先验负荷估计。"
+      },
+      {
+        "priority": "必读",
+        "title_zh": "日前电价概率预测、电池交易策略与预测精度经济价值评估",
+        "title_en": "Probabilistic Forecasting for Day-ahead Electricity Prices, Battery Trading Strategies and the Economic Evaluation of Predictive Accuracy",
+        "authors": [
+          "Marc Müller",
+          "Tomasz Woźniak",
+          "Stefan Feuerriegel"
+        ],
+        "institutions": [],
+        "source": "arXiv",
+        "date": "2026-04-21",
+        "doi": null,
+        "links": {
+          "paper": "https://arxiv.org/abs/2604.19580",
+          "arxiv": "https://arxiv.org/abs/2604.19580",
+          "doi": null,
+          "code": null,
+          "data": null,
+          "project": null
+        },
+        "topics": [
+          "日前电价预测",
+          "概率预测",
+          "电池套利",
+          "决策聚焦学习"
+        ],
+        "relevance": "高",
+        "abstract_only": true,
+        "summary": "将价格概率预测与电池交易策略耦合，强调统计误差改进不必然转化为经济收益提升。"
+      },
+      {
+        "priority": "值得跟进",
+        "title_zh": "面向逆变器型虚拟电厂的分布式优化控制架构分析",
+        "title_en": "Analysis of a Distributed Optimization-Based Control Architecture for Inverter-Interfaced Virtual Power Plants",
+        "authors": [
+          "Theophilos Kartsaklis",
+          "Federico Milanese",
+          "Marios Kountouris",
+          "Eirini Eleni Tsiropoulou"
+        ],
+        "institutions": [],
+        "source": "arXiv",
+        "date": "2026-06-10",
+        "doi": null,
+        "links": {
+          "paper": "https://arxiv.org/abs/2606.12336",
+          "arxiv": "https://arxiv.org/abs/2606.12336",
+          "doi": null,
+          "code": null,
+          "data": null,
+          "project": null
+        },
+        "topics": [
+          "虚拟电厂",
+          "分布式优化控制",
+          "逆变器协调",
+          "稳定性分析"
+        ],
+        "relevance": "高",
+        "abstract_only": true,
+        "summary": "从大信号稳定性角度分析逆变器型 VPP 的分布式优化二次控制架构，适合作为后续 RL/VPP 研究的物理约束层参考。"
+      },
+      {
+        "priority": "值得跟进",
+        "title_zh": "考虑电压不平衡的配电网运行包络公平分配",
+        "title_en": "Fair Allocation of Operating Envelopes for Distribution Networks Considering Voltage Unbalance",
+        "authors": [
+          "Evan O'Sullivan",
+          "Matthew M. F. Almassalkhi",
+          "Javad Mohammadi"
+        ],
+        "institutions": [],
+        "source": "arXiv",
+        "date": "2026-06-28",
+        "doi": null,
+        "links": {
+          "paper": "https://arxiv.org/abs/2606.29351",
+          "arxiv": "https://arxiv.org/abs/2606.29351",
+          "doi": null,
+          "code": null,
+          "data": null,
+          "project": null
+        },
+        "topics": [
+          "配电网运行包络",
+          "DER接入",
+          "公平性",
+          "三相不平衡约束"
+        ],
+        "relevance": "中高",
+        "abstract_only": true,
+        "summary": "用不平衡三相 ACOPF 比较不同公平分配准则，为 DER 调度与 RL 动作空间设计提供更可信的物理可行域。"
+      },
+      {
+        "priority": "值得跟进",
+        "title_zh": "通过 LSTM 联邦学习预测本地能源社区的能源可用性",
+        "title_en": "Forecasting Energy Availability in Local Energy Communities via LSTM Federated Learning",
+        "authors": [
+          "Manuel Benito-Huertas",
+          "Samir Chica",
+          "Ana María Sánchez-Torres",
+          "Laura García",
+          "Rafael Valentín",
+          "José L. Garrido"
+        ],
+        "institutions": [],
+        "source": "Springer LNCS (MEDES 2024 proceedings) / arXiv",
+        "date": "2026-01-31",
+        "doi": "10.1007/978-3-031-93598-5_2",
+        "links": {
+          "paper": "https://doi.org/10.1007/978-3-031-93598-5_2",
+          "arxiv": "https://arxiv.org/abs/2602.00694",
+          "doi": "https://doi.org/10.1007/978-3-031-93598-5_2",
+          "code": null,
+          "data": null,
+          "project": null
+        },
+        "topics": [
+          "本地能源社区",
+          "联邦学习",
+          "LSTM",
+          "社区级预测"
+        ],
+        "relevance": "中高",
+        "abstract_only": true,
+        "summary": "在不共享原始时序数据的条件下用联邦 LSTM 进行社区级能量可用性预测，是今天 formal coverage 的核心条目。"
+      },
+      {
+        "priority": "简要了解",
+        "title_zh": "用于微电网最优控制的强化学习方法",
+        "title_en": "A Reinforcement Learning Approach for Optimal Control in Microgrids",
+        "authors": [
+          "Davide Salaorni",
+          "Sabrina Mimmi",
+          "Lorenzo Ferrarini",
+          "Matteo Pedranzini",
+          "Andrea Bonfanti",
+          "Domenico Gatti",
+          "Alberto Lecchini Visintini",
+          "Andrea P. Aguiari",
+          "Alessio Pavan",
+          "Matteo Dedé",
+          "Diana Cárdenas",
+          "Gian Antonio Susto",
+          "Livia Gelsi",
+          "Renato Mattioni",
+          "Alberto Marini",
+          "Marcello Restelli"
+        ],
+        "institutions": [],
+        "source": "IJCNN 2025 / arXiv",
+        "date": "2025-06-28",
+        "doi": "10.1109/IJCNN64981.2025.11227643",
+        "links": {
+          "paper": "https://doi.org/10.1109/IJCNN64981.2025.11227643",
+          "arxiv": "https://arxiv.org/abs/2506.22995",
+          "doi": "https://doi.org/10.1109/IJCNN64981.2025.11227643",
+          "code": null,
+          "data": null,
+          "project": null
+        },
+        "topics": [
+          "微电网控制",
+          "强化学习",
+          "储能调度",
+          "真实系统验证"
+        ],
+        "relevance": "中高",
+        "abstract_only": true,
+        "summary": "IJCNN 2025 正式接收论文，基于真实微电网运行环境验证 RL 在考虑储能磨损和价格波动时优于规则方法与其他 RL 基线。"
+      }
+    ]
   }
 }

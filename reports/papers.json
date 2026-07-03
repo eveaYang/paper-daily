@@ -2521,5 +2521,229 @@
         "summary": "IJCNN 2025 正式接收论文，基于真实微电网运行环境验证 RL 在考虑储能磨损和价格波动时优于规则方法与其他 RL 基线。"
       }
     ]
+  },
+  "2026-07-03": {
+    "generated_at": "2026-07-03 14:54:52 CST",
+    "search_window": {
+      "primary": [
+        "2026-06-28",
+        "2026-07-03"
+      ],
+      "supplemental": [
+        "2026-06-04",
+        "2026-07-03"
+      ],
+      "representative_extension": [
+        "2025-01-13",
+        "2025-01-13"
+      ]
+    },
+    "dedupe": {
+      "rules": [
+        "same_doi",
+        "same_arxiv_id",
+        "merge_same_paper_across_sources",
+        "skip_existing_entries_in_history"
+      ],
+      "notes": [
+        "已跳过历史已收录的 EV 充电联邦预测、VPP 稳定性分析、operating envelope 公平分配、电池 bidding 与微电网 RL 等重复候选。",
+        "近 1-7 天内未检到可稳定核验且未被历史缓存收录的全新高相关 IEEE/Elsevier/Springer 条目，因此 formal coverage 由一篇带 IEEE 版权声明的 accepted manuscript 承担。"
+      ]
+    },
+    "papers": [
+      {
+        "priority": "必读",
+        "title_zh": "考虑配电变压器过载抑制的截止时间感知电动汽车充电",
+        "title_en": "Deadline-Aware Electric Vehicles Charging with Distribution Transformer Overload Mitigation",
+        "authors": [
+          "Abdulrhman Alshareeda",
+          "Hamid Sharif",
+          "Sang C. Suh",
+          "Heechang Chung",
+          "Mohamed Fouad",
+          "Kamalaldin Abdi"
+        ],
+        "institutions": [],
+        "source": "arXiv",
+        "date": "2026-07-01",
+        "doi": null,
+        "links": {
+          "paper": "https://arxiv.org/abs/2607.00504",
+          "arxiv": "https://arxiv.org/abs/2607.00504",
+          "doi": null,
+          "code": null,
+          "data": null,
+          "project": null
+        },
+        "topics": [
+          "EV充电调度",
+          "配网约束",
+          "需求响应",
+          "交通能源耦合"
+        ],
+        "relevance": "高",
+        "abstract_only": true,
+        "summary": "在满足全部车辆离站 deadline 的同时，将配电变压器过载持续时间相对基线降低 30.3%。"
+      },
+      {
+        "priority": "必读",
+        "title_zh": "基于真实数据量化快充与超快充场站可实现的柔性上限",
+        "title_en": "Quantifying Realizable Flexibility Limits in Fast and Ultra-Fast EV Charging Using Real-World Data",
+        "authors": [
+          "Cesar Diaz-Londono",
+          "Ashwin Sundarraj",
+          "Mauro Salazar"
+        ],
+        "institutions": [],
+        "source": "arXiv",
+        "date": "2026-06-29",
+        "doi": null,
+        "links": {
+          "paper": "https://arxiv.org/abs/2606.29994",
+          "arxiv": "https://arxiv.org/abs/2606.29994",
+          "doi": null,
+          "code": null,
+          "data": null,
+          "project": null
+        },
+        "topics": [
+          "EV充电柔性评估",
+          "需求响应",
+          "交通能源耦合",
+          "站级能量管理"
+        ],
+        "relevance": "高",
+        "abstract_only": true,
+        "summary": "基于 495,221 次真实充电会话量化快充柔性，在 10 分钟激活下可提供最高 6.1 MW 的提前充电柔性。"
+      },
+      {
+        "priority": "必读",
+        "title_zh": "面向动态虚拟电厂的联盟稳定且公平的收益分配",
+        "title_en": "A Coalitional Stable and Fair Reward Allocation for Dynamic Virtual Power Plants",
+        "authors": [
+          "Javad Arash Sarvghad",
+          "Amirhosein Jabbari",
+          "Ali S. Al-Sumaiti",
+          "Mohammad Shahidehpour"
+        ],
+        "institutions": [],
+        "source": "arXiv",
+        "date": "2026-06-30",
+        "doi": null,
+        "links": {
+          "paper": "https://arxiv.org/abs/2606.31728",
+          "arxiv": "https://arxiv.org/abs/2606.31728",
+          "doi": null,
+          "code": null,
+          "data": null,
+          "project": null
+        },
+        "topics": [
+          "虚拟电厂",
+          "收益分配",
+          "合作博弈",
+          "需求响应聚合"
+        ],
+        "relevance": "高",
+        "abstract_only": true,
+        "summary": "把动态成员变化下的联盟稳定性与公平收益分配联合建模，适合作为 VPP 经济层设计参考。"
+      },
+      {
+        "priority": "值得跟进",
+        "title_zh": "面向电动汽车、氢能公交与楼宇韧性枢纽的出行安全自适应备用认证",
+        "title_en": "Mobility Safe Adaptive Reserve Certification for Electric Vehicle, Hydrogen Bus, and Building Resilience Hubs",
+        "authors": [
+          "Tim Wang",
+          "Olivier Rousseau",
+          "Michael A. Bolender",
+          "Venkat Viswanathan",
+          "Aydin Farajollahi"
+        ],
+        "institutions": [],
+        "source": "arXiv",
+        "date": "2026-07-01",
+        "doi": null,
+        "links": {
+          "paper": "https://arxiv.org/abs/2607.00585",
+          "arxiv": "https://arxiv.org/abs/2607.00585",
+          "doi": null,
+          "code": null,
+          "data": null,
+          "project": null
+        },
+        "topics": [
+          "交通能源耦合",
+          "备用容量认证",
+          "楼宇韧性",
+          "需求响应"
+        ],
+        "relevance": "中高",
+        "abstract_only": true,
+        "summary": "利用 conformal prediction 为 EV、氢能公交和楼宇联合提供可认证备用，在 held-out 场景上实现 15.8% 更高备用容量。"
+      },
+      {
+        "priority": "值得跟进",
+        "title_zh": "过于乐观的来水预测如何扭曲水电主导电力系统的调度、价格与合约：来自巴西的证据",
+        "title_en": "How optimistic inflow forecasts distort dispatch, prices, and contracts in hydro-dominated power systems: evidence from Brazil",
+        "authors": [
+          "Raniery Fagundes",
+          "Rafael Oliveira",
+          "Alexandre Street"
+        ],
+        "institutions": [],
+        "source": "arXiv",
+        "date": "2026-07-01",
+        "doi": null,
+        "links": {
+          "paper": "https://arxiv.org/abs/2607.00490",
+          "arxiv": "https://arxiv.org/abs/2607.00490",
+          "doi": null,
+          "code": null,
+          "data": null,
+          "project": null
+        },
+        "topics": [
+          "电力市场",
+          "来水预测偏差",
+          "系统价格",
+          "鲁棒调度"
+        ],
+        "relevance": "中高",
+        "abstract_only": true,
+        "summary": "展示乐观来水预测会系统性扭曲水电主导市场的调度、价格与合约，是预测误差后果分析的好参考。"
+      },
+      {
+        "priority": "简要了解",
+        "title_zh": "连续盘中市场中电池储能的价值：预测驱动策略与完美前视策略的比较",
+        "title_en": "The Value of Battery Energy Storage in the Continuous Intraday Market: Forecast vs. Perfect Foresight Strategies",
+        "authors": [
+          "Maksym Andrushchenko",
+          "Stefan Feuerriegel",
+          "Ulrich Schaller",
+          "Thorsten Wiczorek"
+        ],
+        "institutions": [],
+        "source": "IEEE accepted manuscript / arXiv",
+        "date": "2025-01-13",
+        "doi": null,
+        "links": {
+          "paper": "https://arxiv.org/abs/2501.07121",
+          "arxiv": "https://arxiv.org/abs/2501.07121",
+          "doi": null,
+          "code": null,
+          "data": null,
+          "project": null
+        },
+        "topics": [
+          "电价预测",
+          "储能交易",
+          "连续盘中市场",
+          "决策价值评估"
+        ],
+        "relevance": "高",
+        "abstract_only": false,
+        "summary": "以 IEEE accepted manuscript 形式比较预测驱动交易与完美前视上界，适合作为电价预测经济价值评估的代表性补读。"
+      }
+    ]
   }
 }

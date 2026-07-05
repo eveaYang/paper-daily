@@ -2745,5 +2745,245 @@
         "summary": "以 IEEE accepted manuscript 形式比较预测驱动交易与完美前视上界，适合作为电价预测经济价值评估的代表性补读。"
       }
     ]
+  },
+  "2026-07-05": {
+    "generated_at": "2026-07-05 16:25:23 CST",
+    "search_window": {
+      "primary": [
+        "2026-07-02",
+        "2026-07-05"
+      ],
+      "supplemental": [
+        "2026-06-05",
+        "2026-07-05"
+      ],
+      "representative_extension": [
+        "2025-02-24",
+        "2026-04-23"
+      ]
+    },
+    "dedupe": {
+      "rules": [
+        "same_doi",
+        "same_arxiv_id",
+        "merge_same_paper_across_sources",
+        "skip_existing_entries_in_history"
+      ],
+      "notes": [
+        "已跳过历史已收录的 Tyan-WP(2606.08630)、EV deadline charging、LLM demand response microgrids、spatio-temporal EV charging demand 等重复候选。",
+        "近 1-30 天内未检到第二篇同时满足高相关、官方平台可稳定核验且未被历史缓存收录的 IEEE/Elsevier/Springer 新条目，因此 formal coverage 由 1 篇 2025 IEEE IoT Journal 代表性论文承担。"
+      ]
+    },
+    "papers": [
+      {
+        "priority": "必读",
+        "title_zh": "UniWind：通过物理信息状态路由实现统一的日前风电功率预测",
+        "title_en": "UniWind: Toward Unified Day-Ahead Wind Power Forecasting via Physics-Informed State Routing",
+        "authors": [
+          "Rundong Wang",
+          "Lingfeng Li",
+          "Zeyang Cheng",
+          "Shao-Yu Chien",
+          "Yichi Zhang",
+          "Pengfei Wang",
+          "Zhou Zhou"
+        ],
+        "institutions": [],
+        "source": "arXiv",
+        "date": "2026-07-02",
+        "doi": null,
+        "links": {
+          "paper": "https://arxiv.org/abs/2607.01670",
+          "arxiv": "https://arxiv.org/abs/2607.01670",
+          "doi": null,
+          "code": null,
+          "data": null,
+          "project": null
+        },
+        "topics": [
+          "风电功率预测",
+          "跨区域迁移学习",
+          "物理信息融合",
+          "鲁棒预测"
+        ],
+        "relevance": "高",
+        "abstract_only": true,
+        "summary": "用 physics-informed state routing 建统一风电预测模型，重点处理跨风场状态异质性与 regime shift。"
+      },
+      {
+        "priority": "必读",
+        "title_zh": "多跳智能电表网络中的联邦学习负荷预测",
+        "title_en": "Electrical Load Forecasting over Multihop Smart Metering Networks with Federated Learning",
+        "authors": [
+          "Mohammadreza EskandariNasab",
+          "Ali Asghar Nazari Shirehjini",
+          "Mostafa Rahimi Azghadi",
+          "Shahab Tayebi",
+          "Hamid Reza Rabiee"
+        ],
+        "institutions": [],
+        "source": "IEEE Internet of Things Journal / arXiv",
+        "date": "2025-02-24",
+        "doi": "10.1109/JIOT.2025.3586115",
+        "links": {
+          "paper": "https://doi.org/10.1109/JIOT.2025.3586115",
+          "arxiv": "https://arxiv.org/abs/2502.17226",
+          "doi": "https://doi.org/10.1109/JIOT.2025.3586115",
+          "code": null,
+          "data": null,
+          "project": null
+        },
+        "topics": [
+          "负荷预测",
+          "联邦学习",
+          "边缘侧智能",
+          "隐私保护"
+        ],
+        "relevance": "高",
+        "abstract_only": true,
+        "summary": "把个性化联邦学习与多跳智能电表网络时延优化结合起来，适合作为隐私保护负荷预测 formal coverage。"
+      },
+      {
+        "priority": "必读",
+        "title_zh": "结合动态运行包络的无功交易电力市场：局地化无功支撑并提升网络效率",
+        "title_en": "An Electricity Market with Reactive Power Trading: Incorporating Dynamic Operating Envelopes to Localize Reactive Support and Improve Network Efficiency",
+        "authors": [
+          "Fatemeh Shariatzadeh",
+          "Marina Khorasani",
+          "Mehrdad Ghodrat",
+          "Samaneh Soleymani",
+          "Long Nguyen",
+          "Lachlan Blackhall"
+        ],
+        "institutions": [
+          "Australian National University",
+          "The University of Sydney",
+          "Australian Energy Market Operator",
+          "ACT Government"
+        ],
+        "source": "arXiv",
+        "date": "2026-02-21",
+        "doi": null,
+        "links": {
+          "paper": "https://arxiv.org/abs/2602.18668",
+          "arxiv": "https://arxiv.org/abs/2602.18668",
+          "doi": null,
+          "code": null,
+          "data": null,
+          "project": null
+        },
+        "topics": [
+          "电力市场",
+          "动态operating envelopes",
+          "无功交易",
+          "虚拟电厂"
+        ],
+        "relevance": "高",
+        "abstract_only": false,
+        "summary": "把 DOE、局地无功支撑和分布式市场清算统一到一个竞争均衡框架中，适合延伸到 VPP 和价格机制研究。"
+      },
+      {
+        "priority": "值得跟进",
+        "title_zh": "利用混合模型预测电动汽车充电曲线",
+        "title_en": "Electric Vehicle Charging Profile Forecasting Using Hybrid Models",
+        "authors": [
+          "Riccardo Ramaschi",
+          "Ilhan Oksuz",
+          "Mario Paolone",
+          "Sonia Leva"
+        ],
+        "institutions": [],
+        "source": "arXiv",
+        "date": "2026-05-18",
+        "doi": null,
+        "links": {
+          "paper": "https://arxiv.org/abs/2605.18443",
+          "arxiv": "https://arxiv.org/abs/2605.18443",
+          "doi": null,
+          "code": null,
+          "data": null,
+          "project": null
+        },
+        "topics": [
+          "EV充电负荷预测",
+          "用户行为建模",
+          "站级能量管理",
+          "交通能源耦合"
+        ],
+        "relevance": "高",
+        "abstract_only": false,
+        "summary": "用 RF、GMM 和 rolling nearest-neighbor 逐步修正单车充电曲线，把中位 EMAE 从约 40% 降到 16%。"
+      },
+      {
+        "priority": "值得跟进",
+        "title_zh": "面向电力系统预测任务的时间序列基础模型实证评测",
+        "title_en": "Empirical Assessment of Time-Series Foundation Models For Power System Forecasting Applications",
+        "authors": [
+          "Sajjad Moazeni",
+          "Asif M. Jahir",
+          "Ibrahim N. Hamza",
+          "Fernando Rios",
+          "Le Xie",
+          "Michael E. Webber",
+          "Hooman Mohsenian-Rad"
+        ],
+        "institutions": [],
+        "source": "arXiv",
+        "date": "2026-04-23",
+        "doi": null,
+        "links": {
+          "paper": "https://arxiv.org/abs/2604.16256",
+          "arxiv": "https://arxiv.org/abs/2604.16256",
+          "doi": null,
+          "code": null,
+          "data": null,
+          "project": null
+        },
+        "topics": [
+          "基础模型",
+          "负荷预测",
+          "风光预测",
+          "迁移学习"
+        ],
+        "relevance": "高",
+        "abstract_only": true,
+        "summary": "系统比较 TimesFM、Chronos、Moirai 等在 ERCOT 负荷风光任务上的表现，适合作为 foundation model 实验模板。"
+      },
+      {
+        "priority": "简要了解",
+        "title_zh": "跨域与跨时间尺度的电力系统短期状态预测异构图神经网络",
+        "title_en": "Heterogeneous Graph Neural Networks for Short-term State Forecasting in Power Systems across Domains and Time Scales",
+        "authors": [
+          "Stefan Fuchs",
+          "Georg Frey",
+          "Rodolfo Tomas Gajardo",
+          "Ulrike Lechner",
+          "Bernd Resch",
+          "Christian Schellenberger",
+          "Christian Weber"
+        ],
+        "institutions": [],
+        "source": "arXiv / related DOI",
+        "date": "2025-07-09",
+        "doi": "10.1088/3049-4761/ae565c",
+        "links": {
+          "paper": "https://arxiv.org/abs/2507.06694",
+          "arxiv": "https://arxiv.org/abs/2507.06694",
+          "doi": "https://doi.org/10.1088/3049-4761/ae565c",
+          "code": null,
+          "data": null,
+          "project": null
+        },
+        "topics": [
+          "图神经网络",
+          "多物理耦合",
+          "状态预测",
+          "机理融合"
+        ],
+        "relevance": "中高",
+        "abstract_only": false,
+        "summary": "在水电站案例中用异构图注意力融合水力与电气状态，平均 nRMSE 较 baseline 降低约 35.5%。"
+      }
+    ]
   }
 }

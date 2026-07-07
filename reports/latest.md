@@ -1,288 +1,263 @@
-# 能源与 AI 论文晨间简报｜2026-07-05
+# 能源与 AI 论文晨间简报｜2026-07-07
 
-- 生成时间：2026-07-05 16:25:23 CST
-- 检索重点时间范围：2026-07-02 至 2026-07-05
-- 补充筛选范围：2026-06-05 至 2026-07-05；近 1-7 天去重后仅检到 1 篇高度相关新增论文，近 30 天内可稳定核验且未被历史缓存收录的 IEEE/Elsevier/Springer/ACM/IET 正式条目仍偏少，因此补充 2025-02 至 2026-05 的 formal/representative 论文做方法补读
-- 代表性补读范围：2025-02-24 至 2026-04-23
-- 正式出版覆盖情况：今天纳入 1 篇可通过 IEEE Internet of Things Journal DOI 稳定核验的正式论文 `Electrical Load Forecasting over Multihop Smart Metering Networks with Federated Learning`；其余 5 篇以 arXiv 为主，其中 3 篇可直接浏览 HTML 全文，2 篇仍以摘要页判断为主
-- 主要来源：arXiv 摘要页/HTML 全文、IEEE DOI 链接、公开代码仓库链接；未缓存 PDF，仅保留官方链接与结构化元数据
-- 去重执行：已按 `reports/papers.json` 历史条目、DOI、arXiv ID 与同文多来源规则去重；显式跳过了历史已收录的 `Tyan-WP` (`2606.08630`)、`Deadline-Aware Electric Vehicles Charging with Distribution Transformer Overload Mitigation`、`LLM-Mediated Demand Response Coordination in Smart Microgrids`、`Spatio-temporal modelling of electric vehicle charging demand` 等重复候选
-- 筛选概况：本轮保留 5 篇新增/补充论文与 1 篇代表性补读，主题集中在统一风电预测、隐私保护负荷预测、局地无功交易市场、细粒度 EV 充电曲线建模、能源时序基础模型评测，以及多物理图神经网络状态预测
-- 重要限制：近 1-3 天内没有第二篇可稳定核验且未被历史缓存收录的强相关正式论文，因此今天的 IEEE formal coverage 由 2025 年代表性论文承担；`UniWind` 与 TSFM 基准评测目前主要依据公开摘要信息判断
+- 生成时间：2026-07-07 09:12:18 CST
+- 检索重点时间范围：2026-07-04 至 2026-07-07
+- 补充筛选范围：2026-06-30 至 2026-07-07；近 1-3 天新增且高度相关的候选主要集中在配网峰荷预测与图时空不确定性建模，EV 充电与价格预测方向的新条目较少，因此补充近 7 天与近 18 个月内的高相关论文
+- 代表性 formal 补读范围：2023-09 至 2026-07-07；近 1-30 天内未检到同时满足“高相关、未入历史缓存、且可由 IEEE/Elsevier/Springer/ACM/IET 官方来源稳定核验”的新 formal 条目，因此用 1 篇未入库的正式发表代表作补足 formal coverage
+- 正式出版覆盖情况：今天的 formal coverage 由 `Distributional neural networks for electricity price forecasting` 承担。该论文的正式发表信息依据检索结果摘要可核验为 `Energy Economics`，2023-09；方法与结果分析主要基于 arXiv 摘要页与公开摘要，未缓存 PDF
+- 主要来源：arXiv 摘要页、公开摘要与检索结果；未缓存论文全文 PDF，仅保留 arXiv 或公开来源链接与结构化元数据
+- 去重执行：已按 `reports/papers.json` 历史条目、标题、DOI、arXiv ID 与同文多来源规则去重；显式跳过了历史已收录的 `Deadline-Aware Electric Vehicles Charging with Distribution Transformer Overload Mitigation`、`UniWind: Toward Unified Day-Ahead Wind Power Forecasting via Physics-Informed State Routing`、`Spatio-temporal modelling of electric vehicle charging demand`、`Electricity Price Forecasting: Bridging Linear Models, Neural Networks and Online Learning` 等重复候选
+- 筛选概况：本轮保留 4 篇新增研究和 1 篇 formal 代表性补读，主题集中在低压配网峰荷概率预测、概率电价预测、图时空保形区间、以及把负荷/风/光概率预测前置接入电价模型
+- 重要限制：今天纳入的 5 篇里，除 formal 代表作外，其余 4 篇主要基于 arXiv 摘要与公开摘要判断；没有继续纳入新的 IEEE Early Access/Elsevier/SpringerLink 正式条目，是因为近 30 天内可稳定核验且未入缓存的高相关 formal 候选不足
 
 ## 今日阅读优先级总览
 
 ### 必读
 
-1. `UniWind: Toward Unified Day-Ahead Wind Power Forecasting via Physics-Informed State Routing`：这是今天唯一落在近 3 天窗口、且与新能源功率预测高度贴近的新条目，重点在跨风场泛化与状态切换鲁棒性。
-2. `Electrical Load Forecasting over Multihop Smart Metering Networks with Federated Learning`：今天的 formal coverage，直接对应“隐私保护 + 异构终端 + 负荷预测”这条很实用的研究线。
-3. `An Electricity Market with Reactive Power Trading: Incorporating Dynamic Operating Envelopes to Localize Reactive Support and Improve Network Efficiency`：把 DOE、无功交易和分布式市场出清并到一起，适合把预测问题往市场和控制层延伸。
+1. `Probabilistic Low-Voltage Peak Load Forecasting with Time Series Foundation Models Evaluated on Application-Oriented Metrics`：这是今天最直接对应配网峰荷、负荷预测与应用导向评测的一篇新作，亮点不是单纯比 RMSE，而是把“峰值漏报风险”和资产规划代价写进评估。
+2. `Online Multivariate Regularized Distributional Regression for High-dimensional Probabilistic Electricity Price Forecasting`：如果你做电价预测或储能交易，这篇把“高维联合分布 + 在线更新 + 经济可用性”三件事同时做了。
+3. `Distributional neural networks for electricity price forecasting`：虽然不是新论文，但它是今天的 formal coverage，也是把“只报点预测”升级成“直接输出参数化价格分布”的代表性基线。
 
 ### 值得跟进
 
-1. `Electric Vehicle Charging Profile Forecasting Using Hybrid Models`：对 EV 充电负荷做到了会话内动态修正，适合接到站级调度、需求响应或配网约束控制前端。
-2. `Empirical Assessment of Time-Series Foundation Models For Power System Forecasting Applications`：如果你在评估 TimesFM、Chronos、Moirai 之类模型是否真的适合能源任务，这篇是实验设计层面的速查表。
-
-### 简要了解
-
-1. `Heterogeneous Graph Neural Networks for Short-term State Forecasting in Power Systems across Domains and Time Scales`：更偏多物理量状态融合和图建模，适合作为“物理信息融合建模”方向的旁支补读。
+1. `Relational and Sequential Conformal Inference for Energy Time Series over Graphs via Foundation Models`：更偏不确定性量化，但很适合接到图负荷预测、区域电价与配网风险调度。
+2. `Probabilistic Forecasts of Load, Solar and Wind for Electricity Price Forecasting`：它的关键贡献不是更复杂的价格模型，而是证明上游基础变量的概率预测信息本身就能显著改善电价预测。
 
 ## 必读论文
 
-### 1. 统一风电预测不再只靠共享 backbone，而是先识别物理状态再路由
+### 1. 低压配网峰荷预测，终于开始按“电网怎么用”而不是“模型怎么比”来评估
 
-- 中文标题：UniWind：通过物理信息状态路由实现统一的日前风电功率预测
-- 英文原题：UniWind: Toward Unified Day-Ahead Wind Power Forecasting via Physics-Informed State Routing
-- 作者：Rundong Wang, Lingfeng Li, Zeyang Cheng, Shao-Yu Chien, Yichi Zhang, Pengfei Wang, Zhou Zhou
-- 作者机构：当前可访问摘要页未完整披露
+- 中文标题：基于时间序列基础模型并按应用导向指标评估的低压峰荷概率预测
+- 英文原题：Probabilistic Low-Voltage Peak Load Forecasting with Time Series Foundation Models Evaluated on Application-Oriented Metrics
+- 作者：Benedikt Kaas, Manuel Treutlein, Hannes Benedikt Gerber, Oliver Neumann, Cheewan Phatthanakhuha, Oliver Resch, Ralf Mikut, Veit Hagenmeyer
+- 作者机构：当前可访问摘要页未稳定展开
 - 来源：arXiv
 - 时间：2026-07-02
-- 链接：[arXiv:2607.01670](https://arxiv.org/abs/2607.01670)
+- 链接：[arXiv:2607.01966](https://arxiv.org/abs/2607.01966)
 - 代码/数据/项目页：未检到稳定公开链接
 - 相关程度：高
-- 关联方向：新能源功率预测、跨区域迁移学习、物理信息融合、鲁棒预测
+- 关联方向：负荷预测、峰值风险评估、低压配网、概率预测、基础模型
 - 是否仅基于摘要判断：是
 
 **为什么值得读**
 
-这篇最有价值的地方不是再做一个更大的时序 backbone，而是正面处理风场 operating state 的异质性。对于跨区域、跨风场迁移预测，这是当前最容易失真的环节。
+这篇的价值不只是“Chronos-2 比基线强”，而是把低压馈线峰值预测放回真实电网语境里评估。对配网扩容、台区告警、EV 接入和分布式光伏并网来说，峰值漏报通常比均值误差更危险，这篇正面处理了这个问题。
 
 **主题分析**
 
-它解决的是日前风电功率预测中的“统一模型难以适应不同机组状态和场站工况”问题，属于预测任务，但明显带有机理融合和 domain adaptation 色彩。对智能电网的意义在于，风电预测误差会直接传导到备用、SCUC 和市场报价。
+论文解决的是短期低压净负荷预测，重点不是普通负荷曲线拟合，而是“高电气化、强分布式出力扰动下，如何做带不确定性的峰荷预测并服务配网运维”。这更偏预测与风险评估的结合，而不是单纯模型竞赛。
 
 **方法介绍**
 
-摘要给出的主线是 `physics-informed state routing`。输入应包含历史功率、气象/NWP 特征以及与风机状态相关的物理先验；处理中先根据物理状态进行 routing，再由统一模型在不同状态子空间内完成预测；输出是日前风电功率。这个设计相当于把“共享模型 + 状态专家”的思想显式化，比一味堆参数更像是可迁移方案。
+作者系统比较了 `Chronos-Bolt`、`Chronos-2`、`TabPFN-TS` 与 6 个传统/深度基线，在 200 个真实低压馈线的短期净负荷预测任务上评估点预测与概率预测表现。方法上的关键点有两个：
+一是把基础模型放到真实低压场景里，而不是只在通用公开数据集上比较；
+二是提出面向应用的峰值评估指标，把峰值预测误差映射到“少扩容节约的成本”和“漏判过载导致的失败风险”之间的权衡。
 
 **实验、数据与结果**
 
-公开摘要说明作者在多风场数据上验证了 unified forecasting 的有效性，重点展示跨场站、状态切换和异常工况下的鲁棒收益。虽然摘要页未稳定披露完整指标表，但从问题设定看，它比常见单场站短期风电预测更接近真实部署。
+摘要显示实验覆盖 200 个真实低压馈线，重点比较 TS foundation models 与 6 个基线。结果上 `Chronos-2` 整体最强，尤其在峰值相关表现上更突出；去掉天气协变量后的消融表明，基础模型虽然会受到影响，但能通过更宽的预测分布反映额外不确定性，而不是机械给出过窄区间。
 
 **局限性与风险**
 
-目前只能基于摘要判断，还看不到不同 NWP 源、预测 horizon、概率校准指标与地区迁移细节。若路由状态标签本身需要额外人工定义或依赖高质量运维标注，复现门槛会提高。
+当前可稳定读取的信息主要来自摘要，因此具体预测时域、采样粒度、评分函数和各基线的数值优势还不完整。另一个潜在风险是，200 个馈线虽然已经比很多论文真实，但仍未必覆盖强 EV 渗透、强光伏反送和极端天气并发场景。
 
-**可延伸与迁移方向**
+**对你可延伸的方向**
 
-最直接的迁移是把这个“状态路由”思想移到光伏、负荷甚至电价预测，尤其适合存在 regime shift 的场景。进一步可以叠加图神经网络刻画场站空间相关性，或与 conformal prediction、鲁棒调度、MARL 调度器做串联。
-
-**今日建议**
-
-如果你近期在看跨区域新能源预测或想把机理先验嵌入 foundation/transfer 模型，这篇应排在今天第一篇。
-
-### 2. 联邦学习真正落到智能电表网络时，问题不只是隐私，还包括异构终端与通信时延
-
-- 中文标题：多跳智能电表网络中的联邦学习负荷预测
-- 英文原题：Electrical Load Forecasting over Multihop Smart Metering Networks with Federated Learning
-- 作者：Mohammadreza EskandariNasab, Ali Asghar Nazari Shirehjini, Mostafa Rahimi Azghadi, Shahab Tayebi, Hamid Reza Rabiee
-- 作者机构：当前可访问摘要页未完整披露
-- 来源：IEEE Internet of Things Journal / arXiv
-- 时间：2025-02-24
-- DOI：[10.1109/JIOT.2025.3586115](https://doi.org/10.1109/JIOT.2025.3586115)
-- 链接：[arXiv:2502.17226](https://arxiv.org/abs/2502.17226)
-- 代码/数据/项目页：未检到稳定公开链接
-- 相关程度：高
-- 关联方向：负荷预测、联邦学习、隐私保护、边缘侧智能
-- 是否仅基于摘要判断：是
-
-**为什么值得读**
-
-这是今天 formal coverage 最稳的一篇，而且问题设定很实际：真实 AMI/智能电表网络不可能总把数据集中到云端，再假设终端同质且通信免费。
-
-**主题分析**
-
-论文聚焦的是多跳智能电表网络里的负荷预测，属于预测任务，但把预测器、联邦训练和通信资源分配同时考虑。对配电网与用户侧管理而言，这比只在单机上追求更低 RMSE 更接近可部署形态。
-
-**方法介绍**
-
-摘要给出两个关键部件：一是个性化联邦学习框架，用 meta-learning 缓解不同用户/节点数据异质性；二是面向多跳网络的资源分配与时延优化。输入是分布在各智能电表节点的本地负荷序列；处理中进行本地训练、参数聚合和网络侧资源协调；输出是各节点的个性化负荷预测模型。
-
-**实验、数据与结果**
-
-作者报告其在真实世界数据驱动的仿真中，同时获得更好的预测精度与更低的 operational latency cost，并给出了算法收敛分析。虽然公开摘要没有列出 MAE/RMSE 数值，但这类“预测效果 + 通信代价”联合评估对你设计联邦负荷/EV 预测实验很有参考价值。
-
-**局限性与风险**
-
-现阶段仍主要基于摘要判断，不清楚具体 horizon、节点规模、带宽模型和掉线场景。若网络假设较理想，多跳延迟优化的现实意义会被高估；另外它目前还没有把电价、天气、拓扑等外生变量显式纳入。
-
-**可延伸与迁移方向**
-
-这条线很容易迁移到 EV 充电负荷预测、社区级新能源预测和隐私保护电价预测。后续可以再结合图神经网络表达配网邻接关系，把联邦学习和拓扑约束、时空 Transformer、需求响应或 VPP 控制串起来。
+这篇很适合直接迁移到电价预测与 EV 负荷预测：
+可以把应用导向指标改写成“高价时段漏报风险”“充电峰值越限风险”或“储能误调度成本”；
+可以把馈线级基础模型接上图拓扑、变压器容量和潮流近似，形成物理约束下的峰荷概率预测；
+也可以把预测区间作为下游 RL 或 MPC 的风险输入，而不是先做点预测再单独加安全裕度。
 
 **今日建议**
 
-如果你正在考虑“多主体本地数据不能出域”的场景，这篇就是今天的代表性必读。
+如果你最近想把负荷预测从“做得准”推进到“对配网调度真正有用”，这篇应排今天第一。
 
-### 3. 先把动态 operating envelopes 做成价格信号，再谈配电级局地市场
+### 2. 电价概率预测真正难的不是边际分布，而是 24 小时价格向量的联合结构和在线更新
 
-- 中文标题：结合动态运行包络的无功交易电力市场：局地化无功支撑并提升网络效率
-- 英文原题：An Electricity Market with Reactive Power Trading: Incorporating Dynamic Operating Envelopes to Localize Reactive Support and Improve Network Efficiency
-- 作者：Fatemeh Shariatzadeh, Marina Khorasani, Mehrdad Ghodrat, Samaneh Soleymani, Long Nguyen, Lachlan Blackhall
-- 作者机构：澳大利亚国立大学、悉尼大学、澳大利亚能源市场运营商、澳大利亚首都领地政府等
+- 中文标题：面向高维概率电价预测的在线多变量正则化分布回归
+- 英文原题：Online Multivariate Regularized Distributional Regression for High-dimensional Probabilistic Electricity Price Forecasting
+- 作者：Simon Hirsch
+- 作者机构：当前可访问摘要页未稳定展开
 - 来源：arXiv
-- 时间：2026-02-21
-- 链接：[arXiv:2602.18668](https://arxiv.org/abs/2602.18668)
+- 时间：2025-04-03
+- 链接：[arXiv:2504.02518](https://arxiv.org/abs/2504.02518)
 - 代码/数据/项目页：未检到稳定公开链接
 - 相关程度：高
-- 关联方向：电力市场、虚拟电厂、动态 operating envelopes、分布式优化控制
-- 是否仅基于摘要判断：否
+- 关联方向：电价预测、概率预测、在线学习、多变量建模、储能交易
+- 是否仅基于摘要判断：是
 
 **为什么值得读**
 
-这篇非常适合作为“预测以后怎么用”的下游参考。它没有把重点放在提高预测精度，而是把 DOE、P2P 市场和无功支撑统一进一个可分析的市场机制里。
+许多电价论文把每个时段分开建模，最后只得到 24 个彼此独立的边际预测。这篇直接面向“整天价格路径”的联合分布建模，并把在线更新做成核心设计，非常贴近真实交易场景。
 
 **主题分析**
 
-论文解决的是高 DER 配电网中的本地市场设计问题，本质上属于优化与市场机制，而不是纯预测。它的现实意义在于：当光伏、储能、EV 与柔性负荷越来越多时，配网侧真正稀缺的往往不是有功能源本身，而是电压支撑和局部网络容量。
+论文解决的是德国日前市场的高维概率电价预测问题。它关注的不只是点预测误差，而是如何在高频更新、结构变化快的市场中，持续给出可用于交易和风险控制的联合分布预测。因此它兼具预测与市场决策支持属性。
 
 **方法介绍**
 
-作者构建了一个 optimization-based electricity market，其中 prosumer 会同时参与能源和无功交易；DOE 被内生地转成价格信号与交易边界。论文还证明了 competitive equilibrium 与社会福利最大化/Nash equilibrium 的对应关系。输入包括 prosumer 的负荷、分布式资源、DOE 约束和网络模型；输出是有功/无功功率交易量与相关价格。
+作者提出在线多变量正则化分布回归框架，让分布参数及其依赖结构都能条件化到解释变量上。核心机制包括：
+使用基于在线坐标下降的 LASSO 型更新；
+沿着“越来越复杂的联合依赖结构”做路径式正则化；
+通过早停和稀疏化保持高维模型可估计。
+输入变量包括可再生出力、历史价格等；输出不是单个点值，而是随特征变化的多变量价格分布。
 
 **实验、数据与结果**
 
-论文在修改后的 IEEE 13-node feeder 上做 24 小时仿真，prosumer 侧使用 Ausgrid solar home data，并显式包含屋顶光伏、家用电池与 EV。结果表明，引入 reactive power trading 与 DOE 定价后，系统能在提升社会福利的同时改善电压表现，并把无功支撑更局地化地留在需要它的节点附近。
+摘要明确给出两类结果：
+在德国日前市场的多变量概率预测任务上，它优于在线 LASSO-ARX、自适应边际分布模型和“单变量分布模型 + 自适应 Copula”基线；
+在线估计相对 batch fitting 提速约 80 到 400 倍。
+这意味着它不仅预测更合理，也更适合日常滚动部署。
 
 **局限性与风险**
 
-实验仍然是单馈线、集中式市场清算设定，且用户效用函数和参与行为相对理想化。真实配网里的相不平衡、通信失败、市场合规和用户响应不确定性，都可能让机制变形。
+当前摘要没有展开每种依赖结构、分布族选择与评估指标，也没有给出不同市场 regime 下的细粒度稳定性结果。另一个现实障碍是，这类高维联合分布模型在区域迁移时对市场规则、价差结构和极端尖峰机制比较敏感。
 
-**可延伸与迁移方向**
+**对你可延伸的方向**
 
-很适合迁移到 VPP 内部结算、局地电价机制、配电级需求响应和电压约束下的 MARL 调度。若你的研究主线是电价预测，可以把预测输出直接转成这里的报价或 DOE 约束输入，做“预测-出清-控制”闭环。
+如果你做节点电价或系统电价预测，可以直接把这套框架推广到多节点联合分布预测，再把输出送入储能套利、VPP 报价或风险约束优化。进一步可把图结构、电网拓扑和输电约束嵌进联合依赖建模，或把 conformal / CVaR 风险层接到下游调度器上。
 
 **今日建议**
 
-如果你不想把研究停留在 forecasting，而想往 market design 或 control architecture 推，这篇是今天最值得补的机制论文。
+如果你想做的不只是“下一小时价格回归”，而是能支持交易和决策的价格路径分布预测，这篇值得精读。
+
+### 3. 正式发表代表作：价格分布应该直接建模，而不是先点预测再事后补区间
+
+- 中文标题：用于电价预测的分布式神经网络
+- 英文原题：Distributional neural networks for electricity price forecasting
+- 作者：Grzegorz Marcjasz, Michał Narajewski, Rafał Weron, Florian Ziel
+- 作者机构：当前可访问摘要页未稳定展开
+- 来源：Energy Economics / arXiv
+- 时间：正式发表信息依据检索结果摘要为 2023-09；arXiv 时间 2022-07-06
+- 链接：[arXiv:2207.02832](https://arxiv.org/abs/2207.02832)
+- 代码/数据/项目页：未检到稳定公开链接
+- 相关程度：高
+- 关联方向：电价预测、概率预测、风险管理、分布建模、深度学习
+- 是否仅基于摘要判断：是
+
+**为什么值得读**
+
+今天没有找到足够新的、未入缓存且可稳定核验的 formal 条目，这篇因此承担 formal coverage。它的重要性在于提出了非常清晰的概率建模范式：神经网络不再只输出价格点值或若干分位数，而是直接输出参数化分布。
+
+**主题分析**
+
+论文解决的是德国日前电价的概率预测问题，目标不是提升单一点误差，而是更好刻画尖峰、厚尾和风险暴露。对储能、售电和组合管理来说，这种分布层输出比“先预测均值、再用经验方式估风险”更自然。
+
+**方法介绍**
+
+作者提出 distributional neural network，在深度神经网络末端加入 `probability layer`，直接输出参数化分布。摘要给出的两类分布是两参数正态分布和四参数 Johnson's SU 分布。前者简单，后者更适合偏度和厚尾更明显的价格过程。
+
+**实验、数据与结果**
+
+公开摘要表明，该方法在德国日前电价数据上显著优于若干 SOTA 基线，包括 LASSO 回归和与 Quantile Regression Averaging 结合的深度神经网络。这说明只建模边际均值或少量分位数仍然不够，价格分布的高阶矩信息本身有实际价值。
+
+**局限性与风险**
+
+这篇是 formal 代表作，但离当前时间已经较远；同时当前可读信息主要来自 arXiv 摘要与公开检索摘要，缺少完整实验设定、滚动窗口与多市场泛化细节。若直接迁移到高波动的实时市场或节点电价，可能还需要更灵活的依赖结构。
+
+**对你可延伸的方向**
+
+这篇适合作为你后续所有概率电价工作的重要 baseline：
+可以把分布层替换成更灵活的 mixture / normalizing flow；
+可以把 exogenous variables 扩展到风光负荷的概率输入；
+也可以把输出分布直接接到电池交易、VPP 报价或鲁棒 MPC 的损失函数里，而不是中间再做二次近似。
+
+**今日建议**
+
+如果你要搭一个电价概率预测研究线，这篇仍然值得作为 formal 基准补读。
 
 ## 值得跟进
 
-### 4. EV 充电负荷别只看站级总功率，单车曲线的滚动修正信息量很高
+### 4. 图时空负荷预测下一步不只是更准，而是给出在 domain shift 下仍可用的可靠区间
 
-- 中文标题：利用混合模型预测电动汽车充电曲线
-- 英文原题：Electric Vehicle Charging Profile Forecasting Using Hybrid Models
-- 作者：Riccardo Ramaschi, Ilhan Oksuz, Mario Paolone, Sonia Leva
-- 作者机构：当前可访问 HTML 页未直接完整披露
+- 中文标题：基于基础模型的图时空能源时间序列关系式与序列式保形推断
+- 英文原题：Relational and Sequential Conformal Inference for Energy Time Series over Graphs via Foundation Models
+- 作者：Keivan Faghih Niresi, Alice Cicirello, Olga Fink
+- 作者机构：当前可访问摘要页未稳定展开
 - 来源：arXiv
-- 时间：2026-05-18
-- 链接：[arXiv:2605.18443](https://arxiv.org/abs/2605.18443)
+- 时间：2026-06-30
+- 链接：[arXiv:2606.31804](https://arxiv.org/abs/2606.31804)
 - 代码/数据/项目页：未检到稳定公开链接
 - 相关程度：高
-- 关联方向：EV 充电负荷预测、交通能源耦合、站级能量管理、需求响应
-- 是否仅基于摘要判断：否
-
-**为什么值得读**
-
-这篇不是预测聚合后总功率，而是细到单次会话的充电 profile。对站级 MPC、排队管理、变压器负荷预估和充电柔性评估都更直接。
-
-**主题分析**
-
-论文关注的是会话内 EV 充电曲线预测与时间平移，处在“预测 + 用户行为建模”的交叉位置。它的工程意义在于，很多调度器默认车辆到站后的功率曲线是已知的，但真实世界里正是这部分误差会吞掉你对需求响应和配网约束的收益。
-
-**方法介绍**
-
-作者把问题拆成两段。未接入充电桩前，用随机森林预测 SoC-power profile，并借助高斯混合模型估计电池容量与到离站 SoC；接入后，再用 rolling-horizon nearest-neighbor 持续修正 profile。输入包括充电功率、SoC、环境温度与电池容量代理量；输出是单车未来功率轨迹以及可用于时间平移的完整充电曲线。
-
-**实验、数据与结果**
-
-数据来自 EPFL DESL 公开 L3 充电数据集，覆盖 1,878 次会话和 64,277 个 1 分钟测量点，时间范围为 2022-04 至 2023-07，并结合 Open-Meteo 温度数据。论文显示，随着观测更新次数增加，单车 profile 的中位 `EMAE` 可从约 40% 降到 16%；如果所有关键变量都已知，时间平移后的中位 `EMAE` 约为 4.45%。
-
-**局限性与风险**
-
-场站规模和充电桩类型仍然有限，论文也明确承认夜间样本和部分车辆信息不足。连线后的修正阶段本质上依赖相似轨迹库，若换成新车型、新运营策略或极端天气，近邻搜索可能退化。
-
-**可延伸与迁移方向**
-
-这篇很适合接到 EV 站级调度、充电负荷预测、充电灵活性评估和 deadline-aware 控制前面。进一步可以把滚动修正模块换成时空 Transformer、扩成多站协同预测，或者与 RL/MPC 调度联合成 end-to-end 框架。
-
-**今日建议**
-
-如果你手上有会话级或桩级数据，这篇比多数只做站级聚合负荷预测的论文更容易长出后续工作。
-
-### 5. 基础模型到底是不是能源预测的“默认答案”，这篇给了更冷静的 benchmark
-
-- 中文标题：面向电力系统预测任务的时间序列基础模型实证评测
-- 英文原题：Empirical Assessment of Time-Series Foundation Models For Power System Forecasting Applications
-- 作者：Sajjad Moazeni, Asif M. Jahir, Ibrahim N. Hamza, Fernando Rios, Le Xie, Michael E. Webber, Hooman Mohsenian-Rad
-- 作者机构：当前可访问摘要页未完整披露
-- 来源：arXiv
-- 时间：2026-04-23
-- 链接：[arXiv:2604.16256](https://arxiv.org/abs/2604.16256)
-- 代码/数据/项目页：未检到稳定公开链接
-- 相关程度：高
-- 关联方向：负荷/风光预测、基础模型、迁移学习、实验基准
+- 关联方向：负荷预测、图神经网络、不确定性量化、保形预测、基础模型
 - 是否仅基于摘要判断：是
 
 **为什么值得读**
 
-如果你在决定要不要把下一篇工作押在 TSFM 上，这篇的价值不在于提出新模型，而在于告诉你哪些环节值得认真比较，避免只拿单一数据集做营销式结论。
+很多图时空负荷预测工作停留在点预测精度比较，但真实配网和供热网络调度更关心“区间能不能信”。这篇把 STGNN 与 conformal prediction 结合，并引入 foundation model 做零样本式校准，是一个很实用的方向。
 
 **主题分析**
 
-论文聚焦电力系统预测任务上的基础模型评测，属于实验方法论和模型选择问题。对能源系统研究来说，这类 benchmark 非常重要，因为它决定你后面到底该投入在“大模型迁移”还是“任务定制模型 + 物理约束”。
+论文处理的是图结构能源时间序列的区间预测问题，目标是让预测结果在 spatial-temporal 依赖和 domain shift 下仍具覆盖保证。实际意义在于，它更适合作为 reserve setting、需求响应和风险约束优化的前端模块。
 
 **方法介绍**
 
-摘要显示作者系统评估了 `TimesFM`、`Chronos Bolt`、`MoiraiL`、`MOMENT`、`TTM` 等基础模型，并与 `TFT`、`PatchTST`、`TimeXer`、`LSTM`、`CNN` 等任务模型比较。数据侧使用 ARPA-E PERFORM 的高分辨率 ERCOT 负荷、风电和光伏序列，并从 zero-shot、微调、多变量输入、长预测 horizon 与 unseen-site generalization 等维度切开。
+作者提出 `STOIC` 框架。流程是：
+先由 STGNN 生成点预测；
+再把空间和时间上的残差重构为适合 in-context learning 的表格表示；
+最后用 tabular foundation model 完成无需任务重训的区间校准。
+关键创新在于同时保留 sequential 与 relational dependency，而不是把每个节点、每个时刻独立校准。
 
 **实验、数据与结果**
 
-公开摘要强调的重点不是“某个 foundation model 全面胜出”，而是不同任务、上下文长度和外生变量配置下表现差异很大。对你做选题最有帮助的点，是它把 benchmark 维度先铺平了，后续你可以直接照这个框架换成自己的电价/负荷/新能源数据。
+摘要显示该方法在 5 个基准上验证，包括合成系统、真实电力网络和区域供热网络。结果上 STOIC 持续优于现有 conformal baselines，给出更稳健、更可靠的区间估计。
 
 **局限性与风险**
 
-目前还是摘要级信息，看不到完整排名、校准指标和计算成本对比。另一个风险是 ERCOT 数据的天气、市场与地理特征相对独特，直接外推到其他国家/区域未必成立。
+当前摘要没有展开 foundation model 规模、STGNN 结构、各 benchmark 的覆盖率与区间宽度细节。另一个风险是，若目标系统拓扑变化很频繁或节点缺测严重，残差表格化后的校准质量可能下降。
 
-**可延伸与迁移方向**
+**对你可延伸的方向**
 
-可以直接迁移到电价预测、负荷预测和风光预测任务，补上图拓扑、物理约束和 market-aware loss；也很适合设计“foundation model + 下游调度收益”联合评估，而不是只看点预测误差。
+这篇很适合迁移到配网负荷预测、新能源功率预测和区域电价预测：
+可以把图关系从地理邻接改成电网拓扑、潮流耦合或市场耦合；
+可以把 conformal interval 直接喂给 chance-constrained OPF、VPP reserve 配置或 RL 安全层；
+也可以比较“point model 更强”与“calibration layer 更强”哪个对最终调度更有用。
 
 **今日建议**
 
-如果你要立一个“能源基础模型到底有没有净收益”的实验选题，这篇是很好的开题模板。
+如果你关心“不确定性怎么真正进入调度”，而不是只给论文里一张 PICP 表，这篇值得跟进。
 
-## 简要了解
+### 5. 电价预测提升，有时来自更好的价格模型之前的那一步：把负荷、风、光的不确定性先建好
 
-### 6. 多物理系统里做短期状态预测，图结构不一定来自电网拓扑，也可能来自液压与电气耦合
-
-- 中文标题：跨域与跨时间尺度的电力系统短期状态预测异构图神经网络
-- 英文原题：Heterogeneous Graph Neural Networks for Short-term State Forecasting in Power Systems across Domains and Time Scales
-- 作者：Stefan Fuchs, Georg Frey, Rodolfo Tomas Gajardo, Ulrike Lechner, Bernd Resch, Christian Schellenberger, Christian Weber
-- 作者机构：当前可访问摘要页未完整披露
-- 来源：arXiv（页面含 related DOI）
-- 时间：2025-07-09
-- DOI：[10.1088/3049-4761/ae565c](https://doi.org/10.1088/3049-4761/ae565c)
-- 链接：[arXiv:2507.06694](https://arxiv.org/abs/2507.06694)
+- 中文标题：将负荷、光伏和风电的概率预测用于电价预测
+- 英文原题：Probabilistic Forecasts of Load, Solar and Wind for Electricity Price Forecasting
+- 作者：Bartosz Uniejewski, Florian Ziel
+- 作者机构：当前可访问摘要页未稳定展开
+- 来源：arXiv
+- 时间：2025-01-10
+- 链接：[arXiv:2501.06180](https://arxiv.org/abs/2501.06180)
 - 代码/数据/项目页：未检到稳定公开链接
-- 相关程度：中高
-- 关联方向：图神经网络、物理信息融合建模、状态预测、机理与数据融合
-- 是否仅基于摘要判断：否
+- 相关程度：高
+- 关联方向：电价预测、概率预测、风光负荷耦合、市场建模
+- 是否仅基于摘要判断：是
 
 **为什么值得读**
 
-它不是常见的“拓扑 + 电压/潮流”图学习，而是把水力和电气两个域一起放进异构图里，对你做物理耦合建模会有启发。
+这篇的关键洞见是，电价模型不一定需要先换成更复杂的网络，先把上游基础变量从点预测升级到概率预测，就可能带来实质收益。
 
 **主题分析**
 
-论文解决的是短期状态预测问题，但重点在 heterogeneous graph construction，而不是单一时序 backbone。对能源系统来说，这种范式适合多能系统、储能-电网-设备联合状态估计，属于机制融合路线。
+论文研究德国电力市场中的价格预测，把负荷、光伏和风电出力的 quantile forecasts 作为新的外生输入。它关注的是“上游预测不确定性如何传播到价格预测”，本质上是预测链路的系统性改造。
 
 **方法介绍**
 
-作者提出异构图注意力网络，把 hydraulic 与 electrical 两类节点/边同时编码，并处理不同物理量的时间尺度差异。输入是水电站多类传感器时间序列；处理中通过异构消息传递提取跨域依赖；输出是未来短期状态变量。
+方法核心并不复杂，但很有启发性：把基础变量的概率信息编码成电价模型可用的外生特征，而不是只提供单一均值或中位数。这样价格模型能感知未来供需平衡的不确定范围，而不是只看到一个确定性场景。
 
 **实验、数据与结果**
 
-论文基于一个水电站案例研究，报告平均 `nRMSE` 相比 baseline 降低约 35.5%。这个结果说明图结构在多物理系统里不是装饰性的，而是真能提高状态预测质量。
+摘要表明，在德国市场的经验测试中，引入负荷与可再生出力的概率预测可以显著提升电价点预测精度；而使用完整概率信息时提升最大。这说明对价格预测来说，基础变量的不确定性本身就是有用信号。
 
 **局限性与风险**
 
-案例仍局限于单一水电设施，且任务是状态预测而非价格/负荷/调度。若迁移到配电网、多园区或交通能源系统，需要重新定义节点类型、耦合边和采样频率。
+当前摘要没有展开用了哪些 quantile、怎样编码进价格模型，也没有给出与具体深度模型的分层对比。工程上还要注意：如果上游负荷/风/光概率预测本身校准很差，错误会被整条链路放大。
 
-**可延伸与迁移方向**
+**对你可延伸的方向**
 
-适合迁移到风光储联合状态估计、VPP 设备健康与状态预测、充电网络与配电网耦合建模，也可以与物理约束优化、MPC 或 MARL 形成闭环。
+这篇非常适合延伸到你的研究主线：
+可把它和第 2 篇联合起来，形成“概率外生变量 + 联合价格分布”框架；
+可把 wind/solar/load uncertainty 接进储能套利、VPP 报价、需求响应激活阈值或 EV 充电调度；
+若你研究交通能源耦合，还可以把 EV 到离站分布、充电会话发生率等也视作上游概率驱动变量。
 
 **今日建议**
 
-如果你主线还是预测与调度，它不是今天最优先的一篇；但如果你在找“图结构 + 物理耦合”灵感，值得快速过一遍。
+如果你想把价格预测从单模型竞赛推进到更完整的 forecast-to-decision pipeline，这篇是很好的中间桥梁。

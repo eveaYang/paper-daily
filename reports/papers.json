@@ -2985,5 +2985,396 @@
         "summary": "在水电站案例中用异构图注意力融合水力与电气状态，平均 nRMSE 较 baseline 降低约 35.5%。"
       }
     ]
+  },
+  "2026-07-06": {
+    "generated_at": "2026-07-06 17:39:12 CST",
+    "search_window": {
+      "primary": [
+        "2026-06-29",
+        "2026-07-06"
+      ],
+      "supplemental": [
+        "2026-02-17",
+        "2026-07-06"
+      ],
+        "representative_extension": [
+          "2023-09-28",
+          "2026-05"
+        ]
+    },
+    "dedupe": {
+      "rules": [
+        "same_doi",
+        "same_arxiv_id",
+        "merge_same_paper_across_sources",
+        "skip_existing_entries_in_history"
+      ],
+      "notes": [
+        "已跳过历史已收录的 Forecasting what Matters、XAI electricity markets、From Tokens to Energy Flexibility、Class-Based Smart Charging Control 等重复候选。",
+        "近 30 天内未检到第二篇同时满足高相关、官方平台可稳定核验且未被历史缓存收录的 IEEE/Elsevier/Springer/ACM/IET formal 新条目，因此 formal coverage 由 1 篇 2026-05 期间可由 DOI 稳定核验的 IEEE TPS 论文承担；具体上线日期未直接打开 IEEE Xplore 页面核验。"
+      ]
+    },
+    "papers": [
+      {
+        "priority": "必读",
+        "title_zh": "大规模电动汽车车队智能充电：独立多智能体强化学习方法",
+        "title_en": "Smart charging of large fleets of Electric Vehicles: Independent Multi-Agent Reinforcement Learning approaches",
+        "authors": [
+          "Xavier Rate",
+          "Eloann Le Guern",
+          "Raphaël Féraud",
+          "Fatma Salem",
+          "Melissa Chiknoun",
+          "Eymeric Giabicani",
+          "Mehdi Feki",
+          "Patrick Maillé",
+          "Guy Camilleri",
+          "Anne Blavette",
+          "Hamid Benhamed"
+        ],
+        "institutions": [],
+        "source": "arXiv",
+        "date": "2026-06-30",
+        "doi": null,
+        "links": {
+          "paper": "https://arxiv.org/abs/2606.31347",
+          "arxiv": "https://arxiv.org/abs/2606.31347",
+          "doi": null,
+          "code": null,
+          "data": null,
+          "project": null
+        },
+        "topics": [
+          "多智能体强化学习",
+          "EV充电调度",
+          "需求响应",
+          "交通能源耦合"
+        ],
+        "relevance": "高",
+        "abstract_only": false,
+        "summary": "比较独立 bandit 与策略梯度在大规模 EV 智能充电中的收敛、拥塞适应性与异质部署稳健性。"
+      },
+      {
+        "priority": "必读",
+        "title_zh": "用于电力需求预测的人类空间动态：2022 年法国能源危机案例",
+        "title_en": "Human spatial dynamics for electricity demand forecasting: the case of France during the 2022 energy crisis",
+        "authors": [
+          "Nathan Doumèche",
+          "Yann Allioux",
+          "Yannig Goude",
+          "Stefania Rubrichi"
+        ],
+        "institutions": [
+          "LPSM",
+          "EDF R&D OSIRIS"
+        ],
+        "source": "IEEE Transactions on Power Systems / arXiv",
+        "date": "2026-05",
+        "doi": "10.1109/TPWRS.2025.3648653",
+        "links": {
+          "paper": "https://doi.org/10.1109/TPWRS.2025.3648653",
+          "arxiv": "https://arxiv.org/abs/2309.16238",
+          "doi": "https://doi.org/10.1109/TPWRS.2025.3648653",
+          "code": null,
+          "data": null,
+          "project": null
+        },
+        "topics": [
+          "负荷预测",
+          "外生行为特征",
+          "异常时期鲁棒预测",
+          "需求响应行为建模"
+        ],
+        "relevance": "高",
+        "abstract_only": true,
+        "summary": "把移动网络构造的人类活动指标接入负荷预测，面向能源危机期间的异常行为变化。"
+      },
+      {
+        "priority": "必读",
+        "title_zh": "面向可持续 EV 充电与碳减排的碳感知强化学习：在不同可再生渗透率下的研究",
+        "title_en": "Emission-Aware Reinforcement Learning for Sustainable Electric Vehicle Charging and Carbon Dioxide Reduction Under Varying Renewable Penetration",
+        "authors": [
+          "Ninglin Ou",
+          "Mohammad A. Razzaque",
+          "Iftekher Islam Shovon",
+          "Shafkat Khan Siam",
+          "Shafiuzzaman K Khadem",
+          "Krishnendu Guha",
+          "Mayeen U Khandaker",
+          "Md. Noor-A-Rahim"
+        ],
+        "institutions": [],
+        "source": "arXiv",
+        "date": "2026-05-30",
+        "doi": null,
+        "links": {
+          "paper": "https://arxiv.org/abs/2605.24543",
+          "arxiv": "https://arxiv.org/abs/2605.24543",
+          "doi": null,
+          "code": null,
+          "data": null,
+          "project": null
+        },
+        "topics": [
+          "EV充电调度",
+          "强化学习",
+          "低碳调度",
+          "V2G"
+        ],
+        "relevance": "高",
+        "abstract_only": false,
+        "summary": "用 SAC 把碳强度预测、可再生出力和用户满意度并入 EV 充电多目标调度。"
+      },
+      {
+        "priority": "值得跟进",
+        "title_zh": "虚拟电厂的分布鲁棒模型预测控制",
+        "title_en": "Distributionally Robust Model Predictive Control for Virtual Power Plants",
+        "authors": [
+          "Nikolas Recke",
+          "Mathias Hudoba de Badyn"
+        ],
+        "institutions": [],
+        "source": "arXiv",
+        "date": "2026-05-14",
+        "doi": null,
+        "links": {
+          "paper": "https://arxiv.org/abs/2605.14642",
+          "arxiv": "https://arxiv.org/abs/2605.14642",
+          "doi": null,
+          "code": null,
+          "data": null,
+          "project": null
+        },
+        "topics": [
+          "虚拟电厂",
+          "鲁棒控制",
+          "MPC",
+          "市场调度"
+        ],
+        "relevance": "高",
+        "abstract_only": false,
+        "summary": "将 TiREx 分位数预测与 Wasserstein ambiguity set 结合，提升 VPP 在价格不确定性下的稳健收益。"
+      },
+      {
+        "priority": "值得跟进",
+        "title_zh": "用于电力市场极端日分类的小样本 LLM 框架",
+        "title_en": "A Few-Shot LLM Framework for Extreme Day Classification in Electricity Markets",
+        "authors": [
+          "Saud Alghumayjan",
+          "Ming Yi",
+          "Bolun Xu"
+        ],
+        "institutions": [],
+        "source": "arXiv",
+        "date": "2026-02-17",
+        "doi": null,
+        "links": {
+          "paper": "https://arxiv.org/abs/2602.16735",
+          "arxiv": "https://arxiv.org/abs/2602.16735",
+          "doi": null,
+          "code": null,
+          "data": null,
+          "project": null
+        },
+        "topics": [
+          "电价预测",
+          "极端事件识别",
+          "LLM",
+          "市场风险预警"
+        ],
+        "relevance": "中高",
+        "abstract_only": false,
+        "summary": "把电价 spike 预警改写成 few-shot LLM 分类任务，在低样本设置下优于传统监督基线。"
+      }
+    ]
+  },
+  "2026-07-07": {
+    "generated_at": "2026-07-07 09:12:18 CST",
+    "search_window": {
+      "primary": [
+        "2026-07-04",
+        "2026-07-07"
+      ],
+      "supplemental": [
+        "2026-06-30",
+        "2026-07-07"
+      ],
+      "representative_extension": [
+        "2023-09",
+        "2026-07-07"
+      ]
+    },
+    "dedupe": {
+      "rules": [
+        "same_doi",
+        "same_arxiv_id",
+        "merge_same_paper_across_sources",
+        "skip_existing_entries_in_history"
+      ],
+      "notes": [
+        "已跳过历史已收录的 Deadline-Aware Electric Vehicles Charging with Distribution Transformer Overload Mitigation、UniWind、Spatio-temporal modelling of electric vehicle charging demand、Electricity Price Forecasting: Bridging Linear Models, Neural Networks and Online Learning 等重复候选。",
+        "近 30 天内未检到同时满足高相关、未入缓存且可稳定核验的新增 formal 论文，因此补入 1 篇未入库 formal 代表作承担今日 formal coverage。"
+      ]
+    },
+    "papers": [
+      {
+        "priority": "必读",
+        "title_zh": "基于时间序列基础模型并按应用导向指标评估的低压峰荷概率预测",
+        "title_en": "Probabilistic Low-Voltage Peak Load Forecasting with Time Series Foundation Models Evaluated on Application-Oriented Metrics",
+        "authors": [
+          "Benedikt Kaas",
+          "Manuel Treutlein",
+          "Hannes Benedikt Gerber",
+          "Oliver Neumann",
+          "Cheewan Phatthanakhuha",
+          "Oliver Resch",
+          "Ralf Mikut",
+          "Veit Hagenmeyer"
+        ],
+        "institutions": [],
+        "source": "arXiv",
+        "date": "2026-07-02",
+        "doi": null,
+        "links": {
+          "paper": "https://arxiv.org/abs/2607.01966",
+          "arxiv": "https://arxiv.org/abs/2607.01966",
+          "doi": null,
+          "code": null,
+          "data": null,
+          "project": null
+        },
+        "topics": [
+          "负荷预测",
+          "峰值风险评估",
+          "低压配网",
+          "概率预测"
+        ],
+        "relevance": "高",
+        "abstract_only": true,
+        "summary": "在 200 个真实低压馈线上比较 TS foundation models，并用峰值风险与资产代价挂钩的应用导向指标评估。"
+      },
+      {
+        "priority": "必读",
+        "title_zh": "面向高维概率电价预测的在线多变量正则化分布回归",
+        "title_en": "Online Multivariate Regularized Distributional Regression for High-dimensional Probabilistic Electricity Price Forecasting",
+        "authors": [
+          "Simon Hirsch"
+        ],
+        "institutions": [],
+        "source": "arXiv",
+        "date": "2025-04-03",
+        "doi": null,
+        "links": {
+          "paper": "https://arxiv.org/abs/2504.02518",
+          "arxiv": "https://arxiv.org/abs/2504.02518",
+          "doi": null,
+          "code": null,
+          "data": null,
+          "project": null
+        },
+        "topics": [
+          "电价预测",
+          "概率预测",
+          "在线学习",
+          "储能交易"
+        ],
+        "relevance": "高",
+        "abstract_only": true,
+        "summary": "联合建模整天价格分布及其依赖结构，并通过在线估计把训练速度提升到 batch fitting 的 80 到 400 倍。"
+      },
+      {
+        "priority": "必读",
+        "title_zh": "用于电价预测的分布式神经网络",
+        "title_en": "Distributional neural networks for electricity price forecasting",
+        "authors": [
+          "Grzegorz Marcjasz",
+          "Michał Narajewski",
+          "Rafał Weron",
+          "Florian Ziel"
+        ],
+        "institutions": [],
+        "source": "Energy Economics / arXiv",
+        "date": "2023-09",
+        "doi": null,
+        "links": {
+          "paper": "https://arxiv.org/abs/2207.02832",
+          "arxiv": "https://arxiv.org/abs/2207.02832",
+          "doi": null,
+          "code": null,
+          "data": null,
+          "project": null
+        },
+        "topics": [
+          "电价预测",
+          "概率预测",
+          "风险管理",
+          "深度学习"
+        ],
+        "relevance": "高",
+        "abstract_only": true,
+        "summary": "通过 probability layer 直接输出参数化价格分布，是今天用于补足 formal coverage 的代表性正式论文。"
+      },
+      {
+        "priority": "值得跟进",
+        "title_zh": "基于基础模型的图时空能源时间序列关系式与序列式保形推断",
+        "title_en": "Relational and Sequential Conformal Inference for Energy Time Series over Graphs via Foundation Models",
+        "authors": [
+          "Keivan Faghih Niresi",
+          "Alice Cicirello",
+          "Olga Fink"
+        ],
+        "institutions": [],
+        "source": "arXiv",
+        "date": "2026-06-30",
+        "doi": null,
+        "links": {
+          "paper": "https://arxiv.org/abs/2606.31804",
+          "arxiv": "https://arxiv.org/abs/2606.31804",
+          "doi": null,
+          "code": null,
+          "data": null,
+          "project": null
+        },
+        "topics": [
+          "负荷预测",
+          "图神经网络",
+          "保形预测",
+          "不确定性量化"
+        ],
+        "relevance": "高",
+        "abstract_only": true,
+        "summary": "提出 STOIC，把 STGNN 残差重构为适合 foundation model 校准的表格表示，用于更稳健的图时空区间预测。"
+      },
+      {
+        "priority": "值得跟进",
+        "title_zh": "将负荷、光伏和风电的概率预测用于电价预测",
+        "title_en": "Probabilistic Forecasts of Load, Solar and Wind for Electricity Price Forecasting",
+        "authors": [
+          "Bartosz Uniejewski",
+          "Florian Ziel"
+        ],
+        "institutions": [],
+        "source": "arXiv",
+        "date": "2025-01-10",
+        "doi": null,
+        "links": {
+          "paper": "https://arxiv.org/abs/2501.06180",
+          "arxiv": "https://arxiv.org/abs/2501.06180",
+          "doi": null,
+          "code": null,
+          "data": null,
+          "project": null
+        },
+        "topics": [
+          "电价预测",
+          "概率预测",
+          "风光负荷耦合",
+          "市场建模"
+        ],
+        "relevance": "高",
+        "abstract_only": true,
+        "summary": "证明把负荷、风电和光伏的 quantile forecasts 前置接入价格模型，能显著提升德国市场电价预测表现。"
+      }
+    ]
   }
 }

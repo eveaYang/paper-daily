@@ -3376,5 +3376,160 @@
         "summary": "证明把负荷、风电和光伏的 quantile forecasts 前置接入价格模型，能显著提升德国市场电价预测表现。"
       }
     ]
+  },
+  "2026-07-09": {
+    "generated_at": "2026-07-09 15:27:49 CST",
+    "search_window": {
+      "primary": [
+        "2026-07-06",
+        "2026-07-09"
+      ],
+      "supplemental": [
+        "2026-07-02",
+        "2026-07-09"
+      ],
+      "representative_extension": [
+        "2026-07-07",
+        "2026-07-09"
+      ]
+    },
+    "dedupe": {
+      "rules": [
+        "same_doi",
+        "same_arxiv_id",
+        "merge_same_paper_across_sources",
+        "skip_existing_entries_in_history"
+      ],
+      "notes": [
+        "已按标题、DOI、arXiv ID 与历史缓存逐项去重，今天保留的 4 篇均未在既有日报中出现。",
+        "近 1-3 天新增高相关论文主要集中在动态安全与韧性控制，电价/负荷/EV 方向未检到同时满足强相关与稳定 formal 核验的新条目，因此未补入弱相关旧文。"
+      ]
+    },
+    "papers": [
+      {
+        "priority": "必读",
+        "title_zh": "用于电力系统在线暂态稳定轨迹预测的因果-结构动态图学习",
+        "title_en": "Causal-Structural Dynamic Graph Learning for Online Transient Stability Trajectory Prediction in Power Systems",
+        "authors": [
+          "Ibrahim Shahbaz",
+          "Omar Al-Refai",
+          "Isaac Lagoy",
+          "Ahmad Al-Khateeb",
+          "Sathvik Sankaranarayanan",
+          "Eman Hammad"
+        ],
+        "institutions": [],
+        "source": "arXiv / IEEE SmartGridComm 2026 (accepted)",
+        "date": "2026-07-07",
+        "doi": null,
+        "links": {
+          "paper": "https://arxiv.org/abs/2607.05729",
+          "arxiv": "https://arxiv.org/abs/2607.05729",
+          "doi": null,
+          "code": null,
+          "data": null,
+          "project": null
+        },
+        "topics": [
+          "暂态稳定",
+          "图神经网络",
+          "因果发现",
+          "在线安全评估"
+        ],
+        "relevance": "高",
+        "abstract_only": true,
+        "summary": "融合动态结构图与方向性因果图做故障后轨迹递推，在 IEEE 39-bus 上把自回归预测误差相对基线降低 73%。"
+      },
+      {
+        "priority": "必读",
+        "title_zh": "面向分布式智能电网韧性的惯量感知联邦学习控制框架",
+        "title_en": "Inertia-Informed Federated Learning Control Framework for Distributed Smart Grid Resilience",
+        "authors": [
+          "Ibrahim Shahbaz",
+          "Omar Al-Refai",
+          "Eman Hammad"
+        ],
+        "institutions": [],
+        "source": "arXiv / IEEE SmartGridComm 2026 (accepted)",
+        "date": "2026-07-07",
+        "doi": null,
+        "links": {
+          "paper": "https://arxiv.org/abs/2607.05720",
+          "arxiv": "https://arxiv.org/abs/2607.05720",
+          "doi": null,
+          "code": null,
+          "data": null,
+          "project": null
+        },
+        "topics": [
+          "联邦学习",
+          "韧性控制",
+          "暂态稳定",
+          "物理信息融合"
+        ],
+        "relevance": "高",
+        "abstract_only": true,
+        "summary": "提出惯量加权的 IIWFedAvg 与 ChebyKAN 控制器，在 IEEE 39-bus 未见故障上实现 75% 泛化成功率与约 3 倍更快稳定。"
+      },
+      {
+        "priority": "值得跟进",
+        "title_zh": "利用逆变器资源黑盒建模的网络互依性感知电力系统动态轨迹预测",
+        "title_en": "Network Interdependency-Informed Power System Dynamic Trajectory Prediction Utilizing Black-Box Modeling of Inverter-Based Resources",
+        "authors": [
+          "Sungjoo Chung",
+          "Ying Zhang",
+          "Meng Yue",
+          "Hantao Cui"
+        ],
+        "institutions": [],
+        "source": "arXiv",
+        "date": "2026-07-07",
+        "doi": null,
+        "links": {
+          "paper": "https://arxiv.org/abs/2607.05843",
+          "arxiv": "https://arxiv.org/abs/2607.05843",
+          "doi": null,
+          "code": null,
+          "data": null,
+          "project": null
+        },
+        "topics": [
+          "逆变器并网",
+          "动态轨迹预测",
+          "时空注意力",
+          "物理信息损失"
+        ],
+        "relevance": "高",
+        "abstract_only": true,
+        "summary": "以模块化 STAN 黑盒模型和线性化 AC 潮流损失建模 IBR 动态，在 IEEE 14-bus 与 WECC 179-bus 上兼顾精度和抗噪鲁棒性。"
+      },
+      {
+        "priority": "值得跟进",
+        "title_zh": "面向多逆变器电力系统小信号稳定性的物理信息神经网络",
+        "title_en": "A Physics-Informed Neural Network for Small-Signal Stability in Multi-Inverter Power Systems",
+        "authors": [],
+        "institutions": [],
+        "source": "arXiv",
+        "date": "2026-07",
+        "doi": null,
+        "links": {
+          "paper": "https://arxiv.org/abs/2607.07523",
+          "arxiv": "https://arxiv.org/abs/2607.07523",
+          "doi": null,
+          "code": null,
+          "data": null,
+          "project": null
+        },
+        "topics": [
+          "物理信息学习",
+          "小信号稳定",
+          "逆变器系统",
+          "稳定裕度"
+        ],
+        "relevance": "中高",
+        "abstract_only": true,
+        "summary": "把控制方程与非线性动态嵌入 PINN，用本征值分析和时域仿真联合学习多逆变器系统的稳定裕度与临界运行点。"
+      }
+    ]
   }
 }

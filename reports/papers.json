@@ -3531,5 +3531,188 @@
         "summary": "把控制方程与非线性动态嵌入 PINN，用本征值分析和时域仿真联合学习多逆变器系统的稳定裕度与临界运行点。"
       }
     ]
+  },
+  "2026-07-12": {
+    "generated_at": "2026-07-12 20:53:34 CST",
+    "search_window": {
+      "primary": [
+        "2026-07-09",
+        "2026-07-12"
+      ],
+      "supplemental": [
+        "2026-06-12",
+        "2026-07-12"
+      ],
+      "representative_extension": [
+        "2022-07-11",
+        "2026-06-16"
+      ]
+    },
+    "dedupe": {
+      "rules": [
+        "same_doi",
+        "same_arxiv_id",
+        "merge_same_paper_across_sources",
+        "skip_existing_entries_in_history"
+      ],
+      "notes": [
+        "已按标题、DOI、arXiv ID 与历史缓存逐项去重，今天保留的 5 篇均未在既有日报中出现。",
+        "近 7 天内未检到未入库且高度相关、并能稳定核验官方正式落地页的 IEEE/Elsevier/Springer/ACM/IET 新条目，因此 formal coverage 使用 1 篇可由 arXiv Journal reference 与 Related DOI 核验的 IJF 正式论文补位。"
+      ]
+    },
+    "papers": [
+      {
+        "priority": "必读",
+        "title_zh": "面向电价预测的时间序列基础模型评测：污染风险、分布漂移与协变量依赖",
+        "title_en": "Evaluating Time Series Foundation Models for Electricity Price Forecasting: Contamination Risk, Distributional Shifts, and Covariate Dependence",
+        "authors": [
+          "Zhenghua Pan",
+          "Ahmed Aziz Ezzat"
+        ],
+        "institutions": [],
+        "source": "arXiv / ICML 2026 Foundation Models for Structured Data Workshop",
+        "date": "2026-07-02",
+        "doi": null,
+        "links": {
+          "paper": "https://arxiv.org/abs/2607.02623",
+          "arxiv": "https://arxiv.org/abs/2607.02623",
+          "doi": "https://doi.org/10.48550/arXiv.2607.02623",
+          "code": null,
+          "data": null,
+          "project": null
+        },
+        "topics": [
+          "电价预测",
+          "时间序列基础模型",
+          "分布漂移",
+          "概率预测",
+          "尖峰价格"
+        ],
+        "relevance": "高",
+        "abstract_only": true,
+        "summary": "提出面向 EPF 的双数据集评测框架，显示 TSFM 对协变量支持高度敏感，且与领域模型做简单集成具有明显潜力。"
+      },
+      {
+        "priority": "必读",
+        "title_zh": "微调大语言模型以生成经济且可靠的电网纠正动作",
+        "title_en": "Fine-Tuning LLMs to Generate Economical and Reliable Actions for the Power Grid",
+        "authors": [
+          "Mohamad Chehade",
+          "Hao Zhu"
+        ],
+        "institutions": [],
+        "source": "arXiv",
+        "date": "2026-02-17",
+        "doi": null,
+        "links": {
+          "paper": "https://arxiv.org/abs/2602.15350",
+          "arxiv": "https://arxiv.org/abs/2602.15350",
+          "doi": "https://doi.org/10.48550/arXiv.2602.15350",
+          "code": null,
+          "data": null,
+          "project": null
+        },
+        "topics": [
+          "LLM在能源系统中的应用",
+          "纠正控制",
+          "拓扑切换",
+          "应急调度"
+        ],
+        "relevance": "高",
+        "abstract_only": true,
+        "summary": "用 SFT、DPO 和 best-of-N 构造可验证的 LLM 纠正切换策略，在 IEEE 118-bus PSPS 场景中把 AC 潮流失败率从 50% 降到个位数。"
+      },
+      {
+        "priority": "值得跟进",
+        "title_zh": "面向消费级硬件的能源负荷预测时间序列基础模型多维零样本基准",
+        "title_en": "Time Series Foundation Models for Energy Load Forecasting on Consumer Hardware: A Multi-Dimensional Zero-Shot Benchmark",
+        "authors": [
+          "Luigi Simeone"
+        ],
+        "institutions": [],
+        "source": "arXiv",
+        "date": "2026-02-11",
+        "doi": null,
+        "links": {
+          "paper": "https://arxiv.org/abs/2602.10848",
+          "arxiv": "https://arxiv.org/abs/2602.10848",
+          "doi": "https://doi.org/10.48550/arXiv.2602.10848",
+          "code": null,
+          "data": "ERCOT 2020-2024 hourly load",
+          "project": null
+        },
+        "topics": [
+          "负荷预测",
+          "时间序列基础模型",
+          "概率预测",
+          "极端事件鲁棒性"
+        ],
+        "relevance": "高",
+        "abstract_only": true,
+        "summary": "在 ERCOT 负荷数据上系统比较 4 个 TSFM，最佳模型在长上下文下达到约 0.31 的 MASE，并在校准和极端事件场景上明显优于传统基线。"
+      },
+      {
+        "priority": "值得跟进",
+        "title_zh": "德州转型中电力市场价格形成因果结构映射",
+        "title_en": "Mapping the causal structure of price formation in Texas's transitioning electricity market",
+        "authors": [
+          "Shiva Madadkhani",
+          "Nils Sturma",
+          "Mathias Drton",
+          "Svetlana Ikonnikova"
+        ],
+        "institutions": [],
+        "source": "arXiv",
+        "date": "2026-06-16",
+        "doi": null,
+        "links": {
+          "paper": "https://arxiv.org/abs/2604.14257",
+          "arxiv": "https://arxiv.org/abs/2604.14257",
+          "doi": "https://doi.org/10.48550/arXiv.2604.14257",
+          "code": null,
+          "data": null,
+          "project": null
+        },
+        "topics": [
+          "电力市场",
+          "价格形成机制",
+          "因果发现",
+          "区域拥塞"
+        ],
+        "relevance": "高",
+        "abstract_only": true,
+        "summary": "用因果发现分析德州市场，指出风电已成为日前价格的主导因果驱动，其影响强度超过天然气三倍，并揭示拥塞成本向远端负荷中心转移。"
+      },
+      {
+        "priority": "简要了解",
+        "title_zh": "LASSO 主成分平均：一种全自动点预测集成方法",
+        "title_en": "LASSO Principal Component Averaging -- a fully automated approach for point forecast pooling",
+        "authors": [
+          "Bartosz Uniejewski",
+          "Katarzyna Maciejowska"
+        ],
+        "institutions": [],
+        "source": "International Journal of Forecasting 39 (2023) 1839-1852 / arXiv",
+        "date": "2023",
+        "doi": "10.1016/j.ijforecast.2022.09.004",
+        "links": {
+          "paper": "https://doi.org/10.1016/j.ijforecast.2022.09.004",
+          "arxiv": "https://arxiv.org/abs/2207.04794",
+          "doi": "https://doi.org/10.1016/j.ijforecast.2022.09.004",
+          "code": null,
+          "data": null,
+          "project": null
+        },
+        "topics": [
+          "电价预测",
+          "预测集成",
+          "自动化模型组合",
+          "基线构建"
+        ],
+        "relevance": "中高",
+        "abstract_only": true,
+        "summary": "提出融合 LASSO 与 PCA 的全自动 forecast pooling，在四个欧美市场、约两年半样本外实验中取得稳健的 MAE 优势，是今天的 formal coverage 补位论文。"
+      }
+    ]
   }
 }

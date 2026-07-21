@@ -3714,5 +3714,190 @@
         "summary": "提出融合 LASSO 与 PCA 的全自动 forecast pooling，在四个欧美市场、约两年半样本外实验中取得稳健的 MAE 优势，是今天的 formal coverage 补位论文。"
       }
     ]
+  },
+  "2026-07-21": {
+    "generated_at": "2026-07-21 22:38:16 CST",
+    "search_window": {
+      "primary": [
+        "2026-07-18",
+        "2026-07-21"
+      ],
+      "supplemental": [
+        "2026-07-01",
+        "2026-07-21"
+      ],
+      "representative_extension": [
+        "2025-07-21",
+        "2026-07-21"
+      ]
+    },
+    "dedupe": {
+      "rules": [
+        "same_doi",
+        "same_arxiv_id",
+        "merge_same_paper_across_sources",
+        "skip_existing_entries_in_history"
+      ],
+      "notes": [
+        "今天纳入 4 篇正式期刊论文与 1 篇 arXiv 新论文，全部未与历史缓存重复。",
+        "检到 1 篇较新的 IEEE 相关标题，但公开元数据页在当前环境下无法稳定展开摘要与实验细节，因此未纳入正式解读。"
+      ]
+    },
+    "papers": [
+      {
+        "priority": "必读",
+        "title_zh": "将报价数据融入电价预测：一种可解释的图表示建模方法",
+        "title_en": "Integrating bidding data into electricity price forecasting: An interpretable graph representation modeling approach",
+        "authors": [
+          "Fei Teng",
+          "Haodi Wan",
+          "Siqi Zhao",
+          "Pengxing Zhang",
+          "Xu Zhang",
+          "Jiangang Zhao",
+          "Yonghua Song"
+        ],
+        "institutions": [],
+        "source": "Applied Energy",
+        "date": "2026-07-15",
+        "doi": "10.1016/j.apenergy.2026.127778",
+        "links": {
+          "paper": "https://doi.org/10.1016/j.apenergy.2026.127778",
+          "arxiv": null,
+          "doi": "https://doi.org/10.1016/j.apenergy.2026.127778",
+          "code": null,
+          "data": null,
+          "project": null
+        },
+        "topics": [
+          "电价预测",
+          "电力市场",
+          "报价建模",
+          "图神经网络"
+        ],
+        "relevance": "高",
+        "abstract_only": false,
+        "summary": "用 Graph-X 显式建模市场报价之间的竞争关系，在正常与异常市场条件下都优于对比方法，是今天最贴近电价预测主线的正式论文。"
+      },
+      {
+        "priority": "必读",
+        "title_zh": "跨电网层级的电力负荷预测基准：时间序列 Transformer 超过既有方法",
+        "title_en": "A Benchmark for Electrical Load Forecasting Across Grid Levels: Time-Series Transformers Outperform Established Methods",
+        "authors": [
+          "Pascal Leinen",
+          "Jens Bruse",
+          "Jannis M. Fischer",
+          "Robin Mayr",
+          "Steffen Elting",
+          "Veit Hagenmeyer"
+        ],
+        "institutions": [],
+        "source": "arXiv",
+        "date": "2026-07-17",
+        "doi": "10.48550/arXiv.2607.15705",
+        "links": {
+          "paper": "https://arxiv.org/abs/2607.15705",
+          "arxiv": "https://arxiv.org/abs/2607.15705",
+          "doi": "https://doi.org/10.48550/arXiv.2607.15705",
+          "code": null,
+          "data": null,
+          "project": null
+        },
+        "topics": [
+          "负荷预测",
+          "Transformer",
+          "跨层级建模",
+          "评测基准"
+        ],
+        "relevance": "高",
+        "abstract_only": true,
+        "summary": "构建住宅、商业、工业三层级负荷预测基准，指出 Transformer 在住宅和商业上更强，但工业负荷并不存在单一万能模型。"
+      },
+      {
+        "priority": "值得跟进",
+        "title_zh": "概率化负荷与可再生预测在提升日前电价预测中的作用",
+        "title_en": "The role of probabilistic load and renewable prediction in enhancing day-ahead electricity price forecasts",
+        "authors": [
+          "Paweł Narajewski",
+          "Jakub Kozdraś",
+          "Bartosz Uniejewski"
+        ],
+        "institutions": [],
+        "source": "Renewable Energy",
+        "date": "2026-08-01",
+        "doi": "10.1016/j.renene.2026.125844",
+        "links": {
+          "paper": "https://doi.org/10.1016/j.renene.2026.125844",
+          "arxiv": null,
+          "doi": "https://doi.org/10.1016/j.renene.2026.125844",
+          "code": null,
+          "data": "https://transparency.entsoe.eu/",
+          "project": null
+        },
+        "topics": [
+          "电价预测",
+          "概率预测",
+          "负荷预测",
+          "可再生出力预测"
+        ],
+        "relevance": "高",
+        "abstract_only": false,
+        "summary": "把负荷与可再生概率预测输入到日前电价模型后，点预测与概率预测质量分别提升约 26% 和 17%，说明不确定性传递本身就是有效信息。"
+      },
+      {
+        "priority": "值得跟进",
+        "title_zh": "面向天气敏感热约束的配电网过载缓解：物理增强安全强化学习",
+        "title_en": "Physics-augmented safe reinforcement learning for overload mitigation in distribution networks under weather-sensitive thermal constraints",
+        "authors": [],
+        "institutions": [],
+        "source": "Applied Energy",
+        "date": "2026",
+        "doi": "10.1016/j.apenergy.2026.125800",
+        "links": {
+          "paper": "https://doi.org/10.1016/j.apenergy.2026.125800",
+          "arxiv": null,
+          "doi": "https://doi.org/10.1016/j.apenergy.2026.125800",
+          "code": null,
+          "data": null,
+          "project": null
+        },
+        "topics": [
+          "配电网控制",
+          "安全强化学习",
+          "过载缓解",
+          "物理约束"
+        ],
+        "relevance": "高",
+        "abstract_only": false,
+        "summary": "把天气敏感热约束与物理先验显式纳入 RL 控制框架，用于真实配电系统场景下的过载缓解，是近期很值得跟进的安全控制正式论文。"
+      },
+      {
+        "priority": "简要了解",
+        "title_zh": "通过迭代式 LLM 增强强化学习实现面向自主动机用户偏好的自适应家庭能源管理",
+        "title_en": "Adaptive home energy management to self-motivated user preferences via iterative LLM-augmented reinforcement learning",
+        "authors": [],
+        "institutions": [],
+        "source": "Applied Energy",
+        "date": "2026-07-15",
+        "doi": "10.1016/j.apenergy.2026.127976",
+        "links": {
+          "paper": "https://doi.org/10.1016/j.apenergy.2026.127976",
+          "arxiv": null,
+          "doi": "https://doi.org/10.1016/j.apenergy.2026.127976",
+          "code": null,
+          "data": null,
+          "project": null
+        },
+        "topics": [
+          "家庭能源管理",
+          "强化学习",
+          "LLM",
+          "偏好建模"
+        ],
+        "relevance": "中高",
+        "abstract_only": false,
+        "summary": "让 LLM 在 HEMS 中承担偏好理解与奖励塑形角色，而非直接替代控制器，为 LLM 在能源控制链中的合理定位提供了可参考的正式案例。"
+      }
+    ]
   }
 }

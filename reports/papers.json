@@ -4134,5 +4134,236 @@
         "summary": "LLM 不直接替代控制器，而是把规划、政策与新闻中的非结构化信息转成设备选址与控制可用的模糊规则，代表了更务实的 LLM+电网控制路线。"
       }
     ]
+  },
+  "2026-07-23": {
+    "generated_at": "2026-07-23 20:45:59 CST",
+    "search_window": {
+      "primary": [
+        "2026-07-20",
+        "2026-07-23"
+      ],
+      "supplemental": [
+        "2026-06-23",
+        "2026-07-23"
+      ],
+      "representative_extension": [
+        "2026-05-01",
+        "2026-05-01"
+      ]
+    },
+    "dedupe": {
+      "rules": [
+        "same_doi",
+        "same_arxiv_id",
+        "merge_same_paper_across_sources",
+        "skip_existing_entries_in_history"
+      ],
+      "notes": [
+        "近 1-3 天内能同时满足‘正式出版/可稳定核验/与能源AI主线高度相关/未在历史缓存出现’的条目偏少，因此扩展到近 30 天，并补入 1 篇 2026-05 的代表性正式论文。",
+        "已复核 reports/papers.json 历史 DOI 与标题；今天纳入的 6 篇论文均为新增条目。",
+        "今日未纳入 IEEE 论文：近 7 天内公开可核验的 IEEE Xplore 条目相关性和元数据完整性不足，难以支撑深读。"
+      ]
+    },
+    "papers": [
+      {
+        "priority": "必读",
+        "title_zh": "面向数据稀缺场景的稳健风电预测：卷积-LLM 混合范式",
+        "title_en": "A hybrid convolutional-LLM paradigm for robust wind power forecasting in data-scarce regimes",
+        "authors": [
+          "Wenyi Zhang",
+          "Wuyou Xiao",
+          "Xudong Li",
+          "Zhao Xu"
+        ],
+        "institutions": [
+          "The Hong Kong Polytechnic University"
+        ],
+        "source": "Applied Energy",
+        "date": "2026-07-15",
+        "doi": "10.1016/j.apenergy.2026.127914",
+        "links": {
+          "paper": "https://doi.org/10.1016/j.apenergy.2026.127914",
+          "arxiv": null,
+          "doi": "https://doi.org/10.1016/j.apenergy.2026.127914",
+          "code": null,
+          "data": null,
+          "project": null
+        },
+        "topics": [
+          "风电功率预测",
+          "LLM",
+          "少样本学习",
+          "冷启动"
+        ],
+        "relevance": "高",
+        "abstract_only": false,
+        "summary": "用冻结 LLM 与轻量卷积适配器联合建模风电时序，在仅 5% 训练数据下仍把 MAE 明显压低，并具备零样本可用性。"
+      },
+      {
+        "priority": "必读",
+        "title_zh": "从负荷预测到韧性诊断：配电系统多尺度框架",
+        "title_en": "From load prediction to resilience diagnosis: a multi-scale framework for power distribution systems",
+        "authors": [
+          "Xinruyi Chen",
+          "Hanwen Zhang",
+          "Lei Shi",
+          "Huadong Mo",
+          "Fusen Guo"
+        ],
+        "institutions": [
+          "UNSW"
+        ],
+        "source": "Electric Power Systems Research",
+        "date": "2026-07",
+        "doi": "10.1016/j.epsr.2026.112913",
+        "links": {
+          "paper": "https://doi.org/10.1016/j.epsr.2026.112913",
+          "arxiv": null,
+          "doi": "https://doi.org/10.1016/j.epsr.2026.112913",
+          "code": null,
+          "data": null,
+          "project": null
+        },
+        "topics": [
+          "负荷预测",
+          "配电网韧性",
+          "图建模",
+          "可解释 AI"
+        ],
+        "relevance": "高",
+        "abstract_only": true,
+        "summary": "把多尺度负荷预测与微观拓扑韧性诊断打通，用 RAL+DRG+RDR 框架识别稳定、预警与崩塌区。"
+      },
+      {
+        "priority": "必读",
+        "title_zh": "面向机组组合与需求响应的分层两阶段优化：一种约束感知强化学习方法",
+        "title_en": "Hierarchical two-stage optimization for power system unit commitment and demand response: A constraint-aware reinforcement learning approach",
+        "authors": [
+          "Jingqi Wang",
+          "Yan Gao",
+          "Youmeng He"
+        ],
+        "institutions": [
+          "University of Shanghai for Science and Technology"
+        ],
+        "source": "Sustainable Energy Technologies and Assessments",
+        "date": "2026-05",
+        "doi": "10.1016/j.seta.2026.104989",
+        "links": {
+          "paper": "https://doi.org/10.1016/j.seta.2026.104989",
+          "arxiv": null,
+          "doi": "https://doi.org/10.1016/j.seta.2026.104989",
+          "code": null,
+          "data": null,
+          "project": null
+        },
+        "topics": [
+          "机组组合",
+          "需求响应",
+          "强化学习调度",
+          "实时优化"
+        ],
+        "relevance": "高",
+        "abstract_only": true,
+        "summary": "把 MILP 日前 UC 和约束感知 PPO 实时调度分层求解，在不确定场景下兼顾可行性、速度和可扩展性。"
+      },
+      {
+        "priority": "值得跟进",
+        "title_zh": "考虑行为响应的充电站选址与时空动态定价联合优化",
+        "title_en": "Behaviorally informed joint optimization of charger placement and dynamic spatio-temporal pricing for electric vehicle networks",
+        "authors": [
+          "Iason Liagkas",
+          "Shiyue Zhao",
+          "Neda Masoud"
+        ],
+        "institutions": [],
+        "source": "Transportation Research Part B: Methodological",
+        "date": "2026-07",
+        "doi": "10.1016/j.trb.2026.103480",
+        "links": {
+          "paper": "https://doi.org/10.1016/j.trb.2026.103480",
+          "arxiv": null,
+          "doi": "https://doi.org/10.1016/j.trb.2026.103480",
+          "code": null,
+          "data": null,
+          "project": null
+        },
+        "topics": [
+          "EV充电网络",
+          "动态定价",
+          "交通能源耦合",
+          "强化学习"
+        ],
+        "relevance": "高",
+        "abstract_only": true,
+        "summary": "把充电配置选址和时空动态定价联合优化，显式建模用户空间与时间迁移行为，适合站网规划研究。"
+      },
+      {
+        "priority": "值得跟进",
+        "title_zh": "兼顾奖励分解与电池健康保持的车网互动深度强化学习能源管理",
+        "title_en": "Deep reinforcement learning for vehicle-to-grid energy management with reward decomposition and battery health preservation",
+        "authors": [
+          "Ashiq Nazir Bhat",
+          "Mukesh Singh",
+          "Singara Singh Kasana"
+        ],
+        "institutions": [
+          "Thapar Institute of Engineering & Technology",
+          "Central University of Haryana"
+        ],
+        "source": "Sustainable Energy, Grids and Networks",
+        "date": "2026-06",
+        "doi": "10.1016/j.segan.2026.102184",
+        "links": {
+          "paper": "https://doi.org/10.1016/j.segan.2026.102184",
+          "arxiv": null,
+          "doi": "https://doi.org/10.1016/j.segan.2026.102184",
+          "code": null,
+          "data": "https://www.iea.org/reports/global-ev-outlook-2024",
+          "project": null
+        },
+        "topics": [
+          "V2G",
+          "需求响应",
+          "多目标强化学习",
+          "电池健康"
+        ],
+        "relevance": "高",
+        "abstract_only": false,
+        "summary": "结合预测、奖励分解和 CTDE 多智能体 RL，在经济收益、环境影响和电池健康之间做多目标折中。"
+      },
+      {
+        "priority": "简要了解",
+        "title_zh": "面向实时电价预测的电网物理信息与时间自适应堆叠学习方法",
+        "title_en": "Grid physics-informed and time-adaptive stacked learning for real-time electricity price forecasting: a short-term to mid-term approach",
+        "authors": [
+          "Yawen Yi",
+          "Xinyu Chen",
+          "Zhiyong Tian",
+          "Yuxin Zhang"
+        ],
+        "institutions": [],
+        "source": "Applied Energy",
+        "date": "2026-05-01",
+        "doi": "10.1016/j.apenergy.2026.127502",
+        "links": {
+          "paper": "https://doi.org/10.1016/j.apenergy.2026.127502",
+          "arxiv": null,
+          "doi": "https://doi.org/10.1016/j.apenergy.2026.127502",
+          "code": null,
+          "data": null,
+          "project": null
+        },
+        "topics": [
+          "实时电价预测",
+          "极端价格",
+          "物理信息融合",
+          "集成学习"
+        ],
+        "relevance": "高",
+        "abstract_only": false,
+        "summary": "将 SCUC 物理特征、双阶段异常纠偏与时间自适应堆叠学习结合，显著提升多时域实时电价与极端价格预测。"
+      }
+    ]
   }
 }

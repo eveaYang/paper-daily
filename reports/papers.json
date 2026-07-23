@@ -3899,5 +3899,240 @@
         "summary": "让 LLM 在 HEMS 中承担偏好理解与奖励塑形角色，而非直接替代控制器，为 LLM 在能源控制链中的合理定位提供了可参考的正式案例。"
       }
     ]
+  },
+  "2026-07-22": {
+    "generated_at": "2026-07-22 21:58:26 CST",
+    "search_window": {
+      "primary": [
+        "2026-07-19",
+        "2026-07-22"
+      ],
+      "supplemental": [
+        "2026-07-15",
+        "2026-07-22"
+      ],
+      "representative_extension": [
+        "2026-04-15",
+        "2026-07-22"
+      ]
+    },
+    "dedupe": {
+      "rules": [
+        "same_doi",
+        "same_arxiv_id",
+        "merge_same_paper_across_sources",
+        "skip_existing_entries_in_history"
+      ],
+      "notes": [
+        "近 1-3 天内能同时满足‘正式出版/可稳定核验/与能源AI主线高度相关/未在历史缓存出现’的条目偏少，因此扩展到近 30 天，并额外补入 1 篇 2026-04 的代表性正式论文。",
+        "已复核 reports/papers.json 历史 DOI 与标题；今天纳入的 6 篇论文均为新增条目。",
+        "今日未纳入 IEEE 论文：近 7 天内公开可核验的 IEEE Xplore 条目大多相关性不足，或公开页无法稳定展开足够元数据与实验细节。"
+      ]
+    },
+    "papers": [
+      {
+        "priority": "必读",
+        "title_zh": "基于图神经网络的多智能体强化学习有源电压控制：性能与拓扑鲁棒性",
+        "title_en": "Graph neural network-based multi-agent reinforcement learning for active voltage control: Performance and topology robustness",
+        "authors": [
+          "Chijioke Eze",
+          "Chetan Prakash",
+          "Antonello Monti"
+        ],
+        "institutions": [
+          "RWTH Aachen University"
+        ],
+        "source": "Energy and AI",
+        "date": "2026-07-06",
+        "doi": "10.1016/j.egyai.2026.100835",
+        "links": {
+          "paper": "https://doi.org/10.1016/j.egyai.2026.100835",
+          "arxiv": null,
+          "doi": "https://doi.org/10.1016/j.egyai.2026.100835",
+          "code": null,
+          "data": "https://bit.ly/3KK83kU",
+          "project": null
+        },
+        "topics": [
+          "配电网电压控制",
+          "图神经网络",
+          "多智能体强化学习",
+          "拓扑鲁棒性"
+        ],
+        "relevance": "高",
+        "abstract_only": true,
+        "summary": "把图结构直接嵌入 MARL actor，在 IEEE 141/322 母线系统上显著减少电压越限并验证了对环网拓扑的鲁棒性。"
+      },
+      {
+        "priority": "必读",
+        "title_zh": "基于报价策略行为分类的可解释电价预测",
+        "title_en": "Interpretable electricity price forecasting based on behavioral classification of bidding strategies",
+        "authors": [
+          "Yunxiao Bai",
+          "Siyu Lv",
+          "Wen Zhang",
+          "Qian Sun",
+          "Yidan Zheng",
+          "Yunjie Rao"
+        ],
+        "institutions": [],
+        "source": "Electric Power Systems Research",
+        "date": "2026",
+        "doi": "10.1016/j.epsr.2026.113176",
+        "links": {
+          "paper": "https://doi.org/10.1016/j.epsr.2026.113176",
+          "arxiv": null,
+          "doi": "https://doi.org/10.1016/j.epsr.2026.113176",
+          "code": null,
+          "data": null,
+          "project": null
+        },
+        "topics": [
+          "电价预测",
+          "电力市场",
+          "竞价行为",
+          "可解释机器学习"
+        ],
+        "relevance": "高",
+        "abstract_only": true,
+        "summary": "先把机组报价行为分成激进、稳定、保守三类，再构造 CSBF 特征进入 VMD+Bagging-XGBoost，适合机制感知电价预测研究。"
+      },
+      {
+        "priority": "必读",
+        "title_zh": "在负荷预测中引入“预期未来”：基于上下文增强 Transformer 的方法",
+        "title_en": "Integrating the expected future in load forecasts with contextually enhanced transformer models",
+        "authors": [
+          "Raffael Theiler",
+          "Leandro Von Krannichfeldt",
+          "Giovanni Sansavini",
+          "Michael F. Howland",
+          "Olga Fink"
+        ],
+        "institutions": [],
+        "source": "Energy Reports",
+        "date": "2026-06",
+        "doi": "10.1016/j.egyr.2026.109223",
+        "links": {
+          "paper": "https://doi.org/10.1016/j.egyr.2026.109223",
+          "arxiv": null,
+          "doi": "https://doi.org/10.1016/j.egyr.2026.109223",
+          "code": null,
+          "data": "https://zenodo.org/records/18986667",
+          "project": null
+        },
+        "topics": [
+          "负荷预测",
+          "Transformer",
+          "上下文建模",
+          "异常误差抑制"
+        ],
+        "relevance": "高",
+        "abstract_only": true,
+        "summary": "把时刻表与计划占用率这类“未来上下文”并入 seq2seq Transformer，在铁路与楼宇能耗预测上显著降低 MAE 和大误差频次。"
+      },
+      {
+        "priority": "值得跟进",
+        "title_zh": "基于多智能体强化学习的电动汽车、充电站与电网协同交互",
+        "title_en": "Coordinated interaction of electric vehicles, charging stations, and the power grid using multi-agent reinforcement learning",
+        "authors": [
+          "Yuchen Li",
+          "Hengyuan Zhao",
+          "Zhixuan Song",
+          "Xuequn Chong",
+          "Ruixuan Chen",
+          "Lanyu Li",
+          "Xiaonan Wang"
+        ],
+        "institutions": [],
+        "source": "Advances in Applied Energy",
+        "date": "2026-06",
+        "doi": "10.1016/j.adapen.2026.100274",
+        "links": {
+          "paper": "https://doi.org/10.1016/j.adapen.2026.100274",
+          "arxiv": null,
+          "doi": "https://doi.org/10.1016/j.adapen.2026.100274",
+          "code": null,
+          "data": null,
+          "project": null
+        },
+        "topics": [
+          "EV 充电调度",
+          "多智能体强化学习",
+          "动态定价",
+          "交通能源耦合"
+        ],
+        "relevance": "高",
+        "abstract_only": true,
+        "summary": "Transformer-enhanced MARL 联合学习站端定价与车端双向充放电，在利润、用户成本和可再生消纳上同时给出清晰增益。"
+      },
+      {
+        "priority": "值得跟进",
+        "title_zh": "极端温度事件下综合能源系统多能负荷建模的物理信息稀疏回归",
+        "title_en": "Physics-Informed Sparse Regression for Multi-Energy Load Modeling of Integrated Energy System under Extreme Temperature Events",
+        "authors": [
+          "Yanshuo Liu",
+          "Jiawei Zhang",
+          "Wei Fan",
+          "Qibin Zhou",
+          "Xiaoyan Bian",
+          "Zhijian Hu"
+        ],
+        "institutions": [],
+        "source": "Energy",
+        "date": "2026-07-08",
+        "doi": "10.1016/j.energy.2026.141875",
+        "links": {
+          "paper": "https://doi.org/10.1016/j.energy.2026.141875",
+          "arxiv": null,
+          "doi": "https://doi.org/10.1016/j.energy.2026.141875",
+          "code": null,
+          "data": null,
+          "project": null
+        },
+        "topics": [
+          "综合能源系统",
+          "多能负荷预测",
+          "物理信息融合",
+          "极端天气"
+        ],
+        "relevance": "中高",
+        "abstract_only": true,
+        "summary": "用极端温度检测先验触发 RD-PISR 方程式建模，在解释性、数据需求和训练速度之间做平衡，适合作为机理融合负荷建模参考。"
+      },
+      {
+        "priority": "简要了解",
+        "title_zh": "将上下文知识融入配电网 Volt/Var 控制：大语言模型驱动的模糊推理与模型预测控制方法",
+        "title_en": "Integrating contextual knowledge into volt/Var control of distribution networks: a large language model-driven fuzzy inference and model predictive control approach",
+        "authors": [
+          "Jiafeng Lin",
+          "Jing Qiu",
+          "Sihai An",
+          "Zongyu Yao",
+          "Weiyi Tian",
+          "Xin Lu"
+        ],
+        "institutions": [],
+        "source": "Applied Energy",
+        "date": "2026-04-15",
+        "doi": "10.1016/j.apenergy.2026.127481",
+        "links": {
+          "paper": "https://doi.org/10.1016/j.apenergy.2026.127481",
+          "arxiv": null,
+          "doi": "https://doi.org/10.1016/j.apenergy.2026.127481",
+          "code": null,
+          "data": null,
+          "project": null
+        },
+        "topics": [
+          "Volt/Var 控制",
+          "LLM",
+          "模糊推理",
+          "模型预测控制"
+        ],
+        "relevance": "中高",
+        "abstract_only": true,
+        "summary": "LLM 不直接替代控制器，而是把规划、政策与新闻中的非结构化信息转成设备选址与控制可用的模糊规则，代表了更务实的 LLM+电网控制路线。"
+      }
+    ]
   }
 }

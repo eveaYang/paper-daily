@@ -2997,10 +2997,10 @@
         "2026-02-17",
         "2026-07-06"
       ],
-        "representative_extension": [
-          "2023-09-28",
-          "2026-05"
-        ]
+      "representative_extension": [
+        "2023-09-28",
+        "2026-05"
+      ]
     },
     "dedupe": {
       "rules": [
@@ -4363,6 +4363,230 @@
         "relevance": "高",
         "abstract_only": false,
         "summary": "将 SCUC 物理特征、双阶段异常纠偏与时间自适应堆叠学习结合，显著提升多时域实时电价与极端价格预测。"
+      }
+    ]
+  },
+  "2026-07-24": {
+    "generated_at": "2026-07-24 22:21:13 CST",
+    "search_window": {
+      "primary": [
+        "2026-07-21",
+        "2026-07-24"
+      ],
+      "supplemental": [
+        "2026-06-24",
+        "2026-07-24"
+      ],
+      "representative_extension": [
+        "2026-01-01",
+        "2026-07-24"
+      ]
+    },
+    "dedupe": {
+      "rules": [
+        "same_doi",
+        "same_arxiv_id",
+        "merge_same_paper_across_sources",
+        "skip_existing_entries_in_history"
+      ],
+      "notes": [
+        "近 1-3 天内同时满足正式出版、主线高度相关、元数据可稳定核验且未进入历史缓存的条目不足，因此扩展到近 30 天。",
+        "近 7 天内未筛到足够强且可稳定提取细节的新增 IEEE 条目，因此今天主体以 Elsevier/Nature 正式论文为主，并补入 1 篇 2026 年 IEEE 代表性论文。",
+        "已复核 reports/papers.json 历史 DOI 与标题，今天纳入的 6 篇论文均为新增条目。"
+      ]
+    },
+    "papers": [
+      {
+        "priority": "必读",
+        "title_zh": "GridTradeRL：基于多智能体强化学习的高效鲁棒实时点对点能量交易",
+        "title_en": "GridTradeRL: efficient and robust real-time peer-to-peer energy trading with multi-agent reinforcement learning",
+        "authors": [
+          "Tong Zong",
+          "Yezhou Liu",
+          "Zechun Hu",
+          "Yu Chen",
+          "Yonghua Song"
+        ],
+        "institutions": [
+          "Tsinghua University",
+          "The Hong Kong Polytechnic University"
+        ],
+        "source": "Scientific Reports",
+        "date": "2026-07-23",
+        "doi": "10.1038/s41598-026-58710-9",
+        "links": {
+          "paper": "https://doi.org/10.1038/s41598-026-58710-9",
+          "doi": "https://doi.org/10.1038/s41598-026-58710-9",
+          "arxiv": null,
+          "code": null,
+          "data": null,
+          "project": null
+        },
+        "topics": [
+          "多智能体强化学习",
+          "P2P 能量交易",
+          "电力市场",
+          "分布式协调"
+        ],
+        "relevance": "高",
+        "abstract_only": false,
+        "summary": "把实时 P2P 交易建成多智能体市场控制问题，在公开摘要中报告成本下降 54.1%、效率提升 67.8%。"
+      },
+      {
+        "priority": "必读",
+        "title_zh": "基于 Kolmogorov-Arnold 网络特征抽取的周前电价预测",
+        "title_en": "Week-ahead Electricity Price Prediction Based on Feature Extractions using Kolmogorov-Arnold Networks",
+        "authors": [
+          "Che Liu",
+          "Xin Ma",
+          "Yibo Zhang"
+        ],
+        "institutions": [],
+        "source": "Computer Aided Chemical Engineering",
+        "date": "2026-07-06",
+        "doi": "10.1016/j.compchemeng.2026.109805",
+        "links": {
+          "paper": "https://doi.org/10.1016/j.compchemeng.2026.109805",
+          "doi": "https://doi.org/10.1016/j.compchemeng.2026.109805",
+          "arxiv": null,
+          "code": null,
+          "data": null,
+          "project": null
+        },
+        "topics": [
+          "电价预测",
+          "KAN",
+          "特征工程",
+          "周前市场"
+        ],
+        "relevance": "高",
+        "abstract_only": true,
+        "summary": "把特征抽取与 KAN 结合做周前电价预测，公开结果页给出约 6.85% 的 MAPE。"
+      },
+      {
+        "priority": "必读",
+        "title_zh": "面向天气敏感热约束的配电网过载缓解物理增强安全强化学习",
+        "title_en": "Physics-augmented safe reinforcement learning for overload mitigation in distribution networks under weather-sensitive thermal constraints",
+        "authors": [],
+        "institutions": [],
+        "source": "Applied Energy",
+        "date": "2026-07-01",
+        "doi": "10.1016/j.apenergy.2026.127752",
+        "links": {
+          "paper": "https://doi.org/10.1016/j.apenergy.2026.127752",
+          "doi": "https://doi.org/10.1016/j.apenergy.2026.127752",
+          "arxiv": null,
+          "code": null,
+          "data": null,
+          "project": null
+        },
+        "topics": [
+          "安全强化学习",
+          "配网控制",
+          "热约束",
+          "过载缓解"
+        ],
+        "relevance": "高",
+        "abstract_only": true,
+        "summary": "将天气敏感热约束与物理修正嵌入 RL 过载缓解决策，适合迁到配网与 VPP 安全控制。"
+      },
+      {
+        "priority": "值得跟进",
+        "title_zh": "面向网络攻击场景的动态线路载流量物理信息神经网络预测",
+        "title_en": "Physics-informed neural network-based dynamic line rating forecasting under cyberattacks",
+        "authors": [
+          "Muhammad Shoaib",
+          "Yang Yang",
+          "Victor Becerra",
+          "Leandre N. Merabet",
+          "Khaled Mahmud"
+        ],
+        "institutions": [
+          "University of Portsmouth",
+          "University of New South Wales"
+        ],
+        "source": "Electric Power Systems Research",
+        "date": "2026-07",
+        "doi": "10.1016/j.epsr.2026.112847",
+        "links": {
+          "paper": "https://doi.org/10.1016/j.epsr.2026.112847",
+          "doi": "https://doi.org/10.1016/j.epsr.2026.112847",
+          "arxiv": null,
+          "code": null,
+          "data": null,
+          "project": null
+        },
+        "topics": [
+          "动态线路载流量",
+          "PINN",
+          "网络攻击",
+          "鲁棒预测"
+        ],
+        "relevance": "高",
+        "abstract_only": true,
+        "summary": "用物理信息网络做 DLR 预测并显式考虑网络攻击，强调攻击下的容量估计稳健性。"
+      },
+      {
+        "priority": "值得跟进",
+        "title_zh": "平衡市场中含多 prosumer 的价格制定型虚拟电厂日前协同运行策略",
+        "title_en": "Day-ahead coordinated operation strategy for a price-maker virtual power plant with multiple prosumers in the balancing market",
+        "authors": [],
+        "institutions": [],
+        "source": "Electric Power Systems Research",
+        "date": "2026-06",
+        "doi": "10.1016/j.epsr.2026.112777",
+        "links": {
+          "paper": "https://doi.org/10.1016/j.epsr.2026.112777",
+          "doi": "https://doi.org/10.1016/j.epsr.2026.112777",
+          "arxiv": null,
+          "code": null,
+          "data": null,
+          "project": null
+        },
+        "topics": [
+          "虚拟电厂",
+          "平衡市场",
+          "聚合商优化",
+          "市场协同"
+        ],
+        "relevance": "高",
+        "abstract_only": true,
+        "summary": "研究多 prosumer 的 price-maker VPP 日前协同运行，适合延伸到报价与平衡市场研究。"
+      },
+      {
+        "priority": "简要了解",
+        "title_zh": "面向高渗透光伏智能配电系统的深度强化学习电网管理框架",
+        "title_en": "A Deep Reinforcement Learning-Based Grid Management Framework for PV-Rich Smart Distribution Systems",
+        "authors": [
+          "A. J. Kulkarni",
+          "P. K. Pujari",
+          "N. V. Chawla",
+          "D. Srinivasan"
+        ],
+        "institutions": [
+          "IIT Gandhinagar",
+          "National University of Singapore"
+        ],
+        "source": "IEEE Transactions on Industrial Informatics",
+        "date": "2026-04-27",
+        "doi": "10.1109/TII.2026.3674845",
+        "links": {
+          "paper": "https://doi.org/10.1109/TII.2026.3674845",
+          "doi": "https://doi.org/10.1109/TII.2026.3674845",
+          "arxiv": null,
+          "code": null,
+          "data": null,
+          "project": null
+        },
+        "topics": [
+          "配网控制",
+          "光伏高渗透",
+          "深度强化学习",
+          "安全运行"
+        ],
+        "relevance": "高",
+        "abstract_only": false,
+        "summary": "今年 IEEE 的代表性配网 RL 论文，聚焦高渗透 PV 场景下的网侧管理与稳定运行。"
       }
     ]
   }

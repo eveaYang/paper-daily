@@ -4589,5 +4589,244 @@
         "summary": "今年 IEEE 的代表性配网 RL 论文，聚焦高渗透 PV 场景下的网侧管理与稳定运行。"
       }
     ]
+  },
+  "2026-07-25": {
+    "generated_at": "2026-07-25 10:42:00 CST",
+    "search_window": {
+      "primary": [
+        "2026-07-22",
+        "2026-07-25"
+      ],
+      "supplemental": [
+        "2026-06-25",
+        "2026-07-25"
+      ],
+      "representative_extension": [
+        "2026-03-12",
+        "2026-07-25"
+      ]
+    },
+    "dedupe": {
+      "rules": [
+        "same_doi",
+        "same_arxiv_id",
+        "merge_same_paper_across_sources",
+        "skip_existing_entries_in_history"
+      ],
+      "notes": [
+        "近 1-3 天内与主线高度相关的新正式论文较少，且若干 7 月新条目已在 2026-07-24 缓存中出现，因此今天扩展到近 30 天内未入库正式论文。",
+        "已排除与 2026-07-24 中 GridTradeRL、Applied Energy 安全 RL、电价 KAN 等条目的 DOI 重复。"
+      ]
+    },
+    "papers": [
+      {
+        "priority": "必读",
+        "title_zh": "基于 Kriging 值函数逼近的虚拟电厂电力市场策略竞价方法",
+        "title_en": "Kriging-based value function approximation for the strategic bidding problem of virtual power plant in the electricity market",
+        "authors": [
+          "Jianquan Zhu",
+          "Yufan Hu",
+          "Qiyuan Zheng",
+          "Wenmeng Zhao",
+          "Jiajun Chen",
+          "Zhaolong Lu",
+          "Kai Li"
+        ],
+        "institutions": [],
+        "source": "Electric Power Systems Research",
+        "date": "2026-07",
+        "doi": "10.1016/j.epsr.2026.112865",
+        "links": {
+          "paper": "https://doi.org/10.1016/j.epsr.2026.112865",
+          "doi": "https://doi.org/10.1016/j.epsr.2026.112865",
+          "arxiv": null,
+          "code": null,
+          "data": null,
+          "project": null
+        },
+        "topics": [
+          "虚拟电厂",
+          "策略竞价",
+          "双层优化",
+          "值函数逼近"
+        ],
+        "relevance": "高",
+        "abstract_only": true,
+        "summary": "用 Kriging 值函数逼近改写 VPP 双层竞价问题，重点提升策略求解效率与可扩展性。"
+      },
+      {
+        "priority": "必读",
+        "title_zh": "考虑可再生能源的时间-频率域特征学习日前电价预测方法 EPformer",
+        "title_en": "EPformer: Unlocking day-ahead electricity price forecasting accuracy using the time–frequency domain feature learning strategy considering renewable energy",
+        "authors": [
+          "Hang Fan",
+          "Weican Liu",
+          "Zuhan Zhang",
+          "Wencai Run",
+          "Yunjie Duan",
+          "Dunnan Liu"
+        ],
+        "institutions": [],
+        "source": "Renewable Energy",
+        "date": "2026-04-01",
+        "doi": "10.1016/j.renene.2026.125296",
+        "links": {
+          "paper": "https://doi.org/10.1016/j.renene.2026.125296",
+          "doi": "https://doi.org/10.1016/j.renene.2026.125296",
+          "arxiv": null,
+          "code": null,
+          "data": null,
+          "project": null
+        },
+        "topics": [
+          "电价预测",
+          "时频特征",
+          "BiLSTM",
+          "TCN"
+        ],
+        "relevance": "高",
+        "abstract_only": true,
+        "summary": "将时间域与频域特征共同纳入日前电价预测训练目标，面向高可再生渗透场景。"
+      },
+      {
+        "priority": "必读",
+        "title_zh": "面向缺失数据的鲁棒自适应能源预测：数据驱动不确定集划分学习",
+        "title_en": "Learning Data-Driven Uncertainty Set Partitions for Robust and Adaptive Energy Forecasting With Missing Data",
+        "authors": [
+          "Akylas Stratigakos",
+          "Panagiotis Andrianesis"
+        ],
+        "institutions": [
+          "UCL Bartlett School Env, Energy and Resources",
+          "University of Thessaly"
+        ],
+        "source": "IEEE Transactions on Smart Grid",
+        "date": "2026-01",
+        "doi": "10.1109/TSG.2025.3620957",
+        "links": {
+          "paper": "https://doi.org/10.1109/TSG.2025.3620957",
+          "doi": "https://doi.org/10.1109/TSG.2025.3620957",
+          "arxiv": null,
+          "code": null,
+          "data": null,
+          "project": "https://discovery.ucl.ac.uk/id/eprint/10215885/"
+        },
+        "topics": [
+          "风电预测",
+          "缺失数据",
+          "鲁棒预测",
+          "不确定性建模"
+        ],
+        "relevance": "高",
+        "abstract_only": true,
+        "summary": "把鲁棒优化与对抗思想引入缺失数据下的短时风电预测，适合迁移到稳健电价和负荷预测。"
+      },
+      {
+        "priority": "值得跟进",
+        "title_zh": "面向微电网的电动汽车充电负荷边云协同预测规划",
+        "title_en": "Edge-cloud collaboration-driven predictive planning of electric vehicle charging load for microgrids",
+        "authors": [
+          "Shuaiyin Ma",
+          "Chenyang Niu",
+          "Mengmeng Zhang",
+          "Lingxiang Yun",
+          "Qinge Xiao",
+          "Benyong Yue",
+          "Jun Xu"
+        ],
+        "institutions": [
+          "Xi'an University of Posts and Telecommunications"
+        ],
+        "source": "Applied Energy",
+        "date": "2026-04-01",
+        "doi": "10.1016/j.apenergy.2026.127362",
+        "links": {
+          "paper": "https://doi.org/10.1016/j.apenergy.2026.127362",
+          "doi": "https://doi.org/10.1016/j.apenergy.2026.127362",
+          "arxiv": null,
+          "code": null,
+          "data": null,
+          "project": null
+        },
+        "topics": [
+          "EV充电负荷预测",
+          "边云协同",
+          "微电网",
+          "可解释AI"
+        ],
+        "relevance": "高",
+        "abstract_only": true,
+        "summary": "通过边云协同 MHA-LSTM 实现 EV 充电负荷高精度低时延预测，适合站端部署。"
+      },
+      {
+        "priority": "值得跟进",
+        "title_zh": "从负荷预测到韧性诊断：配电系统多尺度框架",
+        "title_en": "From load prediction to resilience diagnosis: a multi-scale framework for power distribution systems",
+        "authors": [
+          "Xinruyi Chen",
+          "Hanwen Zhang",
+          "Lei Shi",
+          "Huadong Mo",
+          "Fusen Guo"
+        ],
+        "institutions": [],
+        "source": "Electric Power Systems Research",
+        "date": "2026-07",
+        "doi": "10.1016/j.epsr.2026.112913",
+        "links": {
+          "paper": "https://doi.org/10.1016/j.epsr.2026.112913",
+          "doi": "https://doi.org/10.1016/j.epsr.2026.112913",
+          "arxiv": null,
+          "code": null,
+          "data": null,
+          "project": null
+        },
+        "topics": [
+          "负荷预测",
+          "韧性诊断",
+          "图建模",
+          "早预警"
+        ],
+        "relevance": "高",
+        "abstract_only": true,
+        "summary": "将负荷预测与拓扑韧性诊断耦合，目标是从趋势预测走向可解释的配网预警。"
+      },
+      {
+        "priority": "简要了解",
+        "title_zh": "基于 PSO 优化并行神经网络的可再生能源微电网短期负荷预测",
+        "title_en": "Short-term load forecasting in renewable energy microgrids using PSO-optimized parallel artificial neural networks",
+        "authors": [
+          "Jigneshkumar Desai",
+          "Rakeshkumar A. Patel",
+          "Nikunj Patel",
+          "Meet Sureja"
+        ],
+        "institutions": [
+          "Parul University",
+          "Sankalchand Patel University",
+          "Ganpat University"
+        ],
+        "source": "Industrial Artificial Intelligence",
+        "date": "2026-06-03",
+        "doi": "10.1007/s44244-026-00027-7",
+        "links": {
+          "paper": "https://doi.org/10.1007/s44244-026-00027-7",
+          "doi": "https://doi.org/10.1007/s44244-026-00027-7",
+          "arxiv": null,
+          "code": null,
+          "data": null,
+          "project": null
+        },
+        "topics": [
+          "净负荷预测",
+          "微电网",
+          "PSO-ANN",
+          "风光负荷融合"
+        ],
+        "relevance": "中高",
+        "abstract_only": false,
+        "summary": "用三路并行 PSO-ANN 分别预测风、光、负荷并融合成净负荷，是一个扎实的可复现基线。"
+      }
+    ]
   }
 }

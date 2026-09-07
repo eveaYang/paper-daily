@@ -4828,5 +4828,740 @@
         "summary": "用三路并行 PSO-ANN 分别预测风、光、负荷并融合成净负荷，是一个扎实的可复现基线。"
       }
     ]
+  },
+  "2026-07-26": {
+    "generated_at": "2026-07-26 22:02:42 CST",
+    "search_window": {
+      "primary": [
+        "2026-07-23",
+        "2026-07-26"
+      ],
+      "supplemental": [
+        "2026-07-01",
+        "2026-07-26"
+      ],
+      "representative_extension": [
+        "2026-01-01",
+        "2026-07-26"
+      ]
+    },
+    "dedupe": {
+      "rules": [
+        "same_doi",
+        "same_arxiv_id",
+        "merge_same_paper_across_sources",
+        "skip_existing_entries_in_history"
+      ],
+      "notes": [
+        "近 1-3 天内未筛到足够多高度相关、正式出版且未入库的新论文，因此扩展到近 30 天内的 EV 充电、VPP 与电价方向正式论文。",
+        "已排除与历史缓存重复的 10.1016/j.apenergy.2026.127778、10.1016/j.epsr.2026.113176、10.1016/j.apenergy.2026.127914、10.1016/j.apenergy.2026.127976 等条目。",
+        "近 7 天内未筛到足够强且元数据可稳定核验的新增 IEEE 论文，因此补入 1 篇 2026 年 IEEE TSG 代表性论文。"
+      ]
+    },
+    "papers": [
+      {
+        "priority": "必读",
+        "title_zh": "基于不确定性尺度双向 Transformer 的电动汽车充电负荷预测",
+        "title_en": "Dynamic charging load prediction using uncertainty-scale dual-direction transformer",
+        "authors": [
+          "Jinlai Zhang",
+          "Liuqi Tan",
+          "Hancheng Xie",
+          "Kai Gao",
+          "Wenzheng Liu",
+          "Jie Su",
+          "Wenhao Zhu",
+          "Lin Hu"
+        ],
+        "institutions": [],
+        "source": "Sustainable Energy, Grids and Networks",
+        "date": "2026-07-22",
+        "doi": "10.1016/j.segan.2026.102428",
+        "links": {
+          "paper": "https://doi.org/10.1016/j.segan.2026.102428",
+          "doi": "https://doi.org/10.1016/j.segan.2026.102428",
+          "arxiv": null,
+          "code": null,
+          "data": null,
+          "project": null
+        },
+        "topics": [
+          "EV充电负荷预测",
+          "不确定性建模",
+          "Transformer",
+          "需求响应"
+        ],
+        "relevance": "高",
+        "abstract_only": true,
+        "summary": "用不确定性尺度模块和双向 Transformer 处理 EV 充电负荷的强波动与多尺度时序依赖。"
+      },
+      {
+        "priority": "必读",
+        "title_zh": "面向电动汽车灵活性预测与最优调度的一体化深度学习框架",
+        "title_en": "Integrated deep learning framework for electric vehicles' flexibility forecasting and optimal dispatch",
+        "authors": [
+          "Kailang Wu",
+          "Changying Xiang"
+        ],
+        "institutions": [],
+        "source": "Applied Energy",
+        "date": "2026-07-15",
+        "doi": "10.1016/j.apenergy.2026.127821",
+        "links": {
+          "paper": "https://doi.org/10.1016/j.apenergy.2026.127821",
+          "doi": "https://doi.org/10.1016/j.apenergy.2026.127821",
+          "arxiv": null,
+          "code": null,
+          "data": null,
+          "project": null
+        },
+        "topics": [
+          "EV灵活性预测",
+          "最优调度",
+          "预测控制一体化",
+          "decision-focused learning"
+        ],
+        "relevance": "高",
+        "abstract_only": true,
+        "summary": "把 EV 灵活性预测直接接入调度层，公开结果显示预测误差和系统成本均有明显下降。"
+      },
+      {
+        "priority": "必读",
+        "title_zh": "实时电价与绿证联合交易下考虑共享储能的虚拟电厂多智能体优化",
+        "title_en": "Multi-agent optimization of virtual power plant with shared energy storage under real-time price and green certificate joint trading",
+        "authors": [
+          "Junrui Feng",
+          "Dechang Yang"
+        ],
+        "institutions": [
+          "China Agricultural University"
+        ],
+        "source": "Energy",
+        "date": "2026-05-01",
+        "doi": "10.1016/j.energy.2026.140267",
+        "links": {
+          "paper": "https://doi.org/10.1016/j.energy.2026.140267",
+          "doi": "https://doi.org/10.1016/j.energy.2026.140267",
+          "arxiv": null,
+          "code": null,
+          "data": null,
+          "project": null
+        },
+        "topics": [
+          "虚拟电厂",
+          "共享储能",
+          "电力市场",
+          "绿证交易"
+        ],
+        "relevance": "高",
+        "abstract_only": true,
+        "summary": "将共享储能、实时电价和绿证交易放进统一的 VPP 多智能体优化框架中。"
+      },
+      {
+        "priority": "值得跟进",
+        "title_zh": "用于理解与预测日前电价的数据驱动优先出清模型",
+        "title_en": "A data-driven merit order model for understanding and forecasting day-ahead electricity prices",
+        "authors": [
+          "Paul Ghelasi",
+          "Florian Ziel"
+        ],
+        "institutions": [
+          "University of Duisburg-Essen"
+        ],
+        "source": "Energy Economics",
+        "date": "2026-03-01",
+        "doi": "10.1016/j.eneco.2025.109114",
+        "links": {
+          "paper": "https://doi.org/10.1016/j.eneco.2025.109114",
+          "doi": "https://doi.org/10.1016/j.eneco.2025.109114",
+          "arxiv": null,
+          "code": null,
+          "data": null,
+          "project": null
+        },
+        "topics": [
+          "电价预测",
+          "机制建模",
+          "日前市场",
+          "可解释建模"
+        ],
+        "relevance": "高",
+        "abstract_only": true,
+        "summary": "用数据驱动方式估计 merit-order 结构参数，在保留市场解释力的同时提升日前电价预测能力。"
+      },
+      {
+        "priority": "值得跟进",
+        "title_zh": "面向多任务 V2G 调节的 LLM 增强型离线元强化学习：一种人机协同框架",
+        "title_en": "LLM-Enhanced Offline Meta-Reinforcement Learning for Multi-Task V2G Regulation: A Human-AI Collaborative Framework",
+        "authors": [
+          "Zeyu Liang",
+          "Tao Qian",
+          "Linwei Sang",
+          "Boxin Yuan",
+          "Qingcheng Xu",
+          "Qinran Hu",
+          "Yue Chen",
+          "Alexis P. Zhao",
+          "Chongyu Wang",
+          "Zaijun Wu"
+        ],
+        "institutions": [
+          "Southeast University"
+        ],
+        "source": "IEEE Transactions on Smart Grid",
+        "date": "2026-07-10",
+        "doi": "10.1109/TSG.2026.3677461",
+        "links": {
+          "paper": "https://doi.org/10.1109/TSG.2026.3677461",
+          "doi": "https://doi.org/10.1109/TSG.2026.3677461",
+          "arxiv": null,
+          "code": null,
+          "data": null,
+          "project": null
+        },
+        "topics": [
+          "V2G调节",
+          "离线强化学习",
+          "元学习",
+          "LLM"
+        ],
+        "relevance": "高",
+        "abstract_only": true,
+        "summary": "将 LLM 引入多任务 V2G 的离线元强化学习框架，更适合作为任务适配与知识迁移模块。"
+      },
+      {
+        "priority": "简要了解",
+        "title_zh": "常态与极端天气下由电动汽车与电池构成的户侧虚拟电厂韧性框架",
+        "title_en": "A residential virtual power plant of electric vehicles and batteries for a resilient grid during normal and extreme weather",
+        "authors": [
+          "Mohammed Qais",
+          "Desen Kirli",
+          "Aristides Kiprakis"
+        ],
+        "institutions": [
+          "University of Strathclyde",
+          "University of Edinburgh"
+        ],
+        "source": "Journal of Energy Storage",
+        "date": "2026-07-10",
+        "doi": "10.1016/j.est.2026.122315",
+        "links": {
+          "paper": "https://doi.org/10.1016/j.est.2026.122315",
+          "doi": "https://doi.org/10.1016/j.est.2026.122315",
+          "arxiv": null,
+          "code": null,
+          "data": null,
+          "project": null
+        },
+        "topics": [
+          "户侧虚拟电厂",
+          "EV聚合",
+          "储能韧性",
+          "极端天气"
+        ],
+        "relevance": "中高",
+        "abstract_only": true,
+        "summary": "以常态与极端天气双场景评估 EV 与家储组成的户侧 VPP 对配网韧性的提升作用。"
+      }
+    ]
+  },
+  "2026-08-12": {
+    "generated_at": "2026-08-12 10:37:41 CST",
+    "search_window": {
+      "primary": [
+        "2026-08-09",
+        "2026-08-12"
+      ],
+      "supplemental": [
+        "2026-07-13",
+        "2026-08-12"
+      ],
+      "representative_extension": [
+        "2025-08-12",
+        "2026-08-12"
+      ]
+    },
+    "dedupe": {
+      "rules": [
+        "same_doi",
+        "same_arxiv_id",
+        "merge_same_paper_across_sources",
+        "skip_existing_entries_in_history"
+      ],
+      "notes": [
+        "近 1-7 天内未筛到足够多高度相关且未缓存的新增正式论文，因此本次扩展到近 30 天。",
+        "已跳过历史缓存中重复的正式论文候选，如 DOI 10.1016/j.renene.2026.125844。"
+      ]
+    },
+    "papers": [
+      {
+        "priority": "必读",
+        "title_zh": "基于时空大语言模型与多频多尺度信息融合的电动汽车充电预测",
+        "title_en": "EV-STLLM: Electric vehicle charging forecasting based on spatio-temporal large language models with multi-frequency and multi-scale information fusion",
+        "authors": [
+          "Hang Fan",
+          "Yunze Chai",
+          "Chenxi Liu",
+          "Weican Liu",
+          "Zuhan Zhang",
+          "Wencai Run",
+          "Dunnan Liu"
+        ],
+        "institutions": [],
+        "source": "Expert Systems with Applications",
+        "date": "2026-06-01",
+        "doi": "10.1016/j.eswa.2026.131620",
+        "links": {
+          "paper": "https://doi.org/10.1016/j.eswa.2026.131620",
+          "doi": "https://doi.org/10.1016/j.eswa.2026.131620",
+          "arxiv": null,
+          "code": null,
+          "data": null,
+          "project": null
+        },
+        "topics": [
+          "EV充电负荷预测",
+          "时空预测",
+          "LLM",
+          "交通能源耦合"
+        ],
+        "relevance": "高",
+        "abstract_only": true,
+        "summary": "以 GPT-2 为时序主干，结合站点图拓扑与多频多尺度分解做 EV 充电需求和占用率预测。"
+      },
+      {
+        "priority": "必读",
+        "title_zh": "基于云边协同的多能源虚拟电厂集群多时间尺度分布式控制",
+        "title_en": "Multi-timescale distributed control for multi-energy virtual power plant clusters via cloud-edge collaboration",
+        "authors": [
+          "Yang Gao",
+          "Yunqi Wang",
+          "Nan Yang",
+          "Qin Wang",
+          "Bahman Javadi",
+          "Qian Ai",
+          "Jianguo Zhu"
+        ],
+        "institutions": [],
+        "source": "Applied Energy",
+        "date": "2026-07-01",
+        "doi": "10.1016/j.apenergy.2026.127835",
+        "links": {
+          "paper": "https://doi.org/10.1016/j.apenergy.2026.127835",
+          "doi": "https://doi.org/10.1016/j.apenergy.2026.127835",
+          "arxiv": null,
+          "code": null,
+          "data": null,
+          "project": null
+        },
+        "topics": [
+          "虚拟电厂",
+          "能源管理",
+          "多时间尺度控制",
+          "分布式优化"
+        ],
+        "relevance": "高",
+        "abstract_only": true,
+        "summary": "用云边协同与数字孪生实现多能源 VPP 集群的日前、日内和实时分层控制。"
+      },
+      {
+        "priority": "必读",
+        "title_zh": "面向中短期电力现货价格预测的数据驱动多智能体仿真框架",
+        "title_en": "A data-driven multi-agent simulation framework for improved electricity spot price forecasting in medium and short terms",
+        "authors": [
+          "Yulin Jin",
+          "Yu Hu",
+          "Jing Ni",
+          "Xiaofeng Xu",
+          "Xiaotong Qie"
+        ],
+        "institutions": [],
+        "source": "Computers & Industrial Engineering",
+        "date": "2026-02-01",
+        "doi": "10.1016/j.cie.2026.111875",
+        "links": {
+          "paper": "https://doi.org/10.1016/j.cie.2026.111875",
+          "doi": "https://doi.org/10.1016/j.cie.2026.111875",
+          "arxiv": null,
+          "code": null,
+          "data": null,
+          "project": null
+        },
+        "topics": [
+          "电价预测",
+          "电力市场",
+          "多智能体强化学习",
+          "市场仿真"
+        ],
+        "relevance": "高",
+        "abstract_only": true,
+        "summary": "通过多主体市场仿真和 MARL 学习中短期现货价格形成过程，而不是只做价格序列回归。"
+      },
+      {
+        "priority": "值得跟进",
+        "title_zh": "基于元学习增强 Informer 的电动汽车充电负荷概率预测方法",
+        "title_en": "Probabilistic computing forecasting approach for EV charging load forecasting using meta-learning enhanced informer",
+        "authors": [
+          "Arpana Singh",
+          "Uma Nangia",
+          "M. Rizwan"
+        ],
+        "institutions": [],
+        "source": "Applied Soft Computing",
+        "date": "2026-06-30",
+        "doi": "10.1016/j.asoc.2026.115869",
+        "links": {
+          "paper": "https://doi.org/10.1016/j.asoc.2026.115869",
+          "doi": "https://doi.org/10.1016/j.asoc.2026.115869",
+          "arxiv": null,
+          "code": null,
+          "data": null,
+          "project": null
+        },
+        "topics": [
+          "EV充电负荷预测",
+          "概率预测",
+          "迁移学习",
+          "元学习"
+        ],
+        "relevance": "高",
+        "abstract_only": true,
+        "summary": "用 MAML 和 Informer 结合多站点真实数据，提升 EV 充电负荷的多步概率预测与跨站迁移能力。"
+      },
+      {
+        "priority": "值得跟进",
+        "title_zh": "参与人工频率恢复备用需求响应计划的虚拟电厂日前竞价与报价曲线构建",
+        "title_en": "Building day-ahead market bidding and offering curves of a virtual power plant participating in a manual frequency restoration reserve-based demand response program",
+        "authors": [
+          "Andrés Pleite-Paniagua",
+          "Álvaro García-Cerezo",
+          "Miguel Carrión"
+        ],
+        "institutions": [],
+        "source": "Sustainable Energy, Grids and Networks",
+        "date": "2026-07-22",
+        "doi": "10.1016/j.segan.2026.102426",
+        "links": {
+          "paper": "https://doi.org/10.1016/j.segan.2026.102426",
+          "doi": "https://doi.org/10.1016/j.segan.2026.102426",
+          "arxiv": null,
+          "code": null,
+          "data": null,
+          "project": null
+        },
+        "topics": [
+          "虚拟电厂",
+          "日前市场",
+          "需求响应",
+          "随机优化"
+        ],
+        "relevance": "高",
+        "abstract_only": true,
+        "summary": "构建风险规避三阶段随机规划，为 VPP 参与日前市场和频率恢复备用需求响应生成竞价曲线。"
+      },
+      {
+        "priority": "值得跟进",
+        "title_zh": "基于集成融合学习的日前短期负荷预测优化",
+        "title_en": "Optimizing day-ahead short-term load prediction through ensemble fusion learning",
+        "authors": [
+          "Waqar Waheed",
+          "Qingshan Xu"
+        ],
+        "institutions": [],
+        "source": "Electric Power Systems Research",
+        "date": "2026-08-01",
+        "doi": "10.1016/j.epsr.2026.112949",
+        "links": {
+          "paper": "https://doi.org/10.1016/j.epsr.2026.112949",
+          "doi": "https://doi.org/10.1016/j.epsr.2026.112949",
+          "arxiv": null,
+          "code": null,
+          "data": null,
+          "project": null
+        },
+        "topics": [
+          "短期负荷预测",
+          "集成学习",
+          "稳健基线",
+          "需求预测"
+        ],
+        "relevance": "中高",
+        "abstract_only": true,
+        "summary": "融合 SVM、GBDT、随机森林和 Elastic Net，形成适合作为复杂模型对照的负荷预测强基线。"
+      },
+      {
+        "priority": "简要了解",
+        "title_zh": "基于深度混合密度网络的相关光伏出力混合评分驱动多变量概率预测",
+        "title_en": "Hybrid Score-Driven Multivariate Probabilistic Forecasting of Correlated PV Generation Using Deep Mixture Density Network",
+        "authors": [
+          "Zhiqiang He",
+          "Can Wan",
+          "Kaiming Zhang",
+          "Ping Ju"
+        ],
+        "institutions": [],
+        "source": "IEEE Transactions on Sustainable Energy",
+        "date": "2026-03-12",
+        "doi": "10.1109/TSTE.2026.3673563",
+        "links": {
+          "paper": "https://doi.org/10.1109/TSTE.2026.3673563",
+          "doi": "https://doi.org/10.1109/TSTE.2026.3673563",
+          "arxiv": null,
+          "code": null,
+          "data": null,
+          "project": null
+        },
+        "topics": [
+          "光伏概率预测",
+          "不确定性建模",
+          "联合分布",
+          "图结构学习"
+        ],
+        "relevance": "高",
+        "abstract_only": true,
+        "summary": "通过深度混合密度网络和图结构学习建模多站相关光伏出力的联合概率分布。"
+      }
+    ]
+  },
+  "2026-09-07": {
+    "generated_at": "2026-09-07 20:00:00 CST",
+    "search_window": {
+      "primary": [
+        "2026-09-04",
+        "2026-09-07"
+      ],
+      "supplemental": [
+        "2026-08-08",
+        "2026-09-07"
+      ],
+      "representative_extension": [
+        "2025-09-07",
+        "2026-09-07"
+      ]
+    },
+    "dedupe": {
+      "rules": [
+        "same_doi",
+        "same_arxiv_id",
+        "merge_same_paper_across_sources",
+        "skip_existing_entries_in_history"
+      ],
+      "notes": [
+        "以当日已存在且不可覆盖的日报为历史来源，按 DOI、题名和跨来源版本与 2026-09-07 之前的缓存全量比对。",
+        "7 个 DOI 在此前日期均未出现；FETS benchmark 的正式版因预印本已于 2026-06-21 分析而未重复纳入。",
+        "近 1-7 天内没有足够多可稳定核验的高相关正式论文，因此扩展到近 30 天，并补入 1 篇 2026 年 IEEE 代表作。"
+      ]
+    },
+    "papers": [
+      {
+        "priority": "必读",
+        "title_zh": "面向光伏微电网日前净负荷预测的自适应残差 Transformer 集成",
+        "title_en": "Adaptive Residual-Transformer Ensemble for Day-Ahead Net-Load Forecasting in PV-Integrated Microgrids",
+        "authors": [
+          "N. Uddin 等"
+        ],
+        "institutions": [],
+        "source": "IEEE Access",
+        "date": "2026-08-03",
+        "doi": "10.1109/ACCESS.2026.3719209",
+        "links": {
+          "paper": "https://ieeexplore.ieee.org/document/11638084/",
+          "doi": "https://doi.org/10.1109/ACCESS.2026.3719209",
+          "arxiv": null,
+          "code": null,
+          "data": null,
+          "project": null
+        },
+        "topics": [
+          "净负荷预测",
+          "光伏预测",
+          "微电网",
+          "储能调度",
+          "鲁棒预测"
+        ],
+        "relevance": "高",
+        "abstract_only": true,
+        "summary": "将行为基线残差 PatchTST 与晴天/非晴天光伏 Seq2Seq Transformer 融合，并在三个真实站点验证跨气候迁移能力。"
+      },
+      {
+        "priority": "必读",
+        "title_zh": "基于多通道融合的端到端日前电价概率预测",
+        "title_en": "EP-Net: End-to-end probabilistic day-ahead electricity price forecasting with multi-channel fusion",
+        "authors": [
+          "Hang Fan",
+          "Yuying Yang",
+          "Weican Liu",
+          "Ying Lu",
+          "Dunnan Liu",
+          "Tongtao Ma",
+          "Zhe Wang"
+        ],
+        "institutions": [],
+        "source": "Sustainable Energy, Grids and Networks",
+        "date": "2026-07-31",
+        "doi": "10.1016/j.segan.2026.102463",
+        "links": {
+          "paper": "https://www.sciencedirect.com/science/article/pii/S2352467726003450",
+          "doi": "https://doi.org/10.1016/j.segan.2026.102463",
+          "arxiv": null,
+          "code": null,
+          "data": null,
+          "project": null
+        },
+        "topics": [
+          "日前电价预测",
+          "概率预测",
+          "不确定性建模",
+          "多频建模"
+        ],
+        "relevance": "高",
+        "abstract_only": true,
+        "summary": "以 ICEEMDAN、XGBoost、多通道门控融合和惩罚加权分位数损失实现端到端日前电价概率预测。"
+      },
+      {
+        "priority": "必读",
+        "title_zh": "面向可持续能源政策的电力需求预测与供给风险管理",
+        "title_en": "Forecasting electricity demand and managing supply risk for sustainable energy policies",
+        "authors": [
+          "Alireza Moradi",
+          "Nafiseh Sedghi"
+        ],
+        "institutions": [],
+        "source": "Reliability Engineering & System Safety",
+        "date": "2026-08-19",
+        "doi": "10.1016/j.ress.2026.113305",
+        "links": {
+          "paper": "https://www.sciencedirect.com/science/article/abs/pii/S0951832026011142",
+          "doi": "https://doi.org/10.1016/j.ress.2026.113305",
+          "arxiv": null,
+          "code": null,
+          "data": null,
+          "project": null
+        },
+        "topics": [
+          "概率负荷预测",
+          "共形校准",
+          "风险决策",
+          "供给充裕度"
+        ],
+        "relevance": "高",
+        "abstract_only": true,
+        "summary": "把分位数预测与单侧共形校准接入供给风险决策，同时检验覆盖率、可靠性和爬坡约束。"
+      },
+      {
+        "priority": "值得跟进",
+        "title_zh": "基于时空感知与多因素融合双层混合网络的电动汽车负荷预测",
+        "title_en": "Electric vehicle load forecasting using a dual-layer hybrid fusion prediction network with spatio-temporal perception and multi-factor integration",
+        "authors": [
+          "Zitian Wang",
+          "Lijun Yang",
+          "Hao Hu",
+          "Qinglong Duan"
+        ],
+        "institutions": [],
+        "source": "Information Sciences",
+        "date": "2026-08-08",
+        "doi": "10.1016/j.ins.2026.123986",
+        "links": {
+          "paper": "https://www.sciencedirect.com/science/article/pii/S0020025526009175",
+          "doi": "https://doi.org/10.1016/j.ins.2026.123986",
+          "arxiv": null,
+          "code": null,
+          "data": "https://open-data.bouldercolorado.gov/",
+          "project": null
+        },
+        "topics": [
+          "EV充电负荷预测",
+          "交通能源耦合",
+          "时空建模",
+          "因果方向"
+        ],
+        "relevance": "高",
+        "abstract_only": true,
+        "summary": "融合空间邻近、最大信息系数与转移熵构造动态站点关系，并以双层网络预测多站 EV 负荷。"
+      },
+      {
+        "priority": "值得跟进",
+        "title_zh": "基于 AI 演化点对点博弈的分布式 EV 市场激励聚合建模与容量评估",
+        "title_en": "Market-Incentivized Aggregation Modeling and Capacity from Distributed Electric Vehicles with AI-Enabled Evolutionary Peer-to-Peer Game",
+        "authors": [],
+        "institutions": [],
+        "source": "Engineering",
+        "date": "2026-08-05",
+        "doi": "10.1016/j.eng.2026.06.019",
+        "links": {
+          "paper": "https://www.sciencedirect.com/science/article/pii/S2095809926004297",
+          "doi": "https://doi.org/10.1016/j.eng.2026.06.019",
+          "arxiv": null,
+          "code": null,
+          "data": null,
+          "project": null
+        },
+        "topics": [
+          "EV聚合",
+          "虚拟储能",
+          "电力市场",
+          "分布式强化学习",
+          "P2P博弈"
+        ],
+        "relevance": "高",
+        "abstract_only": true,
+        "summary": "通过价格形成和点对点演化博弈，将随机分散 EV 的柔性聚合为可由电网调用的虚拟储能容量。"
+      },
+      {
+        "priority": "值得跟进",
+        "title_zh": "面向高波动住宅负荷预测的边缘优化与可解释深度学习框架",
+        "title_en": "Edge-optimized and interpretable deep learning framework for high-volatility residential load prediction",
+        "authors": [],
+        "institutions": [],
+        "source": "Energy and AI",
+        "date": "2026-08-28",
+        "doi": "10.1016/j.egyai.2026.100877",
+        "links": {
+          "paper": "https://www.sciencedirect.com/science/article/pii/S266654682600203X",
+          "doi": "https://doi.org/10.1016/j.egyai.2026.100877",
+          "arxiv": null,
+          "code": null,
+          "data": null,
+          "project": null
+        },
+        "topics": [
+          "住宅负荷预测",
+          "边缘部署",
+          "可解释AI",
+          "能源管理"
+        ],
+        "relevance": "中高",
+        "abstract_only": true,
+        "summary": "联合评估分钟级预测精度、确定性时延和静态内存，单 GRU 仅 38.75 KB 且与复杂混合模型精度相当。"
+      },
+      {
+        "priority": "简要了解",
+        "title_zh": "极少数据下的中期负荷预测：面向上下文学习的大语言模型方法",
+        "title_en": "Mid-Term Load Forecasting With Minimal Data: An In-Context-Learning-Aware Approach Using Large Language Models",
+        "authors": [],
+        "institutions": [],
+        "source": "IEEE Transactions on Power Systems",
+        "date": "2026-01-15",
+        "doi": "10.1109/TPWRS.2026.3654059",
+        "links": {
+          "paper": "https://ieeexplore.ieee.org/document/11353017/",
+          "doi": "https://doi.org/10.1109/TPWRS.2026.3654059",
+          "arxiv": null,
+          "code": null,
+          "data": null,
+          "project": null
+        },
+        "topics": [
+          "中期负荷预测",
+          "LLM",
+          "上下文学习",
+          "少样本迁移"
+        ],
+        "relevance": "高",
+        "abstract_only": true,
+        "summary": "利用预训练 LLM 的上下文学习在建筑历史数据极少时完成中期负荷模式适配，无需常规迁移学习的大源域数据与微调。"
+      }
+    ]
   }
 }

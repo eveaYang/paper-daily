@@ -5637,5 +5637,49 @@
         "summary": "以深度学习生成动态虚拟储能参数，并通过可微逆优化仅凭价格响应数据辨识 EV/TCL 行为。"
       }
     ]
+  },
+  "2026-09-09": {
+    "generated_at": "2026-09-09 23:15 CST",
+    "search_window": {
+      "primary": ["2026-09-06", "2026-09-09"],
+      "supplemental": ["2026-09-03", "2026-09-09"],
+      "representative_extension": ["2026-09-03", "2026-09-03"]
+    },
+    "dedupe": {
+      "rules": ["same_doi", "same_arxiv_id", "merge_same_paper_across_sources", "skip_existing_entries_in_history"],
+      "notes": ["2 个 DOI 均未在历史缓存出现；排除了已分析的 EP-Net、混合长期电价预测和物理信息实时电价预测论文。"]
+    },
+    "papers": [
+      {
+        "priority": "必读",
+        "title_zh": "改进驾驶训练优化算法辅助的混合机器学习风电功率预测",
+        "title_en": "Using hybrid machine learning model with an improved driving training-based optimization algorithm for wind power forecasting",
+        "authors": ["R. J. Kuo", "Yun-Tung Ko"],
+        "institutions": ["Department of Industrial Management, National Taiwan University of Science and Technology"],
+        "source": "Neural Computing and Applications",
+        "date": "2026-09-08",
+        "doi": "10.1007/s00521-026-12401-8",
+        "links": {"paper": "https://link.springer.com/article/10.1007/s00521-026-12401-8", "doi": "https://doi.org/10.1007/s00521-026-12401-8", "arxiv": null, "code": null, "data": null, "project": null},
+        "topics": ["风电功率预测", "新能源预测", "时序建模", "混合优化"],
+        "relevance": "高",
+        "abstract_only": false,
+        "summary": "以 VMD、TCN-NLSTM 和变异增强 IDTBO 组成日前风电预测管线，在两个真实数据集上最高降低 12.7% RMSE。"
+      },
+      {
+        "priority": "值得跟进",
+        "title_zh": "风电与光伏发电量机器学习预测：系统文献综述",
+        "title_en": "Machine learning for wind and solar PV energy production forecasting: a systematic literature review",
+        "authors": ["Dani Mahaini", "Marcos R. Machado", "João Luiz Rebelo Moreira"],
+        "institutions": ["University of Twente"],
+        "source": "International Journal of Data Science and Analytics",
+        "date": "2026-09-03",
+        "doi": "10.1007/s41060-026-01261-z",
+        "links": {"paper": "https://link.springer.com/article/10.1007/s41060-026-01261-z", "doi": "https://doi.org/10.1007/s41060-026-01261-z", "arxiv": null, "code": null, "data": null, "project": null},
+        "topics": ["风光功率预测", "中期预测", "概率预测", "基准设计"],
+        "relevance": "高",
+        "abstract_only": false,
+        "summary": "按 PRISMA 从 2,978 条记录筛至 31 项研究，指出真实气象输入、统一多时域基准和决策价值评估是关键缺口。"
+      }
+    ]
   }
 }
